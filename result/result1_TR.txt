@@ -1,0 +1,5278 @@
+打 O O O
+开 O O O
+天 B-name B-name B
+天 I-name I-name I
+动 I-name I-name I
+听 I-name I-name I
+并 O O O
+开 O O O
+始 O O O
+播 O O O
+放 O O O
+音 O O O
+乐 O O O
+LAUNCH<=>LAUNCH
+
+打 O O O
+开 O O O
+酷 B-name B-name B
+狗 I-name I-name I
+并 O I-name I
+随 O I-name I
+机 O I-name I
+播 O I-name I
+放 O I-name I
+LAUNCH<=>LAUNCH
+
+打 O O O
+开 O O O
+会 B-name O B
+说 I-name O O
+话 I-name O O
+的 I-name O O
+汤 I-name B-name B
+姆 I-name I-name I
+猫 I-name I-name I
+LAUNCH<=>LAUNCH
+
+打 O O O
+开 O O O
+系 B-name B-name B
+统 I-name I-name I
+软 I-name I-name I
+件 I-name I-name I
+清 I-name I-name I
+理 I-name I-name I
+LAUNCH<=>LAUNCH
+
+帮 O O O
+我 O O O
+开 O O O
+捕 B-name B-name B
+鱼 I-name I-name I
+达 I-name I-name I
+人 I-name I-name I
+LAUNCH<=>QUERY
+
+打 O O O
+开 O O O
+相 B-name B-name B
+机 I-name I-name I
+我 O O O
+想 O O O
+你 O O O
+LAUNCH<=>LAUNCH
+
+启 O O O
+动 O O O
+q B-name B-name B
+q I-name I-name I
+浏 I-name I-name I
+览 I-name I-name I
+器 I-name I-name I
+LAUNCH<=>LAUNCH
+
+帮 O O O
+我 O O O
+打 O O O
+开 O O O
+电 B-name O O
+话 I-name O O
+本 I-name O O
+LAUNCH<=>DIAL
+
+搜 O O O
+索 O O O
+京 B-name B-name B
+东 I-name I-name I
+商 I-name I-name I
+城 I-name I-name I
+QUERY<=>QUERY
+
+打 O O O
+开 O O O
+语 B-name O O
+音 I-name O O
+软 O O O
+件 O O O
+LAUNCH<=>LAUNCH
+
+打 O O O
+开 O O O
+搜 B-name B-name B
+狐 I-name I-name I
+微 I-name I-name I
+博 I-name I-name I
+LAUNCH<=>LAUNCH
+
+把 O O O
+u B-name B-name B
+c I-name I-name I
+打 O O O
+开 O O O
+啊 O O O
+LAUNCH<=>OPEN
+
+打 O O O
+开 O O O
+应 O O B
+用 O O O
+漫 B-name O O
+画 I-name O O
+LAUNCH<=>LAUNCH
+
+开 O O O
+启 O O O
+通 B-name B-name B
+讯 I-name I-name I
+录 I-name I-name I
+LAUNCH<=>LAUNCH
+
+酷 B-name B-name B
+狗 I-name I-name I
+音 I-name I-name I
+乐 I-name I-name I
+盒 I-name I-name I
+LAUNCH<=>LAUNCH
+
+有 B-name O O
+道 I-name O O
+词 I-name O O
+典 I-name O O
+LAUNCH<=>QUERY
+
+查 O O O
+一 O O O
+下 O O O
+到 O O O
+长 B-endLoc_poi B-endLoc_area B
+途 I-endLoc_poi I-endLoc_area I
+汽 I-endLoc_poi I-endLoc_poi I
+车 I-endLoc_poi I-endLoc_poi I
+站 I-endLoc_poi I-endLoc_poi I
+去 O O O
+的 O O O
+最 B-type O O
+省 I-type O O
+钱 I-type O O
+的 O O O
+线 O O O
+路 O O O
+ROUTE<=>ROUTE
+
+导 O O O
+航 O O O
+到 O O O
+山 B-endLoc_province B-endLoc_poi B
+东 I-endLoc_province I-endLoc_poi I
+省 I-endLoc_province I-endLoc_poi I
+菏 B-endLoc_city I-endLoc_poi I
+泽 I-endLoc_city I-endLoc_poi I
+市 I-endLoc_city I-endLoc_poi I
+王 B-endLoc_area I-endLoc_poi I
+浩 I-endLoc_area I-endLoc_poi I
+屯 I-endLoc_area I-endLoc_poi I
+镇 I-endLoc_area I-endLoc_poi I
+ROUTE<=>ROUTE
+
+从 O O O
+我 O O O
+这 O O O
+里 O O O
+去 O O O
+芙 B-endLoc_poi B-endLoc_poi B
+蓉 I-endLoc_poi I-endLoc_poi I
+区 I-endLoc_poi I-endLoc_poi I
+政 I-endLoc_poi I-endLoc_poi I
+府 I-endLoc_poi I-endLoc_poi I
+怎 O O O
+么 O O O
+去 O O O
+ROUTE<=>ROUTE
+
+请 O O O
+查 O O O
+询 O O O
+天 B-Src B-Src B
+津 I-Src I-Src I
+市 I-Src I-Src I
+到 O O O
+哈 B-Dest B-Dest B
+尔 I-Dest I-Dest I
+滨 I-Dest I-Dest I
+的 O O O
+车 O O O
+。 O O O
+QUERY<=>QUERY
+
+查 O O O
+一 O O O
+下 O O O
+运 B-Src B-Src B
+城 I-Src I-Src I
+到 O O O
+临 B-Dest B-Dest B
+汾 I-Dest I-Dest I
+的 O O O
+汽 O O O
+车 O O O
+。 O O O
+QUERY<=>QUERY
+
+帮 O O O
+我 O O O
+找 O O O
+到 O O O
+去 O O O
+安 B-endLoc_province B-endLoc_province B
+徽 I-endLoc_province I-endLoc_province I
+黄 B-endLoc_poi B-endLoc_area I
+山 I-endLoc_poi I-endLoc_area I
+的 O O O
+路 O O O
+ROUTE<=>ROUTE
+
+上 B-Src B-Src B
+海 I-Src I-Src I
+到 O O O
+合 B-Dest B-Dest B
+肥 I-Dest I-Dest I
+可 O O O
+以 O O O
+到 O O O
+哪 O O O
+坐 O O O
+车 O O O
+QUERY<=>QUERY
+
+从 O O O
+杭 B-Src B-Src B
+州 I-Src I-Src I
+到 O O O
+黄 B-Dest B-Dest B
+山 I-Dest I-Dest I
+的 O O O
+汽 O O O
+车 O O O
+。 O O O
+QUERY<=>QUERY
+
+济 B-Src B-Src B
+南 I-Src I-Src I
+去 O O O
+聊 B-Dest B-Dest B
+城 I-Dest I-Dest I
+的 O O O
+汽 O O O
+车 O O O
+。 O O O
+QUERY<=>QUERY
+
+昭 B-Src B-Src B
+通 I-Src I-Src I
+到 O O O
+南 B-Dest B-Dest B
+昌 I-Dest I-Dest I
+的 O O O
+汽 O O O
+车 O O O
+。 O O O
+QUERY<=>QUERY
+
+温 B-Src B-Src B
+州 I-Src I-Src I
+到 O O O
+上 B-Dest B-Dest B
+海 I-Dest I-Dest I
+的 O O O
+车 O O O
+。 O O O
+QUERY<=>QUERY
+
+吉 B-Src B-Src B
+林 I-Src I-Src I
+到 O O O
+大 B-Dest B-Dest B
+连 I-Dest I-Dest I
+的 O O O
+车 O O O
+。 O O O
+QUERY<=>QUERY
+
+南 B-endLoc_poi B-endLoc_poi B
+光 I-endLoc_poi I-endLoc_poi I
+集 I-endLoc_poi I-endLoc_poi I
+团 I-endLoc_poi I-endLoc_poi I
+怎 O O O
+么 O O O
+走 O O O
+ROUTE<=>ROUTE
+
+下 O B-tag B
+载 O I-tag I
+汉 B-name I-tag I
+化 I-name I-tag I
+软 O O O
+件 O O O
+DOWNLOAD<=>QUERY
+
+搜 O O O
+索 O O O
+结 B-name B-name B
+束 I-name I-name I
+软 O O O
+件 O O O
+QUERY<=>QUERY
+
+下 O O O
+载 O B-name B
+飞 B-name I-name I
+信 I-name I-name O
+DOWNLOAD<=>SEND
+
+从 O O O
+观 B-startLoc_poi B-startLoc_poi B
+音 I-startLoc_poi I-startLoc_poi I
+桥 I-startLoc_poi I-startLoc_poi I
+到 O O O
+重 B-endLoc_poi B-endLoc_poi B
+庆 I-endLoc_poi I-endLoc_poi I
+市 I-endLoc_poi I-endLoc_poi I
+图 I-endLoc_poi I-endLoc_poi I
+书 I-endLoc_poi I-endLoc_poi I
+馆 I-endLoc_poi I-endLoc_poi I
+怎 O O O
+么 O O O
+走 O O O
+ROUTE<=>ROUTE
+
+从 O O O
+新 B-startLoc_poi B-startLoc_poi B
+加 I-startLoc_poi I-startLoc_poi I
+坡 I-startLoc_poi I-startLoc_poi I
+花 I-startLoc_poi I-startLoc_poi I
+园 I-startLoc_poi I-startLoc_poi I
+怎 O O O
+么 O O O
+去 O O O
+宁 B-endLoc_poi B-endLoc_poi B
+溪 I-endLoc_poi I-endLoc_poi I
+路 I-endLoc_poi I-endLoc_poi I
+ROUTE<=>ROUTE
+
+帮 O O O
+我 O O O
+搜 O O O
+一 O O O
+下 O O O
+科 B-location_poi B-location_poi B
+大 I-location_poi I-location_poi I
+讯 I-location_poi I-location_poi I
+飞 I-location_poi I-location_poi I
+在 O O O
+哪 O O O
+POSITION<=>POSITION
+
+从 O O O
+连 B-startLoc_city B-startLoc_poi B
+云 I-startLoc_city I-startLoc_poi I
+港 I-startLoc_city I-startLoc_poi I
+到 O O O
+北 B-endLoc_city B-endLoc_poi B
+京 I-endLoc_city I-endLoc_poi I
+该 O O O
+怎 O O O
+么 O O O
+走 O O O
+ROUTE<=>ROUTE
+
+我 O O O
+们 O O O
+现 O B-datetime_time B
+在 O I-datetime_time I
+在 O O O
+什 O O O
+么 O O O
+地 O O O
+方 O O O
+POSITION<=>QUERY
+
+移 B-location_poi B-location_poi B
+动 I-location_poi I-location_poi I
+公 I-location_poi I-location_poi I
+司 I-location_poi I-location_poi I
+在 O O O
+哪 O O O
+里 O O O
+呀 O O O
+POSITION<=>POSITION
+
+昆 B-location_area B-location_poi B
+山 I-location_area I-location_poi I
+大 B-location_poi I-location_poi I
+润 I-location_poi I-location_poi I
+发 I-location_poi I-location_poi I
+在 O O O
+哪 O O O
+里 O O O
+POSITION<=>POSITION
+
+告 O B-location_poi B
+诉 O I-location_poi I
+我 O I-location_poi I
+西 B-location_city I-location_poi I
+安 I-location_city I-location_poi I
+的 O O O
+位 O O O
+置 O O O
+POSITION<=>POSITION
+
+查 O O O
+询 O O O
+沿 O B-name B
+途 O I-name I
+的 O I-name I
+K B-location_poi I-name I
+T I-location_poi I-name I
+V I-location_poi I-name I
+POSITION<=>PLAY
+
+宁 B-startLoc_area B-startLoc_city B
+乡 I-startLoc_area I-startLoc_city I
+到 O O O
+长 B-endLoc_city B-endLoc_area B
+沙 I-endLoc_city I-endLoc_area I
+怎 O O O
+么 O O O
+走 O O O
+ROUTE<=>ROUTE
+
+湘 B-startLoc_city B-startLoc_poi B
+潭 I-startLoc_city I-startLoc_poi I
+到 O O O
+常 B-endLoc_city B-endLoc_area B
+德 I-endLoc_city I-endLoc_area I
+怎 O O O
+么 O O O
+走 O O O
+ROUTE<=>ROUTE
+
+人 B-location_poi B-location_poi B
+民 I-location_poi I-location_poi I
+公 I-location_poi I-location_poi I
+园 I-location_poi I-location_poi I
+在 O O O
+哪 O O O
+里 O O O
+POSITION<=>POSITION
+
+导 O O O
+航 O O O
+去 O O O
+科 B-endLoc_poi B-endLoc_poi B
+大 I-endLoc_poi I-endLoc_poi I
+讯 I-endLoc_poi I-endLoc_poi I
+飞 I-endLoc_poi I-endLoc_poi I
+ROUTE<=>ROUTE
+
+带 O O O
+我 O O O
+去 O O O
+新 B-endLoc_poi B-endLoc_poi B
+都 I-endLoc_poi I-endLoc_poi I
+会 I-endLoc_poi I-endLoc_poi I
+ROUTE<=>QUERY
+
+平 B-endLoc_area B-endLoc_poi B
+阳 I-endLoc_area I-endLoc_poi I
+怎 O O O
+么 O O O
+走 O O O
+吗 O O O
+ROUTE<=>ROUTE
+
+导 O O O
+航 O O O
+到 O O O
+建 B-endLoc_poi B-endLoc_poi B
+八 I-endLoc_poi I-endLoc_poi I
+路 I-endLoc_poi I-endLoc_poi I
+ROUTE<=>ROUTE
+
+查 O O O
+询 O O O
+宜 B-startLoc_city B-startLoc_city B
+春 I-startLoc_city I-startLoc_city I
+到 O O O
+南 B-endLoc_city B-endLoc_city B
+昌 I-endLoc_city I-endLoc_city I
+的 O O O
+火 O O O
+车 O O O
+列 O O O
+车 O O O
+时 O O O
+刻 O O O
+表 O O O
+QUERY<=>QUERY
+
+帮 O O O
+我 O O O
+查 O O O
+一 O O O
+下 O O O
+洛 B-startLoc_city B-startLoc_city B
+阳 I-startLoc_city I-startLoc_city I
+到 O O O
+赣 B-endLoc_city B-endLoc_city B
+州 I-endLoc_city I-endLoc_city I
+的 O O O
+火 O O O
+车 O O O
+QUERY<=>QUERY
+
+到 O O O
+无 B-startLoc_city B-endLoc_city B
+锡 I-startLoc_city I-endLoc_city I
+到 O O O
+北 B-endLoc_city B-endLoc_city B
+京 I-endLoc_city I-endLoc_city I
+的 O O O
+火 O O O
+车 O O O
+有 O O O
+几 O O O
+趟 O O O
+了 O O O
+QUERY<=>QUERY
+
+帮 O O O
+我 O O O
+查 O O O
+一 O O O
+下 O O O
+广 B-startLoc_city B-startLoc_city B
+州 I-startLoc_city I-startLoc_city I
+到 O O O
+深 B-endLoc_city B-endLoc_city B
+圳 I-endLoc_city I-endLoc_city I
+的 O O O
+火 O O O
+车 O O O
+QUERY<=>QUERY
+
+查 O O O
+一 O O O
+下 O O O
+合 B-startLoc_city B-startLoc_city B
+肥 I-startLoc_city I-startLoc_city I
+到 O O O
+淮 B-endLoc_city B-endLoc_city B
+南 I-endLoc_city I-endLoc_city I
+明 B-startDate_date B-endLoc_area B
+天 I-startDate_date I-endLoc_area I
+的 O O O
+火 O O O
+车 O O O
+QUERY<=>QUERY
+
+你 O O O
+知 O O O
+道 O O O
+中 B-location_poi B-location_poi B
+国 I-location_poi I-location_poi I
+科 I-location_poi I-location_poi I
+技 I-location_poi I-location_poi I
+大 I-location_poi I-location_poi I
+学 I-location_poi I-location_poi I
+在 O O O
+哪 O O O
+里 O O O
+吗 O O O
+POSITION<=>POSITION
+
+四 B-startDate_date B-startDate_date B
+月 I-startDate_date I-startDate_date I
+六 I-startDate_date I-startDate_date I
+号 I-startDate_date I-startDate_date I
+南 B-startLoc_city B-startLoc_city B
+宁 I-startLoc_city I-startLoc_city I
+到 O O O
+上 B-endLoc_city B-endLoc_city B
+海 I-endLoc_city I-endLoc_city I
+的 O O O
+火 O O O
+车 O O O
+QUERY<=>QUERY
+
+查 O O O
+一 O O O
+下 O O O
+兰 B-startLoc_city B-startLoc_city B
+州 I-startLoc_city I-startLoc_city I
+到 O O O
+成 B-endLoc_city B-endLoc_city B
+都 I-endLoc_city I-endLoc_city I
+的 O O O
+火 O O O
+车 O O O
+票 O O O
+QUERY<=>QUERY
+
+宿 B-startLoc_city B-startLoc_city B
+州 I-startLoc_city I-startLoc_city I
+到 O O O
+北 B-endLoc_city B-endLoc_city B
+京 I-endLoc_city I-endLoc_city I
+的 O O O
+火 O O O
+车 O O O
+有 O O O
+哪 O O O
+些 O O O
+QUERY<=>QUERY
+
+查 O O O
+一 O O O
+下 O O O
+沿 O O O
+途 O O O
+的 O O O
+科 B-location_poi B-endLoc_poi B
+大 I-location_poi I-endLoc_poi I
+讯 I-location_poi I-endLoc_poi I
+飞 I-location_poi I-endLoc_poi I
+POSITION<=>ROUTE
+
+明 B-startDate_date B-startDate_date B
+天 I-startDate_date I-startDate_date I
+去 O O O
+滁 B-endLoc_city B-endLoc_city B
+州 I-endLoc_city I-endLoc_city I
+的 O O O
+火 O O O
+车 O O O
+QUERY<=>QUERY
+
+深 B-startLoc_city B-startLoc_city B
+圳 I-startLoc_city I-startLoc_city I
+到 O O O
+开 B-endLoc_city O O
+封 I-endLoc_city O O
+的 O O O
+火 O O O
+车 O O O
+QUERY<=>QUERY
+
+明 B-startDate_date B-startDate_date B
+天 I-startDate_date I-startDate_date I
+去 O O O
+蚌 B-endLoc_city B-endLoc_city B
+埠 I-endLoc_city I-endLoc_city I
+的 O O O
+车 O O O
+票 O O O
+QUERY<=>QUERY
+
+广 B-startLoc_city B-startLoc_city B
+州 I-startLoc_city I-startLoc_city I
+去 O O O
+昆 B-endLoc_city B-endLoc_city B
+明 I-endLoc_city I-endLoc_city I
+的 O O O
+火 O O O
+车 O O O
+QUERY<=>QUERY
+
+广 B-location_province B-location_poi B
+东 I-location_province I-location_poi I
+省 I-location_province I-location_poi I
+英 B-location_area I-location_poi B
+德 I-location_area I-location_poi I
+在 O O O
+哪 O O O
+里 O O O
+POSITION<=>POSITION
+
+去 O O O
+枣 B-endLoc_city B-endLoc_city B
+庄 I-endLoc_city I-endLoc_city I
+的 O O O
+火 O O O
+车 O O O
+QUERY<=>QUERY
+
+帮 O O O
+我 O O O
+查 O O O
+一 O O O
+下 O O O
+赣 B-startLoc_city B-startLoc_city B
+州 I-startLoc_city I-startLoc_city I
+到 O O O
+杭 B-endLoc_city B-endLoc_city B
+州 I-endLoc_city I-endLoc_city I
+的 O O O
+火 O O O
+车 O O O
+票 O O O
+QUERY<=>QUERY
+
+帮 O O O
+我 O O O
+查 O O O
+一 O O O
+下 O O O
+苏 B-startLoc_city B-startLoc_city B
+州 I-startLoc_city I-startLoc_city I
+到 O O O
+上 B-endLoc_city B-endLoc_city B
+海 I-endLoc_city I-endLoc_city I
+的 O O O
+火 O O O
+车 O O O
+QUERY<=>QUERY
+
+明 B-startDate_date B-startDate_date B
+天 I-startDate_date I-startDate_date I
+有 O O O
+没 O O O
+有 O O O
+洛 B-startLoc_city B-startLoc_city B
+阳 I-startLoc_city I-startLoc_city I
+到 O O O
+西 B-endLoc_city B-endLoc_city B
+安 I-endLoc_city I-endLoc_city I
+的 O O O
+高 B-category B-category B
+铁 I-category I-category I
+QUERY<=>QUERY
+
+查 O O O
+一 O O O
+下 O O O
+上 B-startLoc_city B-startLoc_city B
+海 I-startLoc_city I-startLoc_city I
+到 O O O
+苏 B-endLoc_city B-endLoc_city B
+州 I-endLoc_city I-endLoc_city I
+的 O O O
+火 O O O
+车 O O O
+票 O O O
+QUERY<=>QUERY
+
+咱 B-name B-name B
+们 I-name I-name I
+结 I-name I-name I
+婚 I-name I-name I
+吧 I-name I-name O
+什 O O O
+么 O O O
+时 O O O
+候 O O O
+播 O O O
+出 O O O
+DATE_QUERY<=>QUERY
+
+最 O O O
+近 O O O
+有 O O O
+什 O O O
+么 O O O
+好 O O O
+看 O O O
+电 O B-category B
+影 O I-category I
+了 O O O
+？ O O O
+QUERY<=>QUERY
+
+查 O O O
+一 O O O
+下 O O O
+最 O O O
+近 O O O
+有 O O O
+什 O O O
+么 O O O
+电 O O O
+影 O O O
+？ O O O
+QUERY<=>QUERY
+
+查 O O O
+询 O O O
+泉 B-startLoc_city B-startLoc_city B
+州 I-startLoc_city I-startLoc_city I
+到 O O O
+上 B-endLoc_city B-endLoc_city B
+海 I-endLoc_city I-endLoc_city I
+的 O O O
+动 B-category B-category B
+车 I-category I-category I
+票 O O O
+QUERY<=>QUERY
+
+最 O O O
+近 O O O
+有 O O O
+什 O O O
+么 O O O
+好 O O O
+电 O O O
+影 O O O
+吗 O O O
+？ O O O
+QUERY<=>QUERY
+
+最 O B-timeDescr B
+近 O I-timeDescr I
+有 O O O
+什 O O O
+么 O O O
+科 B-category B-scoreDescr B
+幻 I-category I-scoreDescr I
+电 O B-category B
+影 O I-category I
+？ O O O
+QUERY<=>QUERY
+
+看 O O O
+看 O O O
+最 O B-datetime_date B
+近 O I-datetime_date I
+有 O O O
+什 O O O
+么 O O O
+电 O O O
+影 O O O
+？ O O O
+QUERY<=>QUERY
+
+查 O O O
+询 O O O
+昆 B-startLoc_city B-startLoc_city B
+明 I-startLoc_city I-startLoc_city I
+到 O O O
+合 B-endLoc_city B-endLoc_city B
+肥 I-endLoc_city I-endLoc_city I
+的 O O O
+火 O O O
+车 O O O
+QUERY<=>QUERY
+
+最 O O O
+近 O O O
+有 O O O
+什 O O O
+么 O O O
+影 O B-timeDescr B
+片 O O O
+？ O O O
+QUERY<=>QUERY
+
+广 B-startLoc_city B-startLoc_city B
+州 I-startLoc_city I-startLoc_city I
+到 O O O
+孝 B-endLoc_city B-endLoc_city B
+感 I-endLoc_city I-endLoc_city I
+的 O O O
+火 O O O
+车 O O O
+QUERY<=>QUERY
+
+查 O O O
+寻 B-name O O
+标 I-name B-name B
+兵 I-name I-name I
+的 O O O
+号 O O O
+码 O O O
+QUERY<=>QUERY
+
+有 O O O
+什 O O O
+么 O O O
+新 O B-scoreDescr B
+电 O B-category B
+影 O I-category I
+QUERY<=>QUERY
+
+打 O O O
+电 O O O
+话 O O O
+给 O O O
+丹 B-name B-name B
+丹 I-name I-name I
+移 B-teleOperator I-name I
+动 I-teleOperator I-name I
+DIAL<=>DIAL
+
+打 O O O
+电 O O O
+话 O O O
+给 O O O
+三 B-name B-name B
+路 I-name I-name I
+店 I-name I-name I
+DIAL<=>DIAL
+
+你 O O O
+给 O O O
+朴 B-name B-name B
+叔 I-name I-name I
+打 O O O
+电 O O O
+话 O O O
+DIAL<=>DIAL
+
+打 O O O
+电 O O O
+话 O O O
+给 O O O
+张 B-name B-name B
+志 I-name I-name I
+国 I-name I-name I
+DIAL<=>DIAL
+
+打 O O O
+电 O O O
+话 O O O
+给 O O O
+王 B-name B-name B
+宇 I-name I-name I
+婕 I-name I-name I
+DIAL<=>DIAL
+
+给 O O O
+木 B-name B-name B
+九 I-name I-name I
+超 I-name I-name I
+打 O O O
+电 O O O
+话 O O O
+DIAL<=>DIAL
+
+打 O O O
+电 O O O
+话 O O O
+给 O O O
+李 B-name B-name B
+新 I-name I-name I
+颖 I-name I-name I
+DIAL<=>DIAL
+
+打 O O O
+电 O O O
+话 O O O
+给 O O O
+大 B-name B-name B
+培 I-name I-name I
+DIAL<=>DIAL
+
+打 O O O
+电 O O O
+话 O O O
+到 O O O
+飞 B-name B-name B
+云 I-name I-name I
+DIAL<=>DIAL
+
+打 O O O
+电 O O O
+话 O O O
+给 O O O
+胖 B-name B-name B
+头 I-name I-name I
+DIAL<=>DIAL
+
+拨 O O O
+打 O O O
+陈 B-name B-name B
+艾 I-name I-name I
+电 O I-name I
+话 O I-name I
+DIAL<=>DIAL
+
+给 O O O
+金 B-name B-name B
+华 I-name I-name I
+打 O O O
+电 O O O
+话 O O O
+DIAL<=>DIAL
+
+打 O O O
+电 O O O
+话 O O O
+给 O O O
+阿 B-name B-name B
+敏 I-name I-name I
+DIAL<=>DIAL
+
+给 O O O
+王 B-name B-name B
+涛 I-name I-name I
+打 O O O
+电 O O O
+话 O O O
+DIAL<=>DIAL
+
+打 O O O
+石 B-name B-name B
+宝 I-name I-name I
+电 O O O
+话 O O O
+DIAL<=>DIAL
+
+呼 O O O
+叫 O O O
+a O B-name B
+DIAL<=>DIAL
+
+给 O O O
+王 B-name B-name B
+帅 I-name I-name I
+发 O O O
+个 O O O
+短 O O O
+信 O O O
+说 O O O
+他 O B-content B
+让 B-content I-content I
+他 I-content I-content I
+起 I-content I-content I
+来 I-content I-content I
+尿 I-content I-content I
+尿 I-content I-content I
+SEND<=>SEND
+
+把 O O O
+王 B-name B-name B
+建 I-name I-name I
+春 I-name I-name I
+的 O O O
+电 O O O
+话 O O O
+号 O O O
+码 O O O
+发 O O O
+给 O O O
+张 B-receiver B-receiver B
+学 I-receiver I-receiver I
+政 I-receiver I-receiver I
+SENDCONTACTS<=>SENDCONTACTS
+
+把 O O O
+王 B-name B-name B
+世 I-name I-name I
+怀 I-name I-name I
+的 O O O
+号 O O O
+码 O O O
+发 O O O
+给 O O O
+乔 B-receiver B-receiver B
+丽 I-receiver I-receiver I
+君 I-receiver I-receiver I
+SENDCONTACTS<=>SENDCONTACTS
+
+把 O O O
+张 B-name B-name B
+新 I-name I-name I
+涛 I-name I-name I
+电 O O O
+话 O O O
+发 O O O
+给 O O O
+常 B-receiver B-receiver B
+胜 I-receiver I-receiver I
+宾 I-receiver I-receiver I
+SENDCONTACTS<=>SENDCONTACTS
+
+发 O O O
+条 O O O
+短 O O O
+信 O O O
+给 O O O
+张 B-name B-name B
+亚 I-name I-name I
+东 I-name I-name I
+SEND<=>SEND
+
+呃 O O O
+发 O O O
+信 O O O
+息 O O O
+给 O O O
+周 B-name B-name B
+玉 I-name I-name I
+豪 I-name I-name I
+SEND<=>SEND
+
+发 O O O
+信 O O O
+息 O O O
+给 O O O
+董 B-name B-name B
+昊 I-name I-name I
+老 I-name I-name I
+婆 I-name I-name I
+SEND<=>SEND
+
+发 O O O
+短 O O O
+信 O O O
+给 O O O
+王 B-name B-name B
+小 I-name I-name I
+露 I-name I-name I
+的 O O O
+SEND<=>SEND
+
+帮 O O O
+我 O O O
+发 O O O
+条 O O O
+短 O O O
+信 O O O
+吧 O O O
+SEND<=>SEND
+
+给 O O O
+小 B-name B-name B
+阳 I-name I-name I
+发 O O O
+短 O O O
+信 O O O
+SEND<=>SEND
+
+发 O O O
+信 O O O
+息 O O O
+给 O O O
+健 B-name B-name B
+美 I-name I-name I
+SEND<=>SEND
+
+发 O O O
+信 O O O
+息 O O O
+给 O O O
+学 B-name B-name B
+超 I-name I-name I
+SEND<=>SEND
+
+给 O O O
+园 B-name B-name B
+园 I-name I-name I
+发 O O O
+短 O O O
+信 O O O
+SEND<=>SEND
+
+发 O O O
+信 O O O
+息 O O O
+给 O O O
+熊 B-name B-name B
+伟 I-name I-name I
+SEND<=>SEND
+
+打 O O O
+电 O O O
+话 O O O
+给 O O O
+卢 B-name B-name B
+静 I-name I-name I
+DIAL<=>DIAL
+
+给 O O O
+青 B-name B-name B
+发 O O O
+短 O O O
+信 O O O
+SEND<=>SEND
+
+添 O O O
+加 O O O
+一 O O O
+条 O O O
+通 O B-location_city B
+讯 O I-location_city I
+录 O I-datetime_date I
+姓 O I-datetime_date I
+名 O I-datetime_date I
+葛 B-name O O
+勇 I-name O O
+手 O O O
+机 O O O
+号 O O O
+码 O O O
+1 B-code O O
+8 I-code O O
+9 I-code O O
+5 I-code B-date I
+7 I-code I-code I
+1 I-code I-code I
+6 I-code I-code I
+4 I-code I-code I
+2 I-code I-code I
+4 I-code I-code I
+9 I-code I-code I
+6 I-code I-code I
+CREATE<=>LAUNCH
+
+添 O O O
+加 O O O
+一 O O O
+条 O O O
+通 O O O
+讯 O O O
+录 O O O
+姓 O O O
+名 O O O
+张 B-name O O
+守 I-name O O
+刚 I-name O O
+号 O O O
+码 O O O
+是 O O O
+1 B-code O O
+3 I-code O O
+8 I-code O O
+1 I-code O O
+1 I-code O O
+7 I-code O O
+2 I-code I-datetime_date I
+5 I-code I-datetime_date I
+1 I-code I-datetime_date I
+5 I-code I-datetime_date I
+8 I-code I-datetime_date I
+CREATE<=>NUMBER_QUERY
+
+新 O B-name B
+建 O I-name I
+联 O I-name I
+系 O I-name I
+人 O I-name I
+1 B-code I-name I
+8 I-code I-name I
+6 I-code I-name I
+2 I-code I-name I
+2 I-code I-name I
+6 I-code I-name I
+2 I-code I-name I
+5 I-code I-name I
+4 I-code I-name I
+9 I-code I-name I
+0 I-code I-name I
+CREATE<=>LAUNCH
+
+发 O O O
+信 O O O
+息 O O O
+给 O O O
+老 B-name B-name B
+婆 I-name I-name I
+说 O O O
+我 B-content B-content B
+不 I-content I-content I
+回 I-content I-content I
+家 I-content I-content I
+吃 I-content I-content I
+饭 I-content I-content I
+了 I-content I-content I
+SEND<=>SEND
+
+哦 B-name O O
+钢 I-name B-name B
+结 I-name I-name I
+构 I-name I-name I
+的 O O O
+电 O O O
+话 O O O
+是 O O O
+多 O O O
+少 O O O
+QUERY<=>QUERY
+
+肉 B-dishName B-dishName B
+沫 I-dishName I-dishName I
+茄 I-dishName I-dishName I
+子 I-dishName I-dishName I
+， O O O
+怎 O O O
+么 O O O
+做 O O O
+？ O O O
+QUERY<=>QUERY
+
+查 O O O
+看 O O O
+之 B-name B-name B
+丽 I-name I-name I
+丽 I-name I-name I
+的 O O O
+号 O O O
+码 O O O
+QUERY<=>QUERY
+
+新 O B-name B
+建 O I-name I
+联 O I-name I
+系 O I-name I
+人 O I-name I
+天 B-name I-name I
+天 I-name I-name I
+CREATE<=>QUERY
+
+查 O O O
+看 O O O
+婷 B-name B-name B
+婷 I-name I-name I
+的 O O O
+号 O O O
+码 O O O
+QUERY<=>QUERY
+
+给 O O O
+德 B-name B-name B
+师 I-name I-name I
+傅 I-name I-name I
+发 O O O
+短 O O O
+信 O O O
+SEND<=>SEND
+
+给 O O O
+杨 B-name B-name B
+李 I-name I-name I
+鹏 I-name I-name I
+发 O O O
+短 O O O
+信 O O O
+SEND<=>SEND
+
+发 O O O
+送 O O O
+短 O O O
+信 O O O
+给 O O O
+陈 B-name B-name B
+群 I-name I-name I
+SEND<=>SEND
+
+周 B-name B-name B
+慧 I-name I-name I
+的 O O O
+电 O O O
+话 O O O
+。 O O O
+QUERY<=>QUERY
+
+查 O O O
+找 O O O
+张 B-name B-name B
+伟 I-name I-name I
+军 I-name I-name I
+nan<=>QUERY
+
+查 O O O
+看 O O O
+短 O O O
+消 O O O
+息 O O O
+VIEW<=>NUMBER_QUERY
+
+虾 B-dishName B-dishName B
+仁 I-dishName I-dishName I
+饭 I-dishName I-dishName I
+。 O O O
+QUERY<=>QUERY
+
+怎 O O O
+样 O O O
+做 O O O
+糖 B-dishName B-dishName B
+醋 I-dishName I-dishName I
+排 I-dishName I-dishName I
+骨 I-dishName I-dishName I
+时 O O O
+， O O O
+去 O O O
+吃 O B-endLoc_city B
+饭 O I-endLoc_city I
+洗 O I-dishName I
+澡 O I-dishName I
+了 O O O
+。 O O O
+QUERY<=>QUERY
+
+请 O O O
+帮 O O O
+我 O O O
+找 O O O
+一 O O O
+下 O O O
+酸 B-dishName B-dishName B
+菜 I-dishName I-dishName I
+鱼 I-dishName I-dishName I
+的 O O O
+做 O O O
+法 O O O
+QUERY<=>QUERY
+
+烧 B-dishName O O
+排 I-dishName B-dishName B
+骨 I-dishName I-dishName I
+汤 I-dishName I-dishName I
+需 O O O
+要 O O O
+什 O O O
+么 O O O
+调 O O O
+料 O O O
+？ O O O
+QUERY<=>QUERY
+
+鱼 B-dishName B-dishName B
+香 I-dishName I-dishName I
+肉 I-dishName I-dishName I
+丝 I-dishName I-dishName I
+， O O O
+怎 O O O
+么 O O O
+做 O O O
+？ O O O
+买 O O O
+？ O O O
+QUERY<=>QUERY
+
+过 B-dishName B-dishName B
+油 I-dishName I-dishName I
+肉 I-dishName I-dishName I
+土 I-dishName I-dishName I
+豆 I-dishName I-dishName I
+片 I-dishName I-dishName I
+怎 O O O
+么 O O O
+做 O O O
+？ O O O
+QUERY<=>QUERY
+
+臭 B-dishName B-dishName B
+豆 I-dishName I-dishName I
+腐 I-dishName I-dishName I
+汤 I-dishName I-dishName I
+怎 O O O
+么 O O O
+烧 O O O
+？ O O O
+QUERY<=>QUERY
+
+草 B-dishName O O
+莓 I-dishName B-dishName O
+芒 I-dishName I-dishName B
+果 I-dishName I-dishName I
+西 I-dishName I-dishName I
+米 I-dishName I-dishName I
+露 I-dishName I-dishName I
+。 O O O
+QUERY<=>QUERY
+
+做 O O O
+红 B-ingredient B-dishName B
+酒 I-ingredient I-dishName I
+怎 O O O
+么 O O O
+做 O O O
+啊 O O O
+？ O O O
+QUERY<=>QUERY
+
+蚝 B-dishName B-ingredient B
+油 I-dishName I-ingredient I
+生 I-dishName I-ingredient I
+菜 I-dishName I-ingredient I
+的 O O O
+做 O O O
+法 O O O
+。 O O O
+QUERY<=>QUERY
+
+酸 B-dishName B-dishName B
+菜 I-dishName I-dishName I
+鱼 I-dishName I-dishName I
+怎 O O O
+么 O O O
+做 O O O
+啊 O O O
+QUERY<=>QUERY
+
+猪 B-ingredient B-ingredient B
+肉 I-ingredient I-ingredient I
+怎 O O O
+么 O O O
+做 O O O
+？ O O O
+QUERY<=>QUERY
+
+馄 B-dishName B-ingredient B
+炖 I-dishName I-ingredient I
+怎 O O O
+么 O O O
+做 O O O
+？ O O O
+QUERY<=>QUERY
+
+鱼 B-ingredient B-ingredient B
+怎 O O O
+么 O O O
+做 O O O
+莱 O B-ingredient O
+QUERY<=>QUERY
+
+米 B-dishName B-dishName B
+饭 I-dishName I-dishName I
+怎 O O O
+么 O O O
+做 O O O
+QUERY<=>QUERY
+
+土 B-dishName B-dishName B
+豆 I-dishName I-dishName I
+烧 I-dishName I-dishName I
+肉 I-dishName I-dishName I
+。 O O O
+QUERY<=>QUERY
+
+炖 B-dishName B-dishName B
+肉 I-dishName I-dishName I
+QUERY<=>QUERY
+
+自 O O O
+演 O O O
+艺 O O O
+， O O O
+羊 B-ingredient B-ingredient B
+肉 I-ingredient I-ingredient I
+怎 O O O
+么 O O O
+做 O O O
+？ O O O
+QUERY<=>QUERY
+
+猪 B-dishName B-dishName B
+肉 I-dishName I-dishName I
+灌 I-dishName I-dishName I
+汤 I-dishName I-dishName I
+包 I-dishName I-dishName I
+怎 O O O
+么 O O O
+做 O O O
+？ O O O
+QUERY<=>QUERY
+
+送 O B-dishName B
+黄 O I-dishName I
+炒 B-dishName I-dishName I
+鸡 I-dishName I-dishName I
+蛋 I-dishName I-dishName I
+怎 O O O
+么 O O O
+做 O O O
+？ O O O
+QUERY<=>QUERY
+
+培 B-dishName B-dishName B
+根 I-dishName I-dishName I
+金 I-dishName I-dishName I
+针 I-dishName I-dishName I
+菇 I-dishName I-dishName I
+怎 O O O
+么 O O O
+做 O O O
+？ O O O
+QUERY<=>QUERY
+
+怎 O O O
+么 O O O
+做 O O O
+水 B-dishName B-dishName B
+煮 I-dishName I-dishName I
+鱼 I-dishName I-dishName I
+店 O O O
+？ O O O
+QUERY<=>QUERY
+
+白 B-dishName B-dishName B
+切 I-dishName I-dishName I
+鸡 I-dishName I-dishName I
+怎 O O O
+么 O O O
+做 O O O
+啊 O O O
+？ O O O
+QUERY<=>QUERY
+
+久 B-dishNamet B-dishName B
+久 I-dishNamet I-dishName I
+鸭 I-dishNamet I-dishName I
+怎 O O O
+么 O O O
+做 O O O
+？ O O O
+QUERY<=>QUERY
+
+虾 B-dishName B-dishName B
+炒 I-dishName I-dishName I
+蛋 I-dishName I-dishName I
+怎 O O O
+么 O O O
+做 O O O
+？ O O O
+QUERY<=>QUERY
+
+做 O O O
+面 B-dishName B-dishName B
+包 I-dishName I-dishName I
+的 O O O
+配 O O O
+方 O O O
+。 O O O
+QUERY<=>QUERY
+
+米 B-dishName B-dishName B
+粉 I-dishName I-dishName I
+肉 I-dishName I-dishName I
+怎 O O O
+么 O O O
+做 O O O
+？ O O O
+QUERY<=>QUERY
+
+螃 B-ingredient B-ingredient B
+蟹 I-ingredient I-ingredient I
+怎 O O O
+么 O O O
+蒸 O O O
+？ O O O
+QUERY<=>QUERY
+
+秋 B-ingredient B-ingredient B
+葵 I-ingredient I-ingredient I
+怎 O O O
+么 O O O
+做 O O O
+？ O O O
+QUERY<=>QUERY
+
+教 O O O
+我 O O O
+做 O O O
+馒 B-dishName B-dishName B
+头 I-dishName I-dishName I
+。 O O O
+QUERY<=>QUERY
+
+想 O O O
+做 O O O
+蛋 B-dishName B-dishName B
+糕 I-dishName I-dishName I
+。 O O O
+QUERY<=>QUERY
+
+瘦 B-dishName B-dishName B
+肉 I-dishName I-dishName I
+粥 I-dishName I-dishName I
+。 O O O
+QUERY<=>QUERY
+
+腊 B-dishName B-dishName B
+鱼 I-dishName I-dishName I
+。 O O O
+QUERY<=>QUERY
+
+恒 O B-dishName B
+宇 O I-dishName I
+乐 O I-dishName I
+活 B-ingredient I-dishName I
+鱼 I-ingredient I-dishName I
+怎 O O O
+么 O O O
+做 O O O
+的 O O O
+好 O O O
+吃 O O O
+的 O O O
+回 O O O
+复 O O O
+哦 O O O
+， O O O
+你 O O O
+。 O O O
+QUERY<=>QUERY
+
+那 O O O
+做 O O O
+红 B-dishName B-dishName B
+烧 I-dishName I-dishName I
+鱼 I-dishName I-dishName I
+需 O O O
+要 O O O
+哪 O O O
+些 O O O
+材 O O O
+料 O O O
+啊 O O O
+？ O O O
+QUERY<=>QUERY
+
+帮 O O O
+我 O O O
+查 O O O
+一 O O O
+下 O O O
+红 B-dishName B-dishName B
+烧 I-dishName I-dishName I
+肉 I-dishName I-dishName I
+的 O O O
+做 O O O
+法 O O O
+QUERY<=>QUERY
+
+红 B-ingredient B-dishName B
+薯 I-ingredient I-dishName I
+粉 I-ingredient I-dishName I
+的 O O O
+做 O O O
+法 O O O
+， O O O
+了 O O O
+。 O O O
+QUERY<=>QUERY
+
+怎 O O O
+么 O O O
+煮 B-dishName O O
+面 I-dishName B-ingredient B
+才 O I-ingredient I
+好 O O O
+吃 O O O
+呢 O O O
+？ O O O
+QUERY<=>QUERY
+
+酸 B-dishName B-dishName B
+菜 I-dishName I-dishName I
+鱼 I-dishName I-dishName I
+的 O O O
+做 O O O
+法 O O O
+， O O O
+妈 O O O
+。 O O O
+QUERY<=>QUERY
+
+有 O O O
+什 O O O
+么 O O O
+特 B-keyword B-keyword B
+色 I-keyword I-keyword I
+美 I-keyword I-keyword I
+食 I-keyword I-keyword I
+。 O O O
+QUERY<=>QUERY
+
+红 B-dishName B-dishName B
+豆 I-dishName I-dishName I
+沙 I-dishName I-dishName I
+怎 O O O
+么 O O O
+做 O O O
+？ O O O
+QUERY<=>QUERY
+
+酸 B-dishName B-dishName B
+辣 I-dishName I-dishName I
+汤 I-dishName I-dishName I
+的 O O O
+做 O O O
+法 O O O
+。 O O O
+QUERY<=>QUERY
+
+鱼 B-ingredient B-ingredient B
+肉 I-ingredient I-ingredient I
+怎 O O O
+么 O O O
+做 O O O
+？ O O O
+QUERY<=>QUERY
+
+做 O O O
+蛋 B-dishName B-dishName B
+挞 I-dishName I-dishName I
+怎 O O O
+么 O O O
+做 O O O
+QUERY<=>QUERY
+
+牛 B-dishName B-dishName B
+肉 I-dishName I-dishName I
+面 I-dishName I-dishName I
+， O O O
+哦 O O O
+。 O O O
+QUERY<=>QUERY
+
+烤 B-dishName B-dishName B
+鸭 I-dishName I-dishName I
+， O O O
+啊 O O O
+！ O O O
+QUERY<=>QUERY
+
+冰 B-dishName B-name B
+糖 I-dishName I-name I
+雪 I-dishName I-name I
+梨 I-dishName I-name I
+QUERY<=>QUERY
+
+红 B-dishName B-name B
+烧 I-dishName I-name I
+猪 I-dishName I-name I
+脚 I-dishName I-name I
+QUERY<=>QUERY
+
+炸 B-dishName B-name B
+馒 I-dishName I-name I
+头 I-dishName I-name I
+片 I-dishName I-name I
+QUERY<=>QUERY
+
+你 O O O
+给 O O O
+我 O O O
+讲 O O O
+讲 O O O
+红 B-dishName B-dishName B
+烧 I-dishName I-dishName I
+肉 I-dishName I-dishName I
+的 O O O
+做 O O O
+法 O O O
+。 O O O
+QUERY<=>QUERY
+
+怎 O O O
+样 O O O
+蒸 B-dishName O B
+排 I-dishName B-ingredient I
+骨 I-dishName I-ingredient I
+最 O O O
+好 O O O
+吃 O O O
+的 O O O
+。 O O O
+QUERY<=>QUERY
+
+a O B-dishName B
+排 B-ingredient I-dishName I
+骨 I-ingredient I-dishName I
+怎 O O O
+么 O O O
+做 O O O
+好 O O O
+吃 O O O
+？ O O O
+QUERY<=>QUERY
+
+红 B-dishName B-dishName B
+烧 I-dishName I-dishName I
+肉 I-dishName I-dishName I
+怎 O O O
+么 O O O
+做 O O O
+？ O O O
+嗯 O O O
+？ O O O
+QUERY<=>QUERY
+
+又 O O O
+热 O O O
+炒 B-dishName B-dishName B
+鸡 I-dishName I-dishName I
+蛋 I-dishName I-dishName I
+怎 O O O
+么 O O O
+做 O O O
+？ O O O
+QUERY<=>QUERY
+
+怎 O O O
+么 O O O
+弄 O O O
+红 B-dishName B-dishName B
+烧 I-dishName I-dishName I
+肉 I-dishName I-dishName I
+哦 O O O
+？ O O O
+QUERY<=>QUERY
+
+四 B-dishName B-dishName B
+喜 I-dishName I-dishName I
+丸 I-dishName I-dishName I
+子 I-dishName I-dishName I
+怎 O O O
+么 O O O
+做 O O O
+？ O O O
+QUERY<=>QUERY
+
+花 O B-dishName B
+格 O I-dishName I
+等 O I-dishName I
+蛋 B-ingredient I-dishName I
+的 O O O
+做 O O O
+法 O O O
+。 O O O
+QUERY<=>QUERY
+
+求 O B-dishName B
+米 B-ingredient I-dishName I
+线 I-ingredient I-dishName I
+怎 O O O
+么 O O O
+做 O O O
+？ O O O
+QUERY<=>QUERY
+
+豆 B-dishName B-ingredient B
+腐 I-dishName I-ingredient I
+花 I-dishName I-ingredient I
+的 O O O
+做 O O O
+法 O O O
+。 O O O
+QUERY<=>QUERY
+
+紫 B-dishName B-dishName B
+菜 I-dishName I-dishName I
+蛋 I-dishName I-dishName I
+花 I-dishName I-dishName I
+汤 I-dishName I-dishName I
+。 O O O
+QUERY<=>QUERY
+
+甜 B-ingredient B-ingredient B
+酒 I-ingredient I-ingredient I
+怎 O O O
+么 O O O
+做 O O O
+？ O O O
+QUERY<=>QUERY
+
+狗 B-ingredient O O
+肉 I-ingredient B-ingredient O
+怎 O O O
+么 O O O
+做 O O O
+？ O O O
+QUERY<=>QUERY
+
+煮 B-dishName O O
+面 I-dishName B-ingredient B
+怎 O O O
+么 O O O
+做 O O O
+？ O O O
+QUERY<=>QUERY
+
+红 B-dishName B-dishName B
+烧 I-dishName I-dishName I
+鱼 I-dishName I-dishName I
+块 I-dishName I-dishName I
+。 O O O
+QUERY<=>QUERY
+
+蒸 B-dishName B-dishName B
+鸡 I-dishName I-dishName I
+蛋 I-dishName I-dishName I
+糕 I-dishName I-dishName I
+QUERY<=>QUERY
+
+发 O O O
+邮 O O O
+件 O O O
+给 O O O
+灿 B-name B-name B
+灿 I-name I-name I
+说 O O O
+明 B-content B-content B
+早 I-content I-content I
+我 I-content I-content I
+们 I-content I-content I
+一 I-content I-content I
+起 I-content I-content I
+跑 I-content I-content I
+步 I-content I-content I
+SEND<=>SEND
+
+发 O O O
+邮 O O O
+件 O O O
+给 O O O
+莹 B-name B-name B
+莹 I-name I-name I
+说 O O O
+我 B-content B-content B
+好 I-content I-content I
+困 I-content I-content I
+我 I-content I-content I
+想 I-content I-content I
+睡 I-content I-content I
+觉 I-content I-content I
+SEND<=>SEND
+
+青 B-dishName B-dishName B
+椒 I-dishName I-dishName I
+肉 I-dishName I-dishName I
+丝 I-dishName I-dishName I
+怎 O O O
+么 O O O
+做 O O O
+怎 O O O
+么 O O O
+炒 O O O
+？ O O O
+QUERY<=>QUERY
+
+牛 B-ingredient B-ingredient B
+肉 I-ingredient I-ingredient I
+怎 O O O
+么 O O O
+煮 O O O
+才 O O O
+好 O O O
+吃 O O O
+？ O O O
+你 O O O
+？ O O O
+QUERY<=>QUERY
+
+椒 B-dishName O O
+盐 I-dishName B-dishName O
+排 I-dishName I-dishName B
+骨 I-dishName I-dishName I
+怎 O O O
+么 O O O
+做 O O O
+？ O O O
+你 O O O
+？ O O O
+QUERY<=>QUERY
+
+红 B-dishName B-dishName B
+烧 I-dishName I-dishName I
+肉 I-dishName I-dishName I
+的 O O O
+做 O O O
+法 O O O
+， O O O
+a O O O
+。 O O O
+QUERY<=>QUERY
+
+我 O O O
+想 O O O
+答 O O O
+复 O O O
+这 O O O
+个 O O O
+邮 O O O
+件 O O O
+REPLY<=>REPLY
+
+帮 O O O
+我 O O O
+发 O O O
+邮 O O O
+件 O O O
+给 O O O
+婷 B-name B-name B
+婷 I-name I-name I
+SEND<=>SEND
+
+给 O O O
+我 O O O
+打 O O O
+开 O O O
+m O B-name B
+a O I-name I
+i O I-name I
+l O I-name I
+LAUNCH<=>LAUNCH
+
+人 B-dishName B-dishName B
+造 I-dishName I-dishName I
+鸡 I-dishName I-dishName I
+蛋 I-dishName I-dishName I
+的 O O O
+配 O O O
+方 O O O
+。 O O O
+nan<=>QUERY
+
+替 O O O
+我 O O O
+打 O O O
+开 O O O
+新 O O O
+邮 O O O
+件 O O O
+LAUNCH<=>LAUNCH
+
+替 O O O
+我 O O O
+查 O O O
+看 O O O
+新 O O O
+邮 O O O
+件 O O O
+LAUNCH<=>LAUNCH
+
+怎 O O O
+么 O O O
+做 O O O
+饭 B-dishName B-ingredient B
+好 O I-ingredient I
+吃 O O O
+？ O O O
+QUERY<=>QUERY
+
+发 O O O
+邮 O O O
+件 O O O
+给 O O O
+晶 B-name B-name B
+晶 I-name I-name I
+SEND<=>SEND
+
+鱼 B-dishName B-dishName B
+香 I-dishName I-dishName I
+肉 I-dishName I-dishName I
+丝 I-dishName I-dishName I
+哦 O O O
+QUERY<=>QUERY
+
+发 O O O
+邮 O O O
+件 O O O
+SEND<=>SEND
+
+给 O O O
+我 O O O
+查 O O O
+一 O O O
+下 O O O
+什 O O O
+么 O O O
+时 O O O
+间 O O O
+有 O O O
+播 O O O
+放 O O O
+天 B-name B-name B
+天 I-name I-name I
+向 I-name I-name I
+上 I-name I-name I
+QUERY<=>QUERY
+
+那 O O O
+中 B-tvchannel B-tvchannel B
+央 I-tvchannel I-tvchannel I
+六 I-tvchannel I-tvchannel I
+台 I-tvchannel I-tvchannel I
+明 B-datetime_date B-datetime_date B
+天 I-datetime_date I-datetime_date I
+演 O O O
+什 O O O
+么 O O O
+节 O O O
+目 O O O
+QUERY<=>QUERY
+
+现 B-datetime_time B-datetime_time B
+在 I-datetime_time I-datetime_time I
+有 O O O
+什 O O O
+么 O O O
+好 O O O
+的 O O O
+电 B-category B-category B
+视 I-category I-category I
+剧 I-category I-category I
+。 O O O
+QUERY<=>QUERY
+
+现 B-datetime_time B-datetime_time B
+在 I-datetime_time I-datetime_time I
+电 O O O
+视 O O O
+台 O O O
+在 O O O
+播 O O O
+什 O O O
+么 O O O
+QUERY<=>QUERY
+
+我 O O O
+想 O O O
+要 O O O
+转 O O O
+发 O O O
+这 O O O
+条 O O O
+邮 O O O
+件 O O O
+FORWARD<=>SEND
+
+我 O O O
+想 O O O
+要 O O O
+转 O O O
+发 O O O
+这 O O O
+封 O O O
+邮 O O O
+件 O O O
+FORWARD<=>SEND
+
+河 B-tvchannel B-tvchannel B
+南 I-tvchannel I-tvchannel I
+卫 I-tvchannel I-tvchannel I
+视 I-tvchannel I-tvchannel I
+节 O O O
+目 O O O
+单 O O O
+。 O O O
+QUERY<=>QUERY
+
+转 O O O
+发 O O O
+这 O O O
+条 O O O
+m O B-name I
+a O I-name I
+i O I-name I
+l O I-name I
+FORWARD<=>QUERY
+
+我 O O O
+想 O O O
+转 O O O
+发 O O O
+这 O O O
+封 O O O
+邮 O O O
+件 O O O
+FORWARD<=>REPLY
+
+给 O O O
+我 O O O
+写 O O O
+一 O O O
+个 O O O
+新 O O O
+邮 O O O
+件 O O O
+CREATE<=>CREATE
+
+帮 O O O
+我 O O O
+写 O O O
+一 O O O
+条 O O O
+新 O O O
+邮 O O O
+件 O O O
+CREATE<=>CREATE
+
+我 O O O
+想 O O O
+写 O O O
+一 O O O
+个 O O O
+新 O O O
+邮 O O O
+件 O O O
+CREATE<=>CREATE
+
+我 O O O
+要 O O O
+回 O O O
+复 O O O
+这 O O O
+条 O O O
+邮 O O O
+件 O O O
+REPLY<=>REPLY
+
+帮 O O O
+我 O O O
+写 O O O
+一 O O O
+封 O O O
+邮 O O O
+件 O O O
+CREATE<=>CREATE
+
+帮 O O O
+我 O O O
+转 O O O
+发 O O O
+邮 O O O
+件 O O O
+FORWARD<=>SEND
+
+我 O O O
+要 O O O
+全 O O O
+部 O O O
+回 O O O
+复 O O O
+REPLAY_ALL<=>REPLY
+
+搜 O O O
+一 O O O
+下 O O O
+C B-tvchannel B-tvchannel B
+C I-tvchannel I-tvchannel I
+T I-tvchannel I-tvchannel I
+V I-tvchannel I-tvchannel I
+7 I-tvchannel I-tvchannel I
+4 B-datetime_date I-tvchannel I
+月 I-datetime_date I-tvchannel I
+1 I-datetime_date I-tvchannel I
+5 I-datetime_date I-tvchannel I
+号 I-datetime_date I-tvchannel I
+播 O O O
+出 O B-name B
+新 B-name I-name I
+编 I-name I-name I
+辑 I-name I-name I
+部 I-name I-name I
+的 I-name I-name I
+故 I-name I-name I
+事 I-name I-name I
+呢 O O O
+QUERY<=>NUMBER_QUERY
+
+给 O O O
+我 O O O
+搜 O O O
+搜 O O O
+什 O O O
+么 O O O
+电 O O O
+视 O O O
+台 O O O
+什 O O O
+么 O O O
+时 O O O
+间 O O O
+有 O O O
+转 O O O
+播 O O O
+神 B-name B-name B
+探 I-name I-name I
+高 I-name I-name I
+伦 I-name I-name I
+布 I-name I-name I
+QUERY<=>QUERY
+
+我 O O O
+回 O O O
+去 O O O
+看 O O O
+昨 B-datetime_date B-datetime_date B
+天 I-datetime_date I-datetime_date I
+晚 B-datetime_time B-datetime_time B
+上 I-datetime_time I-datetime_time I
+播 O O O
+出 O O O
+的 O O O
+爸 B-name B-name B
+爸 I-name I-name I
+去 I-name I-name I
+哪 I-name I-name I
+儿 I-name I-name I
+3 B-code I-name I
+1 I-code I-name I
+频 O I-name I
+道 O I-name I
+QUERY<=>QUERY
+
+周 B-datetime_date B-datetime_date B
+六 I-datetime_date I-datetime_date I
+晚 B-datetime_time B-datetime_time B
+上 I-datetime_time I-datetime_time I
+重 B-tvchannel B-tvchannel B
+庆 I-tvchannel I-tvchannel I
+卫 I-tvchannel I-tvchannel I
+视 I-tvchannel I-tvchannel I
+有 O O O
+转 O O O
+播 O O O
+神 B-name B-name B
+探 I-name I-name I
+高 I-name I-name I
+伦 I-name I-name I
+布 I-name I-name I
+吗 O O O
+QUERY<=>QUERY
+
+明 B-datetime_date B-datetime_date B
+天 I-datetime_date I-datetime_date I
+晚 B-datetime_time B-datetime_time B
+上 I-datetime_time I-datetime_time I
+湖 B-tvchannel B-tvchannel B
+南 I-tvchannel I-tvchannel I
+卫 I-tvchannel I-tvchannel I
+视 I-tvchannel I-tvchannel I
+演 O O O
+什 O O O
+么 O O O
+电 B-category O O
+视 I-category O O
+剧 I-category O O
+QUERY<=>QUERY
+
+电 O O O
+视 O O O
+台 O O O
+现 B-datetime_time O O
+在 I-datetime_time O O
+在 O O O
+播 O O O
+放 O O O
+什 O O O
+么 O O O
+大 B-area O O
+陆 I-area O O
+动 B-category O O
+漫 I-category O O
+QUERY<=>QUERY
+
+8 B-datetime_time O O
+点 I-datetime_time O O
+河 B-tvchannel B-name B
+北 I-tvchannel I-name I
+卫 I-tvchannel I-name I
+视 I-tvchannel I-name I
+播 O O O
+放 O O O
+过 O O O
+恋 B-name O O
+了 I-name O O
+爱 I-name O O
+了 I-name O O
+QUERY<=>PLAY
+
+现 B-datetime_time B-datetime_time B
+在 I-datetime_time I-datetime_time I
+中 B-tvchannel B-tvchannel B
+央 I-tvchannel I-tvchannel I
+一 I-tvchannel I-tvchannel I
+台 I-tvchannel I-tvchannel I
+在 O I-tvchannel I
+播 O I-tvchannel I
+什 O O I
+么 O O O
+节 O O O
+目 O O O
+？ O O O
+QUERY<=>QUERY
+
+查 O O O
+查 O O O
+什 O O O
+么 O O O
+时 O O O
+候 O O O
+放 O O O
+百 B-name B-name B
+变 I-name I-name I
+大 I-name I-name I
+咖 I-name I-name I
+秀 I-name I-name I
+QUERY<=>QUERY
+
+央 B-tvchannel B-tvchannel B
+视 I-tvchannel I-tvchannel I
+三 I-tvchannel I-tvchannel I
+台 I-tvchannel I-tvchannel I
+现 B-datetime_time B-datetime_time B
+在 I-datetime_time I-datetime_time I
+播 O O O
+放 O O O
+什 O O O
+么 O O O
+节 O O O
+目 O O O
+QUERY<=>QUERY
+
+快 B-name B-name B
+乐 I-name I-name I
+大 I-name I-name I
+本 I-name I-name I
+营 I-name I-name I
+什 O O O
+么 O O O
+时 O O O
+间 O O O
+播 O O O
+？ O O O
+QUERY<=>QUERY
+
+昨 B-datetime_date B-datetime_date B
+天 I-datetime_date I-datetime_date I
+晚 B-datetime_time B-datetime_time B
+上 I-datetime_time I-datetime_time I
+湖 B-tvchannel B-tvchannel B
+南 I-tvchannel I-tvchannel I
+卫 I-tvchannel I-tvchannel I
+视 I-tvchannel I-tvchannel I
+演 O O O
+什 O O O
+么 O O O
+QUERY<=>QUERY
+
+什 O O O
+么 O O O
+时 O O O
+候 O O O
+有 O O O
+西 B-name B-name B
+游 I-name I-name I
+记 I-name I-name I
+呢 O O O
+？ O O O
+QUERY<=>QUERY
+
+B B-tvchannel B-name B
+T I-tvchannel I-name I
+V I-tvchannel I-name I
+北 I-tvchannel I-name I
+京 I-tvchannel I-name I
+频 I-tvchannel I-name I
+道 I-tvchannel I-name I
+打 B-name I-name O
+狗 I-name I-name O
+棍 I-name I-name O
+QUERY<=>PLAY
+
+今 B-datetime_date B-datetime_date B
+天 I-datetime_date I-datetime_date I
+什 O O O
+么 O O O
+好 O B-scoreDescr B
+看 O I-scoreDescr I
+电 B-category B-category B
+影 I-category I-category I
+？ O O O
+QUERY<=>QUERY
+
+中 B-tvchannel B-tvchannel B
+央 I-tvchannel I-tvchannel I
+六 I-tvchannel I-tvchannel I
+台 I-tvchannel I-tvchannel I
+有 O O O
+什 O O O
+么 O O O
+节 O O O
+目 O O O
+QUERY<=>QUERY
+
+查 O O O
+一 O O O
+下 O O O
+明 B-startDate_date B-startDate_date B
+天 I-startDate_date I-startDate_date I
+晚 O B-startLoc_city B
+上 O I-startLoc_city I
+1 B-startDate_time I-startDate_date B
+7 I-startDate_time I-startDate_date I
+点 I-startDate_time I-startDate_date I
+3 I-startDate_time I-startDate_date I
+0 I-startDate_time I-startDate_date I
+分 I-startDate_time I-startDate_date I
+从 O O O
+上 B-startLoc_city B-startLoc_city B
+海 I-startLoc_city I-startLoc_city I
+飞 O O O
+往 O O O
+珠 B-endLoc_city B-endLoc_city B
+海 I-endLoc_city I-endLoc_city I
+三 B-endLoc_poi I-endLoc_city I
+灶 I-endLoc_poi O I
+机 I-endLoc_poi B-endLoc_city I
+场 I-endLoc_poi I-endLoc_city I
+的 O O O
+飞 O O O
+机 O O O
+QUERY<=>QUERY
+
+帮 O O O
+我 O O O
+查 O O O
+一 O O O
+下 O O O
+明 B-startDate_date B-startDate_date B
+天 I-startDate_date I-startDate_date I
+南 B-startLoc_city B-startLoc_city B
+昌 I-startLoc_city I-startLoc_city I
+到 O O O
+广 B-endLoc_city B-endLoc_city B
+州 I-endLoc_city I-endLoc_city I
+的 O O O
+飞 O O O
+机 O O O
+票 O O O
+QUERY<=>QUERY
+
+帮 O O O
+我 O O O
+查 O O O
+一 O O O
+下 O O O
+明 B-startDate_date B-startDate_date B
+天 I-startDate_date I-startDate_date I
+广 B-startLoc_city B-startLoc_city B
+州 I-startLoc_city I-startLoc_city I
+到 O O O
+北 B-endLoc_city B-endLoc_city B
+京 I-endLoc_city I-endLoc_city I
+的 O O O
+航 O O O
+班 O O O
+。 O O O
+QUERY<=>QUERY
+
+八 B-startDate_date B-startDate_date B
+月 I-startDate_date I-startDate_date I
+十 I-startDate_date I-startDate_date I
+一 I-startDate_date I-startDate_date I
+日 I-startDate_date I-startDate_date I
+从 O O O
+厦 B-startLoc_city B-startLoc_city B
+门 I-startLoc_city I-startLoc_city I
+飞 O O O
+往 O O O
+上 B-endLoc_city B-endLoc_city B
+海 I-endLoc_city I-endLoc_city I
+的 O O O
+航 O O O
+班 O O O
+QUERY<=>QUERY
+
+帮 O O O
+我 O O O
+查 O O O
+一 O O O
+下 O O O
+深 B-startLoc_city B-startLoc_city B
+圳 I-startLoc_city I-startLoc_city I
+到 O O O
+桂 B-endLoc_city B-endLoc_city B
+林 I-endLoc_city I-endLoc_city I
+后 B-startDate_date I-endLoc_city I
+天 I-startDate_date I-endLoc_city I
+的 O O O
+机 O O O
+票 O O O
+QUERY<=>QUERY
+
+回 O O O
+看 O O O
+上 B-datetime_date B-datetime_date B
+周 I-datetime_date I-datetime_date I
+末 I-datetime_date I-datetime_date I
+早 B-datetime_time I-datetime_date I
+上 I-datetime_time I-datetime_date I
+8 I-datetime_time I-datetime_date I
+点 I-datetime_time I-datetime_date I
+的 O O O
+湖 B-tvchannel B-name B
+南 I-tvchannel I-name I
+卫 I-tvchannel I-name I
+视 I-tvchannel I-name I
+LOOK_BACK<=>PLAY
+
+查 O O O
+一 O O O
+下 O O O
+济 B-startLoc_city B-startLoc_city B
+南 I-startLoc_city I-startLoc_city I
+到 O O O
+成 B-endLoc_city B-endLoc_city B
+都 I-endLoc_city I-endLoc_city I
+的 O O O
+航 O O O
+班 O O O
+QUERY<=>QUERY
+
+查 O O O
+询 O O O
+上 B-startLoc_city B-startLoc_city B
+海 I-startLoc_city I-startLoc_city I
+到 O O O
+玉 B-endLoc_city B-endLoc_city B
+林 I-endLoc_city I-endLoc_city I
+的 O O O
+航 O O O
+班 O O O
+。 O O O
+QUERY<=>QUERY
+
+从 O O O
+从 O O O
+合 B-startLoc_city B-startLoc_city B
+肥 I-startLoc_city I-startLoc_city I
+到 O O O
+北 B-endLoc_city B-endLoc_city B
+京 I-endLoc_city I-endLoc_city I
+的 O O O
+航 O O O
+班 O O O
+QUERY<=>QUERY
+
+C B-tvchannel B-name B
+C I-tvchannel I-name I
+T I-tvchannel I-name I
+V I-tvchannel I-name I
+8 I-tvchannel I-name I
+高 I-tvchannel B-resolution I
+清 I-tvchannel I-resolution I
+电 B-category B-category B
+视 I-category I-category I
+剧 I-category I-category I
+QUERY<=>PLAY
+
+我 O O O
+昨 B-datetime_date B-datetime_date B
+天 I-datetime_date I-datetime_date I
+晚 B-datetime_time B-datetime_time B
+上 I-datetime_time I-datetime_time I
+的 O O O
+今 B-name B-category B
+日 I-name I-category I
+关 I-name O O
+注 I-name O O
+QUERY<=>QUERY
+
+从 O O O
+厦 B-startLoc_city B-startLoc_city B
+门 I-startLoc_city I-startLoc_city I
+到 O O O
+昆 B-endLoc_city B-endLoc_city B
+明 I-endLoc_city I-endLoc_city I
+的 O O O
+飞 O O O
+机 O O O
+QUERY<=>QUERY
+
+北 B-tvchannel B-tvchannel B
+京 I-tvchannel I-tvchannel I
+台 I-tvchannel I-tvchannel I
+有 O O O
+什 O O O
+么 O O O
+好 O O O
+电 O O O
+视 O O O
+QUERY<=>QUERY
+
+到 O O O
+北 B-endLoc_city B-endLoc_city B
+京 I-endLoc_city I-endLoc_city I
+的 O O O
+飞 O O O
+机 O O O
+。 O O O
+QUERY<=>QUERY
+
+到 O O O
+武 B-endLoc_city B-endLoc_city B
+汉 I-endLoc_city I-endLoc_city I
+的 O O O
+航 O O O
+班 O O O
+QUERY<=>QUERY
+
+央 B-tvchannel B-tvchannel B
+视 I-tvchannel I-tvchannel I
+精 I-tvchannel I-tvchannel I
+品 I-tvchannel I-tvchannel I
+节 O O O
+目 O O O
+QUERY<=>QUERY
+
+请 O O O
+查 O O O
+询 O O O
+一 O O O
+下 O O O
+深 B-startLoc_city B-startLoc_city B
+圳 I-startLoc_city I-startLoc_city I
+飞 O O O
+往 O O O
+上 B-endLoc_city B-endLoc_city B
+海 I-endLoc_city I-endLoc_city I
+的 O O O
+航 O O O
+班 O O O
+QUERY<=>QUERY
+
+查 O O O
+询 O O O
+明 B-startDate_date B-startDate_date B
+天 I-startDate_date I-startDate_date I
+南 B-startLoc_city B-startLoc_city B
+阳 I-startLoc_city I-startLoc_city I
+到 O O O
+上 B-endLoc_city B-endLoc_city B
+海 I-endLoc_city I-endLoc_city I
+的 O O O
+航 O O O
+班 O O O
+QUERY<=>QUERY
+
+怎 O O O
+么 O O O
+治 O O O
+疗 O O O
+口 B-keyword B-keyword B
+腔 I-keyword I-keyword I
+溃 I-keyword I-keyword I
+疡 I-keyword I-keyword I
+呃 O I-keyword I
+呃 O I-keyword I
+呃 O I-keyword I
+QUERY<=>QUERY
+
+包 B-keyword B-keyword B
+皮 I-keyword I-keyword I
+过 I-keyword I-keyword I
+长 I-keyword I-keyword I
+怎 O O O
+么 O O O
+办 O O O
+啊 O O O
+？ O O O
+你 O O O
+。 O O O
+QUERY<=>QUERY
+
+明 B-startDate_date B-startDate_date B
+天 I-startDate_date I-startDate_date I
+温 B-startLoc_city B-startLoc_city B
+州 I-startLoc_city I-startLoc_city I
+到 O O O
+上 B-endLoc_city B-endLoc_city B
+海 I-endLoc_city I-endLoc_city I
+的 O O O
+航 O O O
+班 O O O
+。 O O O
+QUERY<=>QUERY
+
+八 B-startDate_date B-startDate_date B
+月 I-startDate_date I-startDate_date I
+一 I-startDate_date I-startDate_date I
+号 I-startDate_date I-startDate_date I
+去 O O O
+上 B-endLoc_city B-endLoc_city B
+海 I-endLoc_city I-endLoc_city I
+的 O O O
+航 O O O
+班 O O O
+QUERY<=>QUERY
+
+查 O O O
+询 O O O
+广 B-startLoc_city B-startLoc_city B
+州 I-startLoc_city I-startLoc_city I
+到 O O O
+海 B-endLoc_city B-endLoc_city B
+南 I-endLoc_city I-endLoc_city I
+的 O O O
+航 O O O
+班 O O O
+QUERY<=>QUERY
+
+上 B-startLoc_city B-startLoc_city B
+海 I-startLoc_city I-startLoc_city I
+到 O O O
+淮 B-endLoc_city B-endLoc_city B
+安 I-endLoc_city I-endLoc_city I
+的 O O O
+飞 O O O
+机 O O O
+QUERY<=>QUERY
+
+头 B-keyword B-keyword B
+晕 I-keyword I-keyword I
+该 O O O
+怎 O O O
+么 O O O
+办 O O O
+？ O O O
+QUERY<=>QUERY
+
+近 B-keyword B-keyword B
+视 I-keyword I-keyword I
+眼 I-keyword I-keyword I
+怎 O O O
+么 O O O
+治 O O O
+疗 O O O
+QUERY<=>QUERY
+
+湿 B-keyword B-keyword B
+疹 I-keyword I-keyword I
+怎 O O O
+么 O O O
+处 O O O
+理 O O O
+？ O O O
+QUERY<=>QUERY
+
+肾 B-keyword B-keyword B
+积 I-keyword I-keyword I
+水 I-keyword I-keyword I
+怎 O O O
+么 O O O
+治 O O O
+？ O O O
+QUERY<=>QUERY
+
+偏 B-keyword B-keyword B
+头 I-keyword I-keyword I
+痛 I-keyword I-keyword I
+怎 O O O
+么 O O O
+治 O O O
+？ O O O
+QUERY<=>QUERY
+
+尿 B-keyword B-keyword B
+道 I-keyword I-keyword I
+炎 I-keyword I-keyword I
+怎 O O O
+么 O O O
+办 O O O
+QUERY<=>QUERY
+
+失 B-keyword B-keyword B
+眠 I-keyword I-keyword I
+怎 O O O
+么 O O O
+办 O O O
+呀 O O O
+QUERY<=>QUERY
+
+乳 B-keyword B-keyword B
+腺 I-keyword I-keyword I
+炎 I-keyword I-keyword I
+。 O O O
+QUERY<=>QUERY
+
+广 B-name B-name B
+州 I-name I-name I
+恒 I-name I-name I
+大 I-name I-name I
+亚 B-category I-name I
+冠 I-category I-name I
+联 I-category I-name I
+赛 I-category I-name I
+， O O O
+比 O O O
+赛 O O O
+时 O O O
+间 O O O
+。 O O O
+QUERY<=>QUERY
+
+中 B-category B-category B
+超 I-category I-category I
+A O I-category B
+组 O I-category I
+比 O O O
+赛 O O O
+结 B-type B-type O
+果 I-type I-type O
+分 O I-type I
+别 O I-type I
+是 O O O
+多 O O O
+少 O O O
+QUERY<=>QUERY
+
+双 B-name B-name B
+色 I-name I-name I
+球 I-name I-name I
+的 O O O
+开 O O O
+奖 O O O
+号 O O O
+码 O O O
+是 O O O
+多 O O O
+少 O O O
+？ O O O
+NUMBER_QUERY<=>NUMBER_QUERY
+
+帮 O O O
+我 O O O
+查 O O O
+一 O O O
+下 O O O
+上 B-relIssue B-datetime_date B
+一 I-relIssue I-datetime_date I
+期 I-relIssue I-datetime_date I
+的 O O O
+大 B-name B-name B
+乐 I-name I-name I
+透 I-name I-name I
+NUMBER_QUERY<=>NUMBER_QUERY
+
+肩 B-keyword B-keyword B
+周 I-keyword I-keyword I
+炎 I-keyword I-keyword I
+， O O O
+要 O O O
+怎 O O O
+么 O O O
+治 O O O
+疗 O O O
+。 O O O
+QUERY<=>QUERY
+
+广 B-name B-name B
+州 I-name I-name I
+恒 I-name I-name I
+大 I-name I-name I
+的 O O O
+赛 O O O
+程 O O O
+。 O O O
+QUERY<=>QUERY
+
+中 B-category B-category B
+超 I-category I-category I
+赛 O O O
+事 O O O
+预 O B-type B
+告 O I-type I
+吗 O O O
+？ O O O
+QUERY<=>QUERY
+
+大 B-name B-name B
+乐 I-name I-name I
+透 I-name I-name I
+的 O O O
+开 O O O
+奖 O O O
+情 O O O
+况 O O O
+NUMBER_QUERY<=>NUMBER_QUERY
+
+我 O O O
+要 O O O
+购 O O O
+买 O O O
+七 B-name B-name B
+乐 I-name I-name I
+彩 I-name I-name I
+NUMBER_QUERY<=>NUMBER_QUERY
+
+肩 B-keyword B-keyword B
+周 I-keyword I-keyword I
+炎 I-keyword I-keyword I
+怎 O O O
+么 O O O
+治 O O O
+？ O O O
+QUERY<=>QUERY
+
+我 O O O
+要 O O O
+买 O O O
+彩 O O O
+票 O O O
+。 O O O
+QUERY<=>QUERY
+
+如 O O O
+何 O O O
+治 O O O
+疗 O O O
+感 B-keyword B-keyword B
+冒 I-keyword I-keyword I
+QUERY<=>QUERY
+
+包 B-keyword B-keyword B
+茎 I-keyword I-keyword I
+怎 O O O
+么 O O O
+办 O O O
+？ O O O
+QUERY<=>QUERY
+
+淋 B-keyword B-keyword B
+病 I-keyword I-keyword I
+怎 O O O
+么 O O O
+办 O O O
+QUERY<=>QUERY
+
+截 B-keyword B-name B
+瘫 I-keyword I-name I
+吧 O I-name I
+QUERY<=>QUERY
+
+甲 B-keyword B-keyword B
+亢 I-keyword I-keyword I
+。 O O O
+QUERY<=>QUERY
+
+帮 O O O
+我 O O O
+搜 O O O
+一 O O O
+下 O O O
+中 B-category B-category B
+超 I-category I-category I
+3 B-datetime_date I-category I
+月 I-datetime_date I-category I
+份 I-datetime_date I-category I
+的 O O O
+对 O O O
+阵 O O O
+情 O B-tag B
+况 O I-tag I
+QUERY<=>QUERY
+
+恒 B-homeName B-keyword B
+大 I-homeName I-keyword I
+山 B-awayName I-keyword I
+东 I-awayName I-keyword I
+鲁 I-awayName I-keyword I
+能 I-awayName I-keyword I
+比 O B-queryField I
+分 O I-subfocus I
+是 O O O
+多 O O O
+少 O O O
+？ O O O
+QUERY<=>QUERY
+
+我 O O O
+想 O O O
+听 O O O
+周 B-artist B-artist B
+杰 I-artist I-artist I
+伦 I-artist I-artist I
+的 O O O
+菊 B-song B-name B
+花 I-song I-name I
+台 I-song I-name I
+PLAY<=>PLAY
+
+我 O O O
+想 O O O
+听 O O O
+音 O O O
+乐 O O O
+忘 B-song B-dishName B
+情 I-song I-dishName I
+水 I-song I-dishName I
+。 O O O
+PLAY<=>QUERY
+
+我 O O O
+想 O O O
+听 O O O
+忐 B-song B-song B
+忑 I-song I-song I
+这 O O O
+首 O O O
+歌 O O O
+打 O O O
+PLAY<=>PLAY
+
+我 O O O
+想 O O O
+听 O O O
+春 B-song B-song B
+天 I-song I-song I
+里 I-song I-song I
+这 O O O
+首 O O O
+歌 O O O
+PLAY<=>PLAY
+
+放 O O O
+首 O O O
+歌 O O O
+听 O O O
+一 O O O
+下 O O O
+你 O O O
+好 O O O
+PLAY<=>PLAY
+
+唱 O O O
+一 O O O
+首 O O O
+两 B-song B-name B
+只 I-song I-name I
+蝴 I-song I-name I
+蝶 I-song I-name I
+。 O O O
+PLAY<=>QUERY
+
+播 O O O
+放 O O O
+郁 B-artist B-artist B
+可 I-artist I-artist I
+唯 I-artist I-artist I
+的 O O O
+歌 O O O
+PLAY<=>PLAY
+
+来 O O O
+一 O O O
+首 O O O
+听 B-song O O
+你 I-song O O
+听 I-song O O
+我 I-song O O
+PLAY<=>PLAY
+
+我 O O O
+想 O O O
+听 O O O
+伤 B-category B-category B
+感 I-category I-category I
+歌 O O I
+曲 O O O
+PLAY<=>PLAY
+
+国 B-category B-category B
+足 I-category I-category I
+最 O O O
+新 O O O
+赛 O O O
+程 O O O
+。 O O O
+QUERY<=>QUERY
+
+播 O O O
+放 O O O
+田 B-artist B-artist B
+园 I-artist I-artist I
+的 O O O
+歌 O O O
+PLAY<=>PLAY
+
+来 O O O
+首 O O O
+快 B-song B-song B
+乐 I-song I-song I
+崇 I-song I-song I
+拜 I-song I-song I
+PLAY<=>PLAY
+
+来 O O O
+一 O O O
+首 O O O
+夜 B-song B-name B
+夜 I-song I-name I
+夜 I-song I-name I
+PLAY<=>QUERY
+
+给 O O O
+我 O O O
+放 O O O
+首 O O O
+歌 O O O
+PLAY<=>PLAY
+
+我 O O O
+想 O O O
+听 O O O
+蔡 B-artist B-song B
+依 I-artist I-song I
+林 I-artist I-song I
+的 O O O
+倒 B-song B-song B
+带 I-song I-song I
+这 O O O
+首 O O O
+歌 O O O
+PLAY<=>PLAY
+
+看 O O O
+一 O O O
+下 O O O
+今 B-datetime_date B-datetime_date B
+天 I-datetime_date I-datetime_date I
+有 O O O
+什 O O O
+么 O O O
+新 O O O
+闻 O O O
+？ O O O
+PLAY<=>PLAY
+
+喂 O O O
+喂 O O O
+那 O O O
+个 O O O
+我 O O O
+说 O O O
+想 O O O
+听 O O O
+音 O O O
+乐 O O O
+呢 O O O
+PLAY<=>QUERY
+
+帮 O O O
+我 O O O
+查 O O O
+一 O O O
+下 O O O
+周 B-artist B-artist B
+杰 I-artist I-artist I
+伦 I-artist I-artist I
+的 O O O
+歌 O O O
+SEARCH<=>QUERY
+
+找 O O O
+一 O O O
+首 O O O
+歌 O O O
+叫 O O O
+斑 B-song O O
+马 I-song O O
+斑 I-song O O
+马 I-song O O
+SEARCH<=>SEARCH
+
+我 O O O
+想 O O O
+听 O O O
+足 B-category O O
+球 I-category O O
+类 O O O
+新 O O O
+闻 O O O
+PLAY<=>PLAY
+
+报 O O O
+点 O O O
+新 O O O
+闻 O O O
+给 O O O
+我 O O O
+听 O O O
+。 O O O
+PLAY<=>PLAY
+
+来 O O O
+一 O O O
+首 O O O
+宝 B-song B-song B
+贝 I-song I-song I
+对 I-song I-song I
+不 I-song I-song I
+起 I-song I-song I
+PLAY<=>PLAY
+
+播 O O O
+放 O O O
+歌 O O O
+曲 O O O
+再 B-song B-song B
+见 I-song I-song I
+青 I-song I-song I
+春 I-song I-song I
+PLAY<=>PLAY
+
+来 O O O
+一 O O O
+首 O O O
+月 B-song B-author B
+亮 I-song I-author I
+惹 I-song I-author I
+的 I-song O O
+祸 I-song B-name B
+PLAY<=>QUERY
+
+看 O O O
+今 B-datetime_date B-datetime_date B
+天 I-datetime_date I-datetime_date I
+的 O O O
+新 O O O
+闻 O O O
+。 O O O
+PLAY<=>PLAY
+
+搜 O O O
+索 O O O
+电 B-category B-category B
+视 I-category I-category I
+剧 I-category I-category I
+插 I-category B-name B
+曲 I-category I-name I
+SEARCH<=>QUERY
+
+哦 O O O
+来 O O O
+一 O O O
+首 O O O
+青 B-song B-song B
+花 I-song I-song I
+瓷 I-song I-song I
+PLAY<=>PLAY
+
+唱 O O O
+一 O O O
+首 O O O
+简 B-song B-name B
+单 I-song I-name I
+爱 I-song I-name I
+PLAY<=>QUERY
+
+国 B-category B-datetime_date B
+际 I-category I-datetime_date I
+新 O O O
+闻 O O O
+。 O O O
+PLAY<=>PLAY
+
+王 B-artist B-keyword B
+菲 I-artist I-keyword I
+传 B-song I-keyword I
+奇 I-song I-keyword I
+。 O O O
+PLAY<=>QUERY
+
+讯 O O O
+飞 O O O
+语 O O O
+音 O O O
+我 O O O
+想 O O O
+知 O O O
+道 O O O
+山 B-location_province B-keyword B
+东 I-location_province I-keyword I
+省 I-location_province I-keyword I
+东 B-location_city I-keyword I
+营 I-location_city O O
+市 I-location_city O O
+今 B-datetime_date O O
+天 I-datetime_date O O
+的 O O O
+新 O O O
+闻 O O O
+。 O O O
+PLAY<=>PLAY
+
+现 B-datetime_time O O
+在 I-datetime_time O O
+看 O O O
+看 O O O
+有 O O O
+最 B-keyword B-keyword B
+新 I-keyword I-keyword I
+的 O O O
+新 O O O
+闻 O O O
+吗 O O O
+？ O O O
+PLAY<=>PLAY
+
+我 O O O
+要 O O O
+听 O O O
+新 O O O
+闻 O O O
+， O O O
+给 O O O
+我 O O O
+数 O O O
+。 O O O
+PLAY<=>PLAY
+
+我 O O O
+要 O O O
+看 O O O
+古 B-category B-category O
+典 I-category I-category B
+仙 I-category I-category I
+侠 I-category I-category I
+小 O O O
+说 O O O
+QUERY<=>QUERY
+
+今 B-datetime_date B-datetime_date B
+天 I-datetime_date I-datetime_date I
+的 O O O
+新 O O O
+闻 O O O
+有 O O O
+什 O O O
+么 O O O
+？ O O O
+PLAY<=>PLAY
+
+今 B-datetime_date B-datetime_date B
+天 I-datetime_date I-datetime_date I
+有 O O O
+什 O O O
+么 O O O
+新 O O O
+闻 O O O
+呢 O O O
+。 O O O
+PLAY<=>PLAY
+
+我 O O O
+要 O O O
+听 O O O
+最 B-datetime_date O O
+近 I-datetime_date O O
+的 O O O
+新 O O O
+闻 O O O
+。 O O O
+PLAY<=>PLAY
+
+看 O O O
+看 O O O
+有 O O O
+什 O O O
+么 O O O
+好 O O O
+新 O O O
+闻 O O O
+PLAY<=>PLAY
+
+播 O O O
+放 O O O
+最 B-datetime_date B-datetime_date B
+近 I-datetime_date I-datetime_date I
+的 O O O
+新 O O O
+闻 O O O
+。 O O O
+PLAY<=>PLAY
+
+今 B-datetime_date B-datetime_date B
+天 I-datetime_date I-datetime_date I
+东 B-location_city B-datetime_time B
+莞 I-location_city I-datetime_time I
+新 O O O
+闻 O O O
+。 O O O
+PLAY<=>PLAY
+
+噗 O O O
+我 O O O
+想 O O O
+听 O O O
+新 O O O
+闻 O O O
+。 O O O
+PLAY<=>PLAY
+
+今 B-datetime_date B-datetime_date B
+天 I-datetime_date I-datetime_date I
+惠 B-location_city B-datetime_time B
+州 I-location_city I-datetime_time I
+新 O O O
+闻 O O O
+。 O O O
+PLAY<=>PLAY
+
+搜 O O O
+索 O O O
+最 B-keyword B-media B
+新 I-keyword I-media I
+新 O O O
+闻 O O O
+PLAY<=>PLAY
+
+加 O O O
+， O O O
+听 O O O
+新 O O O
+闻 O O O
+。 O O O
+PLAY<=>PLAY
+
+听 O O O
+听 O O O
+新 O O O
+闻 O O O
+。 O O O
+PLAY<=>PLAY
+
+打 O O O
+开 O O O
+新 O O O
+闻 O O O
+PLAY<=>PLAY
+
+我 O O O
+要 O O O
+看 O O O
+校 B-category B-category B
+园 I-category I-category I
+小 O O O
+说 O O O
+致 B-name O O
+我 I-name O O
+们 I-name O O
+终 I-name O O
+将 I-name B-name I
+逝 I-name I-name I
+去 I-name I-name I
+的 I-name I-name I
+青 I-name I-name I
+春 I-name I-name I
+QUERY<=>QUERY
+
+江 B-keyword B-keyword B
+涵 I-keyword I-keyword I
+秋 I-keyword I-keyword I
+影 I-keyword I-keyword I
+雁 I-keyword I-keyword I
+初 I-keyword I-keyword I
+飞 I-keyword I-keyword I
+的 O O O
+下 B-queryField B-queryField B
+一 I-queryField I-queryField I
+句 I-queryField I-queryField I
+是 O O O
+什 O O O
+么 O O O
+？ O O O
+QUERY<=>QUERY
+
+那 O O O
+就 O O O
+来 O O O
+一 O O O
+首 O O O
+李 B-author B-author B
+白 I-author I-author I
+的 O O O
+诗 O O O
+词 O O O
+吗 O O O
+？ O O O
+QUERY<=>QUERY
+
+背 O O O
+一 O O O
+首 O O O
+， O O O
+纳 B-author B-author B
+兰 I-author I-author I
+容 I-author I-author I
+若 I-author I-author I
+的 O O O
+词 O O O
+。 O O O
+QUERY<=>QUERY
+
+查 O O O
+一 O O O
+首 O O O
+古 O O O
+诗 O O O
+， O O O
+武 B-name B-name B
+林 I-name I-name I
+春 I-name I-name I
+。 O O O
+QUERY<=>QUERY
+
+搜 O O O
+搜 O O O
+一 O O O
+首 O O O
+毛 B-author B-author B
+泽 I-author I-author I
+东 I-author I-author I
+的 O O O
+诗 O O O
+。 O O O
+QUERY<=>QUERY
+
+玄 B-category B-category B
+幻 I-category I-category I
+小 O O O
+说 O O O
+《 O O O
+武 B-name B-name B
+动 I-name I-name I
+乾 I-name I-name I
+坤 I-name I-name I
+》 O O O
+QUERY<=>QUERY
+
+来 O O O
+一 O O O
+句 O O O
+唐 B-dynasty B-dynasty B
+诗 O O O
+呗 O B-name B
+！ O I-name I
+QUERY<=>QUERY
+
+我 O O O
+要 O O O
+看 O O O
+古 B-category O O
+言 I-category O O
+小 O O O
+说 O O O
+QUERY<=>QUERY
+
+背 O O O
+屈 B-author B-author B
+原 I-author I-author I
+的 O O O
+离 B-name B-name B
+骚 I-name I-name I
+QUERY<=>QUERY
+
+恶 O O O
+念 O O O
+首 O O O
+唐 B-dynasty B-dynasty B
+诗 O O O
+。 O O O
+QUERY<=>QUERY
+
+背 O O O
+一 O O O
+首 O O O
+春 B-name B-name B
+晓 I-name I-name I
+QUERY<=>QUERY
+
+杜 B-author B-author B
+甫 I-author I-author I
+的 O O O
+诗 O O O
+。 O O O
+QUERY<=>QUERY
+
+看 O O O
+乡 B-name B-name B
+村 I-name I-name I
+爱 I-name I-name I
+情 I-name I-name I
+QUERY<=>QUERY
+
+玄 B-category B-category B
+幻 I-category I-category I
+小 O O O
+说 O O O
+QUERY<=>QUERY
+
+情 B-name B-tag B
+债 I-name I-tag I
+QUERY<=>QUERY
+
+月 B-keyword B-keyword B
+咏 I-keyword I-keyword I
+牡 I-keyword I-keyword I
+丹 I-keyword I-keyword I
+的 O O O
+下 B-queryField B-queryField B
+一 I-queryField I-queryField I
+句 I-queryField I-queryField I
+， O O O
+是 O O O
+什 O O O
+么 O O O
+？ O O O
+QUERY<=>QUERY
+
+何 B-keyword B-keyword B
+以 I-keyword I-keyword I
+解 I-keyword I-keyword I
+忧 I-keyword I-keyword I
+的 O O O
+下 B-queryField B-queryField B
+一 I-queryField I-queryField I
+句 I-queryField I-queryField I
+是 O O O
+什 O O O
+么 O O O
+？ O O O
+QUERY<=>QUERY
+
+那 O O O
+你 O O O
+给 O O O
+我 O O O
+背 O O O
+一 O O O
+首 O O O
+唐 B-dynasty B-dynasty B
+诗 O O O
+吧 O O O
+！ O O O
+QUERY<=>QUERY
+
+帮 O O O
+我 O O O
+来 O O O
+一 O O O
+首 O O O
+兰 B-name B-name B
+陵 I-name I-name I
+王 I-name I-name I
+。 O O O
+QUERY<=>QUERY
+
+给 O O O
+我 O O O
+来 O O O
+一 O O O
+首 O O O
+山 B-name B-name B
+歌 I-name I-name I
+吗 O O O
+？ O O O
+QUERY<=>PLAY
+
+去 O O O
+网 O O O
+上 O O O
+搜 O O O
+索 O O O
+兰 B-name B-name B
+陵 I-name I-name I
+王 I-name I-name I
+。 O O O
+QUERY<=>QUERY
+
+我 O O O
+要 O O O
+听 O O O
+李 B-author B-author B
+白 I-author I-author I
+的 O O O
+诗 O O O
+。 O O O
+QUERY<=>QUERY
+
+来 O O O
+首 O O O
+苏 B-author B-author B
+轼 I-author I-author I
+的 O O O
+词 O O O
+。 O O O
+QUERY<=>QUERY
+
+李 B-author B-author B
+白 I-author I-author I
+的 O O O
+将 B-name B-name B
+进 I-name I-name I
+酒 I-name I-name I
+。 O O O
+QUERY<=>QUERY
+
+给 O O O
+我 O O O
+念 O O O
+首 O O O
+春 B-name B-name B
+晓 I-name I-name I
+。 O O O
+QUERY<=>QUERY
+
+搜 O O O
+索 O O O
+古 O O O
+诗 O O O
+绝 B-name B-name B
+句 I-name I-name I
+。 O O O
+QUERY<=>QUERY
+
+我 O O O
+背 O O O
+一 O O O
+下 O O O
+春 B-name B-name B
+晓 I-name I-name I
+。 O O O
+QUERY<=>QUERY
+
+诗 O O O
+词 O O O
+满 B-name B-name B
+江 I-name I-name I
+红 I-name I-name I
+。 O O O
+QUERY<=>QUERY
+
+背 O O O
+首 O O O
+绝 B-name B-author B
+句 I-name I-author I
+的 O O O
+。 O O O
+QUERY<=>QUERY
+
+来 O O O
+一 O O O
+首 O O O
+咏 B-name B-name B
+柳 I-name I-name I
+。 O O O
+QUERY<=>QUERY
+
+来 O O O
+首 O O O
+唐 B-dynasty B-dynasty B
+诗 O O O
+小 B-name O O
+池 I-name O O
+QUERY<=>QUERY
+
+请 O O O
+帮 O O O
+我 O O O
+调 O O O
+频 O O O
+1 B-code B-code B
+0 I-code I-code I
+5 I-code I-code I
+. I-code I-code I
+8 I-code I-code I
+南 B-name B-name B
+京 I-name I-name I
+人 I-name I-name I
+民 I-name I-name I
+广 I-name I-name I
+播 I-name I-name I
+电 I-name I-name I
+台 I-name I-name I
+音 I-name I-name I
+乐 I-name I-name I
+台 I-name I-name I
+LAUNCH<=>LAUNCH
+
+不 O O O
+是 O O O
+我 O O O
+是 O O O
+说 O O O
+我 O O O
+给 O O O
+你 O O O
+猜 O O O
+个 O O O
+谜 B-category B-category B
+语 I-category I-category I
+吧 O O O
+！ O O O
+QUERY<=>QUERY
+
+讲 O O O
+一 O O O
+个 O O O
+谜 B-category B-category B
+语 I-category I-category I
+， O O O
+啊 O O O
+， O O O
+你 O O O
+， O O O
+哦 O O O
+。 O O O
+QUERY<=>QUERY
+
+一 O O O
+起 O O O
+听 O O O
+听 O O O
+新 B-name B-name B
+疆 I-name I-name I
+人 I-name I-name I
+民 I-name I-name I
+广 I-name I-name I
+播 I-name I-name I
+电 I-name I-name I
+台 I-name I-name I
+LAUNCH<=>LAUNCH
+
+能 O O O
+不 O O O
+能 O O O
+帮 O O O
+我 O O O
+接 O O O
+听 O O O
+中 B-name B-name B
+广 I-name I-name I
+流 I-name I-name I
+行 I-name I-name I
+网 I-name I-name I
+LAUNCH<=>OPEN
+
+呵 O O O
+呵 O O O
+， O O O
+背 O O O
+首 O O O
+诗 O O O
+来 O O O
+听 O O O
+。 O O O
+DEFAULT<=>DEFAULT
+
+来 O O O
+一 O O O
+个 O O O
+灯 B-category B-category B
+谜 I-category I-category I
+， O O O
+你 O O O
+。 O O O
+QUERY<=>QUERY
+
+讲 O O O
+个 O O O
+谜 B-category B-category B
+语 I-category I-category I
+猜 O O O
+一 O O O
+下 O O O
+。 O O O
+QUERY<=>QUERY
+
+听 O O O
+江 B-name B-name B
+苏 I-name I-name I
+交 I-name I-name I
+通 I-name I-name I
+广 I-name I-name I
+播 I-name I-name I
+网 O I-name I
+LAUNCH<=>PLAY
+
+念 O O O
+首 O O O
+诗 O O O
+听 O O O
+一 O O O
+下 O O O
+。 O O O
+DEFAULT<=>DEFAULT
+
+老 O O O
+朗 O O O
+诵 O O O
+首 O O O
+古 O O O
+诗 O O O
+。 O O O
+DEFAULT<=>DEFAULT
+
+给 O O O
+我 O O O
+念 O O O
+首 O O O
+古 O O O
+诗 O O O
+。 O O O
+DEFAULT<=>DEFAULT
+
+读 O O O
+句 O O O
+诗 O O O
+来 O O O
+听 O O O
+听 O O O
+。 O O O
+DEFAULT<=>DEFAULT
+
+来 O O O
+个 O O O
+灯 B-category B-category B
+谜 I-category I-category I
+吧 O O O
+！ O O O
+QUERY<=>QUERY
+
+打 O O O
+个 O O O
+谜 B-category B-category B
+语 I-category I-category I
+吧 O O O
+！ O O O
+QUERY<=>QUERY
+
+来 O O O
+个 O O O
+字 B-category B-category B
+谜 I-category I-category I
+吗 O O O
+？ O O O
+QUERY<=>QUERY
+
+截 O B-name B
+止 O I-name I
+目 O I-name I
+前 O I-name I
+银 B-name I-name I
+鸽 I-name I-name I
+投 I-name I-name I
+资 I-name I-name I
+股 O O O
+份 O O I
+的 O O O
+市 O O O
+值 O O O
+是 O O O
+多 O O O
+少 O O O
+QUERY<=>QUERY
+
+搜 O O O
+索 O O O
+中 B-name B-name B
+国 I-name I-name I
+移 I-name I-name I
+动 I-name I-name I
+的 O O O
+股 O O O
+市 O O O
+行 O O O
+情 O O O
+QUERY<=>QUERY
+
+查 O O O
+询 O O O
+濮 B-name B-name B
+耐 I-name I-name I
+股 I-name I-name I
+份 I-name I-name I
+的 O O O
+股 O O O
+票 O O O
+QUERY<=>QUERY
+
+你 O O O
+给 O O O
+我 O O O
+说 O O O
+几 O O O
+个 O O O
+谜 B-category B-category B
+语 I-category I-category I
+。 O O O
+QUERY<=>QUERY
+
+讯 B-name B-name B
+飞 I-name I-name I
+科 I-name I-name I
+技 I-name I-name I
+股 O O O
+票 O O O
+价 O O O
+格 O O O
+QUERY<=>QUERY
+
+搜 O O O
+索 O O O
+泰 B-name B-name B
+亚 I-name I-name I
+股 I-name I-name I
+份 I-name I-name I
+股 O O O
+票 O O O
+QUERY<=>QUERY
+
+查 O O O
+下 O O O
+银 B-name B-name B
+星 I-name I-name I
+能 I-name I-name I
+源 I-name I-name I
+股 O O O
+票 O O O
+QUERY<=>QUERY
+
+查 O O O
+询 O O O
+一 B-name O O
+汽 I-name O O
+轿 I-name B-name B
+车 I-name I-name I
+股 O O O
+票 O O O
+QUERY<=>QUERY
+
+包 B-name B-name B
+钢 I-name I-name I
+稀 I-name I-name I
+土 I-name I-name I
+股 O O O
+票 O O O
+价 O O O
+格 O O O
+QUERY<=>QUERY
+
+中 B-name B-name B
+水 I-name I-name I
+渔 I-name I-name I
+业 I-name I-name I
+的 O O O
+股 O O O
+票 O O O
+QUERY<=>QUERY
+
+永 B-name B-name B
+高 I-name I-name I
+股 I-name O O
+份 I-name O O
+的 O O O
+股 O O O
+票 O O O
+QUERY<=>QUERY
+
+安 B-name B-name B
+徽 I-name I-name I
+合 I-name I-name I
+力 I-name I-name I
+股 O O O
+票 O O O
+QUERY<=>QUERY
+
+中 B-name B-name B
+信 I-name I-name I
+证 I-name I-name I
+券 I-name I-name I
+股 O O O
+票 O O O
+QUERY<=>QUERY
+
+富 B-name B-name B
+瑞 I-name I-name I
+特 I-name I-name I
+装 I-name I-name I
+股 O O O
+票 O O O
+QUERY<=>QUERY
+
+搞 B-category O O
+笑 I-category O O
+谜 I-category B-category B
+语 I-category I-category I
+。 O O O
+QUERY<=>QUERY
+
+爆 O O O
+笑 O O O
+谜 B-category B-category B
+语 I-category I-category I
+QUERY<=>QUERY
+
+代 O B-name B
+码 O I-name I
+0 B-code I-name I
+0 I-code I-name I
+0 I-code I-name I
+8 I-code I-name I
+0 I-code I-name I
+0 I-code I-name I
+的 O O O
+股 O O O
+票 O O O
+涨 O O O
+幅 O O O
+是 O O O
+多 O O O
+少 O O O
+RISERATE_QUERY<=>QUERY
+
+大 B-content B-content B
+家 I-content I-content I
+今 I-content I-content I
+天 I-content I-content I
+心 I-content I-content I
+情 I-content I-content I
+如 I-content I-content I
+何 I-content I-content I
+用 O O O
+英 B-target B-target B
+语 I-target I-target I
+怎 O O O
+么 O O O
+说 O O O
+TRANSLATION<=>TRANSLATION
+
+美 B-name B-name B
+菱 I-name I-name I
+电 I-name I-name I
+器 I-name I-name I
+的 O O O
+昨 B-yesterday B-category B
+日 I-yesterday I-category I
+收 O O O
+盘 O O O
+价 O O O
+是 O O O
+多 O O O
+少 O O O
+CLOSEPRICE_QUERY<=>QUERY
+
+陈 O B-name B
+娴 O I-name I
+T B-name I-name I
+C I-name I-name I
+L I-name I-name I
+股 O O O
+票 O O O
+是 O O O
+涨 O O O
+还 O O O
+是 O O O
+跌 O O O
+了 O O O
+RISERATE_QUERY<=>RISERATE_QUERY
+
+我 B-content B-content B
+要 I-content I-content I
+和 I-content I-content I
+妹 I-content I-content I
+妹 I-content I-content I
+睡 I-content I-content I
+觉 I-content I-content I
+英 B-target B-target B
+语 I-target I-target I
+怎 O O O
+么 O O O
+说 O O O
+TRANSLATION<=>TRANSLATION
+
+当 B-content B-content B
+前 I-content I-content I
+不 I-content I-content I
+再 I-content I-content I
+呼 I-content I-content I
+叫 I-content I-content I
+英 B-target B-target B
+语 I-target I-target I
+怎 O O O
+么 O O O
+说 O O O
+TRANSLATION<=>TRANSLATION
+
+宏 B-name B-name B
+达 I-name I-name I
+高 I-name I-name I
+科 I-name I-name I
+的 O O O
+股 O O O
+票 O O O
+跌 O O O
+了 O O O
+没 O O O
+有 O O O
+RISERATE_QUERY<=>QUERY
+
+你 B-content B-content B
+好 I-content I-content I
+丑 I-content I-content I
+用 O O O
+英 B-target B-target B
+文 I-target I-target I
+怎 O O O
+么 O O O
+说 O O O
+TRANSLATION<=>TRANSLATION
+
+腾 B-name B-name B
+讯 I-name I-name I
+股 O O O
+票 O O O
+昨 B-yesterday B-name B
+日 I-yesterday I-name I
+收 O O O
+盘 O O O
+价 O O O
+CLOSEPRICE_QUERY<=>QUERY
+
+查 O O O
+寻 O O O
+天 B-name B-name B
+龙 I-name I-name I
+集 I-name I-name I
+团 I-name I-name I
+的 O O O
+股 O O O
+票 O O O
+QUERY<=>QUERY
+
+科 B-name B-name B
+大 I-name I-name I
+讯 I-name I-name I
+飞 I-name I-name I
+今 O O O
+天 O O O
+的 O O O
+股 O O O
+票 O O O
+QUERY<=>QUERY
+
+一 B-content B-content B
+千 I-content I-content I
+五 I-content I-content I
+英 B-target B-target B
+语 I-target I-target I
+怎 O O O
+么 O O O
+说 O O O
+TRANSLATION<=>TRANSLATION
+
+查 O O O
+寻 O O O
+科 B-name B-name B
+大 I-name I-name I
+讯 I-name I-name I
+飞 I-name I-name I
+的 O O O
+股 O O O
+QUERY<=>QUERY
+
+小 B-content O O
+说 I-content O O
+英 B-target B-target B
+语 I-target I-target I
+怎 O O O
+么 O O O
+说 O O O
+TRANSLATION<=>TRANSLATION
+
+杰 B-name B-name B
+瑞 I-name I-name I
+股 I-name I-name I
+份 I-name I-name I
+股 O O O
+价 O O O
+QUERY<=>QUERY
+
+人 B-name B-name B
+福 I-name I-name I
+医 I-name I-name I
+药 I-name I-name I
+股 O O O
+票 O O O
+QUERY<=>QUERY
+
+你 B-content B-content B
+今 I-content I-content I
+天 I-content I-content I
+去 I-content I-content I
+了 I-content I-content I
+哪 I-content I-content I
+里 I-content I-content I
+用 O O O
+英 B-target B-target B
+文 I-target I-target I
+怎 O O O
+么 O O O
+讲 O O O
+TRANSLATION<=>TRANSLATION
+
+很 B-content B-content B
+高 I-content I-content I
+兴 I-content I-content I
+见 I-content I-content I
+到 I-content O O
+你 I-content I-content B
+英 B-target B-target B
+文 I-target I-target I
+怎 O O O
+么 O O O
+讲 O O O
+TRANSLATION<=>TRANSLATION
+
+你 B-content B-content B
+叫 I-content I-content I
+什 I-content I-content I
+么 I-content I-content I
+名 I-content I-content I
+字 I-content I-content I
+英 B-target B-target B
+文 I-target I-target I
+怎 O O O
+么 O O O
+说 O O O
+TRANSLATION<=>TRANSLATION
+
+我 B-content B-content B
+不 I-content I-content I
+明 I-content I-content I
+白 I-content I-content I
+用 O O O
+英 B-target B-target B
+文 I-target I-target I
+怎 O O O
+么 O O O
+讲 O O O
+TRANSLATION<=>TRANSLATION
+
+帮 O O O
+我 O O O
+切 O O O
+换 O O O
+到 O O O
+湖 B-name B-name B
+南 I-name I-name I
+卫 I-name I-name I
+视 I-name I-name I
+PLAY<=>PLAY
+
+我 B-content B-content B
+不 I-content I-content I
+在 I-content I-content I
+家 I-content I-content I
+英 B-target B-target B
+语 I-target I-target I
+怎 O O O
+么 O O O
+说 O O O
+TRANSLATION<=>TRANSLATION
+
+我 B-content B-content B
+想 I-content I-content I
+打 I-content I-content I
+你 I-content I-content I
+英 B-target B-target B
+语 I-target I-target I
+怎 O O O
+么 O O O
+说 O O O
+TRANSLATION<=>TRANSLATION
+
+西 B-content B-content B
+红 I-content I-content I
+柿 I-content I-content I
+用 O O O
+英 B-target B-target B
+语 I-target I-target I
+怎 O O O
+么 O O O
+说 O O O
+TRANSLATION<=>TRANSLATION
+
+我 B-content B-content B
+不 I-content I-content I
+吃 I-content I-content I
+英 B-target B-target B
+文 I-target I-target I
+怎 O O O
+么 O O O
+讲 O O O
+TRANSLATION<=>TRANSLATION
+
+帮 O O O
+我 O O O
+翻 O O O
+译 O O O
+一 O O O
+下 O O O
+番 B-content B-name B
+茄 I-content I-name I
+TRANSLATION<=>TRANSLATION
+
+睡 B-content B-content B
+觉 I-content I-content I
+用 O O O
+英 B-target B-target B
+文 I-target I-target I
+怎 O O O
+么 O O O
+说 O O O
+TRANSLATION<=>TRANSLATION
+
+湖 B-name B-name B
+北 I-name I-name I
+电 I-name I-name I
+视 I-name I-name I
+台 I-name I-name I
+高 B-resolution B-resolution B
+清 I-resolution I-resolution I
+PLAY<=>PLAY
+
+桔 B-content B-content B
+子 I-content I-content I
+英 B-target B-target B
+文 I-target I-target I
+怎 O O O
+么 O O O
+说 O O O
+TRANSLATION<=>TRANSLATION
+
+C B-name B-name B
+C I-name I-name I
+T I-name I-name I
+V I-name I-name I
+少 I-name I-name I
+儿 I-name I-name I
+PLAY<=>PLAY
+
+中 B-name B-name B
+央 I-name I-name I
+八 I-name I-name I
+PLAY<=>PLAY
+
+央 B-name B-name B
+3 I-name I-name I
+PLAY<=>PLAY
+
+2 B-datetime_date B-datetime_date B
+0 I-datetime_date I-datetime_date I
+1 I-datetime_date I-datetime_date I
+3 I-datetime_date I-datetime_date I
+年 I-datetime_date I-datetime_date I
+陈 B-artist I-datetime_date I
+可 I-artist I-datetime_date I
+辛 I-artist I-datetime_date I
+导 B-artistRole B-datetime_time I
+演 I-artistRole I-datetime_time I
+的 O O O
+好 B-scoreDescr B-scoreDescr B
+看 I-scoreDescr I-scoreDescr I
+的 O O O
+电 B-category B-category B
+影 I-category I-category I
+QUERY<=>QUERY
+
+中 B-name B-name B
+国 I-name I-name I
+教 I-name I-name I
+育 I-name I-name I
+电 I-name I-name I
+视 I-name I-name I
+台 I-name I-name I
+三 I-name I-name I
+台 I-name I-name I
+PLAY<=>PLAY
+
+在 O O O
+线 O O O
+观 O O O
+看 O O O
+中 B-name B-name B
+央 I-name I-name I
+七 I-name I-name I
+套 I-name I-name I
+PLAY<=>PLAY
+
+薛 B-name B-name B
+平 I-name I-name I
+贵 I-name I-name I
+与 I-name I-name I
+王 I-name I-name I
+宝 I-name I-name I
+钏 I-name I-name I
+QUERY<=>QUERY
+
+我 O O O
+要 O O O
+看 O O O
+中 B-name B-name B
+央 I-name I-name I
+五 I-name I-name I
+台 I-name I-name I
+PLAY<=>PLAY
+
+调 O O O
+到 O O O
+新 B-name B-name B
+疆 I-name I-name I
+综 I-name I-name I
+艺 I-name I-name I
+PLAY<=>PLAY
+
+海 O B-name B
+南 O I-name I
+旅 B-name I-name I
+游 I-name I-name I
+卫 I-name I-name I
+视 I-name I-name I
+PLAY<=>PLAY
+
+刑 B-tag B-tag B
+侦 I-tag I-tag I
+电 B-category B-category B
+视 I-category I-category I
+剧 I-category I-category I
+QUERY<=>QUERY
+
+福 B-name B-name B
+建 I-name I-name I
+电 I-name I-name I
+视 I-name I-name I
+台 I-name I-name I
+PLAY<=>PLAY
+
+换 O O O
+江 B-name B-name B
+苏 I-name I-name I
+卫 I-name I-name I
+视 I-name I-name I
+PLAY<=>PLAY
+
+吉 B-name B-name B
+林 I-name I-name I
+电 I-name I-name I
+视 I-name I-name I
+台 I-name I-name I
+PLAY<=>PLAY
+
+高 B-resolution B-resolution B
+清 I-resolution I-resolution I
+深 B-name B-name B
+圳 I-name I-name I
+台 I-name I-name I
+PLAY<=>PLAY
+
+江 B-name B-name B
+苏 I-name I-name I
+影 I-name I-name I
+视 I-name I-name I
+台 I-name I-name I
+PLAY<=>PLAY
+
+陕 B-name B-name B
+西 I-name I-name I
+二 I-name I-name I
+套 I-name I-name I
+PLAY<=>PLAY
+
+浙 B-name B-name B
+江 I-name I-name I
+台 I-name I-name I
+PLAY<=>PLAY
+
+A B-name B-name B
+X I-name I-name I
+N I-name I-name I
+PLAY<=>QUERY
+
+我 O O O
+是 O O O
+说 O O O
+我 O O O
+要 O O O
+看 O O O
+一 B-name O O
+起 I-name O O
+又 I-name O O
+看 I-name O O
+流 I-name B-name B
+星 I-name I-name I
+雨 I-name I-name I
+QUERY<=>QUERY
+
+我 O O O
+想 O O O
+看 O O O
+张 B-artist B-artist B
+艺 I-artist I-artist I
+谋 I-artist I-artist I
+导 B-artistRole B-artistRole B
+演 I-artistRole I-artistRole I
+的 O O O
+电 B-category B-category B
+影 I-category I-category I
+QUERY<=>QUERY
+
+搜 O O O
+索 O O O
+逃 B-name B-name B
+学 I-name I-name I
+威 I-name I-name I
+龙 I-name I-name I
+第 B-season O O
+二 I-season O O
+部 I-season O O
+QUERY<=>QUERY
+
+天 B-name O O
+机 I-name O O
+富 I-name B-name B
+春 I-name I-name I
+山 I-name I-name I
+居 I-name I-name I
+图 I-name I-name I
+QUERY<=>QUERY
+
+我 O O O
+想 O O O
+看 O O O
+电 B-category B-category B
+影 I-category I-category I
+超 B-name I-category I
+人 I-name I-category I
+QUERY<=>QUERY
+
+宫 B-artist B-name B
+崎 I-artist I-name I
+骏 I-artist I-name I
+动 B-tag I-name I
+画 I-tag I-name I
+电 B-category B-category B
+影 I-category I-category I
+QUERY<=>QUERY
+
+我 B-name B-name B
+是 I-name I-name I
+特 I-name I-name I
+种 I-name I-name I
+兵 I-name I-name I
+二 I-name I-name I
+QUERY<=>QUERY
+
+英 B-name B-name B
+雄 I-name I-name I
+本 I-name I-name I
+色 I-name I-name I
+电 B-category B-category B
+影 I-category I-category I
+QUERY<=>QUERY
+
+中 B-name B-name B
+国 I-name I-name I
+合 I-name I-name I
+伙 I-name I-name I
+人 I-name I-name I
+QUERY<=>QUERY
+
+猫 B-name B-name B
+眼 I-name I-name I
+三 I-name I-name I
+姐 I-name I-name I
+妹 I-name I-name I
+QUERY<=>QUERY
+
+生 B-name B-name B
+活 I-name I-name I
+大 I-name I-name I
+爆 I-name I-name I
+炸 I-name I-name I
+QUERY<=>QUERY
+
+太 B-name B-name B
+阳 I-name I-name I
+第 B-episode B-episode B
+九 I-episode I-episode I
+集 I-episode I-episode I
+QUERY<=>QUERY
+
+新 B-name B-name B
+扎 I-name I-name I
+师 I-name I-name I
+妹 I-name I-name I
+QUERY<=>PLAY
+
+福 B-name B-name B
+尔 I-name I-name I
+摩 I-name I-name I
+斯 I-name I-name I
+QUERY<=>QUERY
+
+钢 B-name B-name B
+铁 I-name I-name I
+侠 I-name I-name I
+三 I-name I-name I
+QUERY<=>QUERY
+
+贺 B-tag B-tag B
+岁 I-tag I-tag I
+片 B-category B-category I
+QUERY<=>QUERY
+
+查 O O O
+找 O O O
+9 B-decade B-author B
+0 I-decade I-author I
+年 I-decade I-author I
+代 I-decade I-author I
+好 B-payment I-author B
+评 I-payment I-author I
+的 O O O
+武 B-tag B-name B
+侠 I-tag I-name I
+电 B-category B-category B
+影 I-category I-category I
+QUERY<=>QUERY
+
+韩 B-area B-tag B
+国 I-area I-tag I
+电 B-category B-category B
+视 I-category I-category I
+连 I-category I-category I
+续 I-category I-category I
+剧 I-category I-category I
+老 B-name B-name B
+大 I-name I-name I
+QUERY<=>QUERY
+
+看 O O O
+千 B-name B-name B
+金 I-name I-name I
+归 I-name I-name I
+来 I-name I-name I
+第 B-episode B-episode B
+五 I-episode I-episode I
+集 I-episode I-episode I
+QUERY<=>QUERY
+
+你 O O O
+好 O O O
+我 O O O
+想 O O O
+看 O O O
+电 B-category B-category B
+影 I-category I-category I
+QUERY<=>QUERY
+
+下 B-datetime_date B-datetime_date B
+半 I-datetime_date I-datetime_date I
+年 I-datetime_date I-datetime_date I
+的 O O O
+电 B-category B-category B
+视 I-category I-category I
+剧 I-category I-category I
+QUERY<=>QUERY
+
+x B-name B-name B
+战 I-name I-name I
+警 I-name I-name I
+第 B-season O O
+一 I-season O O
+部 I-season O O
+QUERY<=>RISERATE_QUERY
+
+影 B-category B-name B
+视 I-category I-name I
+流 B-name I-name I
+星 I-name I-name I
+花 I-name I-name I
+园 I-name I-name I
+QUERY<=>QUERY
+
+美 B-name B-name B
+好 I-name I-name I
+的 I-name I-name I
+时 I-name I-name I
+代 I-name I-name I
+QUERY<=>QUERY
+
+中 B-name B-name B
+国 I-name I-name I
+新 I-name I-name I
+声 I-name I-name I
+代 I-name I-name I
+QUERY<=>QUERY
+
+甄 B-name B-name B
+嬛 I-name I-name I
+传 I-name I-name I
+高 B-resolution B-resolution B
+清 I-resolution I-resolution I
+QUERY<=>PLAY
+
+智 B-name B-name B
+取 I-name I-name I
+威 I-name I-name I
+虎 I-name I-name I
+山 I-name I-name I
+QUERY<=>QUERY
+
+铁 B-name B-name B
+甲 I-name I-name I
+威 I-name I-name I
+虫 I-name I-name I
+QUERY<=>QUERY
+
+我 B-name B-name B
+的 I-name I-name I
+幸 I-name I-name I
+福 I-name I-name I
+QUERY<=>QUERY
+
+热 B-tag B-popularity B
+血 I-tag I-popularity I
+动 B-category B-tag B
+漫 I-category I-tag I
+QUERY<=>QUERY
+
+捍 B-name B-name B
+卫 I-name I-name I
+者 I-name I-name I
+QUERY<=>QUERY
+
+陈 B-name B-name B
+真 I-name I-name I
+QUERY<=>QUERY
+
+合 B-location_city B-location_city B
+肥 I-location_city I-location_city I
+明 B-datetime_date B-datetime_date B
+天 I-datetime_date I-datetime_date I
+的 O O O
+湿 B-subfocus B-location_city B
+度 I-subfocus I-location_city I
+如 O O O
+何 O O O
+QUERY<=>QUERY
+
+请 O O O
+播 O O O
+放 O O O
+一 O O O
+下 O O O
+举 B-name B-name B
+起 I-name I-name I
+手 I-name I-name I
+来 I-name I-name I
+QUERY<=>QUERY
+
+现 O O O
+在 O O O
+打 O O O
+开 O O O
+你 B-name B-name B
+的 I-name I-name I
+官 I-name I-name I
+网 I-name I-name I
+OPEN<=>OPEN
+
+打 O O O
+开 O O O
+索 B-name B-name B
+尼 I-name I-name I
+官 O I-name I
+方 O I-name I
+网 O I-name I
+站 O I-name I
+OPEN<=>OPEN
+
+播 O O O
+放 O O O
+法 B-name B-name B
+制 I-name I-name I
+进 I-name I-name I
+行 I-name I-name I
+时 I-name I-name O
+QUERY<=>QUERY
+
+搜 O O O
+王 B-artist O O
+菲 I-artist B-name B
+演 B-tag I-name I
+唱 I-tag I-name I
+会 I-tag I-name I
+QUERY<=>QUERY
+
+广 B-name B-name B
+西 I-name I-name I
+新 I-name I-name I
+闻 I-name I-name I
+网 I-name I-name I
+OPEN<=>OPEN
+
+今 B-datetime_date B-datetime_date B
+天 I-datetime_date I-datetime_date I
+有 B-questionWord O O
+雨 B-subfocus B-dynasty B
+吗 O O O
+QUERY<=>QUERY
+
+中 B-name B-name B
+国 I-name I-name I
+最 I-name I-name I
+强 I-name I-name I
+音 I-name I-name I
+QUERY<=>QUERY
+
+请 O O O
+打 O O O
+开 O O O
+电 B-category B-category B
+影 I-category I-category I
+QUERY<=>QUERY
+
+九 B-name B-name B
+阴 I-name I-name I
+真 I-name I-name I
+经 I-name I-name I
+QUERY<=>PLAY
+
+看 O O O
+电 B-category B-category B
+影 I-category I-category I
+啊 O O O
+QUERY<=>QUERY
+
+海 B-name B-name B
+棉 I-name I-name I
+宝 I-name I-name I
+宝 I-name I-name I
+QUERY<=>QUERY
+
+心 B-name B-name B
+术 I-name I-name I
+电 B-category B-category B
+影 I-category I-category I
+QUERY<=>QUERY
+
+刘 B-name B-name B
+三 I-name I-name I
+姐 I-name I-name I
+QUERY<=>QUERY
+
+宜 B-name B-name B
+家 I-name I-name I
+OPEN<=>QUERY
+
+我 O O O
+要 O O O
+上 O O O
+网 O O O
+打 O O O
+开 O O O
+百 B-name B-name B
+度 I-name I-name I
+OPEN<=>OPEN
+
+但 O O O
+是 O O O
+我 O O O
+想 O O O
+上 O O O
+腾 B-name B-name B
+讯 I-name I-name I
+网 I-name I-name I
+OPEN<=>OPEN
+
+中 B-name B-name B
+国 I-name I-name I
+新 I-name I-name I
+闻 I-name I-name I
+网 I-name I-name I
+网 O I-name I
+站 O I-name I
+OPEN<=>OPEN
+
+打 O O O
+开 O O O
+搜 B-name B-name B
+狐 I-name I-name I
+网 I-name I-name I
+首 O O O
+页 O O O
+OPEN<=>OPEN
+
+你 O O O
+帮 O O O
+我 O O O
+打 O O O
+开 O O O
+网 O O O
+站 O O O
+OPEN<=>OPEN
+
+打 O O O
+开 O O O
+互 O B-name B
+联 O I-name I
+网 O I-name I
+啦 O I-name I
+OPEN<=>OPEN
+
+我 O O O
+要 O O O
+打 O O O
+开 O O O
+百 B-name B-name B
+度 I-name I-name I
+OPEN<=>OPEN
+
+讲 O O O
+个 O O O
+笑 O O O
+话 O O O
+吗 O O O
+nan<=>QUERY
+
+我 O O O
+想 O O O
+上 O O O
+网 B-name B-name B
+易 I-name I-name I
+OPEN<=>OPEN
+
+打 O O O
+开 O O O
+百 B-name B-name B
+度 I-name I-name I
+啊 O O O
+OPEN<=>OPEN
+
+上 O O O
+美 B-name B-name B
+空 I-name I-name I
+网 I-name I-name I
+OPEN<=>OPEN
+
+新 B-name B-name B
+浪 I-name I-name I
+汽 I-name I-name I
+车 I-name I-name I
+OPEN<=>QUERY
+
+老 B-category B-name B
+故 I-category I-name I
+事 I-category I-name I
+QUERY<=>QUERY
+

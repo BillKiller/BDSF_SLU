@@ -1,0 +1,124 @@
+认 O B-song_name B
+真 O I-song_name M
+的 O I-song_name M
+回 O I-song_name M
+答 O E-song_name E
+， O O O
+我 B-song_name O O
+想 I-song_name O O
+听 I-song_name O O
+你 I-song_name B-song_name B
+说 E-song_name E-song_name E
+这 O O O
+首 O O O
+歌 O O O
+。 O O O
+PlayMusic<=>PlayMusic
+
+
+我 O O O
+真 O O O
+爱 O B-song_type B
+听 O I-song_type E
+演 B-song_name I-song_type B
+唱 E-song_name E-song_type E
+。 O O O
+Chat<=>PlayMusic
+
+
+唱 B-song_name O O
+的 I-song_name O O
+响 I-song_name B-song_name B
+亮 E-song_name E-song_name E
+PlayMusic<=>PlayMusic
+
+
+播 O O O
+金 B-song_type B-singer_name B
+曲 E-song_type E-singer_name E
+PlayMusic<=>PlayMusic
+
+
+你 O O O
+好 O O O
+我 O B-song_name B
+要 O E-song_name E
+Chat<=>Chat
+
+我 O O O
+想 O O O
+听 O O O
+彩 B-song_name B-song_type B
+虹 I-song_name E-song_type E
+的 I-song_name O O
+微 I-song_name B-song_name B
+笑 E-song_name E-song_name E
+。 O O O
+PlayMusic<=>PlayMusic
+
+奥 B-song_name B-movie_name B
+特 I-song_name I-movie_name M
+曼 I-song_name E-movie_name E
+之 I-song_name O O
+歌 E-song_name O O
+PlayMusic<=>PlayMusic 
+
+
+我 O O O
+想 O O O
+听 O O O
+音 B-singer_name O O
+阙 I-singer_name O O
+诗 I-singer_name O O
+听 E-singer_name O O
+的 O O O
+红 B-song_name B-song_name B
+昭 I-song_name I-song_name M
+愿 E-song_name E-song_name E
+PlayMusic<=>PlayMusic
+
+来 O O O
+首 O O O
+劲 B-song_type B-singer_name B
+爆 E-song_type E-singer_name E
+的 O O O
+歌 O O O
+曲 O O O
+PlayMusic<=>PlayMusic
+
+搜 O O O
+索 O O O
+一 O O O
+下 O O O
+在 O B-album_name B
+王 B-album_name I-album_name M
+牌 I-album_name I-album_name M
+对 I-album_name I-album_name M
+王 I-album_name I-album_name M
+牌 E-album_name E-album_name E
+里 O O O
+面 O O O
+王 B-singer_name B-singer_name B
+源 E-singer_name E-singer_name E
+唱 O O O
+的 O O O
+一 O O O
+首 O O O
+英 B-song_type B-song_type B
+语 I-song_type E-song_type E
+歌 I-song_type O O
+曲 E-song_type O O
+。 O O O
+PlayMusic<=>PlayMusic
+
+我 O O O
+想 O O O
+听 O O O
+吹 B-movie_name B-story_name B
+牛 I-movie_name I-story_name M
+大 I-movie_name I-story_name M
+王 I-movie_name I-story_name M
+历 I-movie_name I-story_name M
+险 I-movie_name I-story_name M
+记 E-movie_name E-story_name E
+PlayMusic<=>PlayFMStory

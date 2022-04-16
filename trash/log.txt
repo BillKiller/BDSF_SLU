@@ -1,0 +1,408 @@
+Training parameters are listed as follows:
+
+	number of train sample:                    1656;
+	number of dev sample:                      414;
+	number of test sample:                     509;
+	number of epoch:						    300;
+	batch size:							    16;
+	learning rate:							    0.001;
+	random seed:							    1;
+	rate of l2 penalty:					    1e-06;
+	rate of dropout in network:                0.4;
+	teacher forcing rate(slot)		    		0.9;
+	teacher forcing rate(intent):		    	0.9;
+
+End of parameters show. Save dir: save/smp_1.
+
+
+Model parameters are listed as follows:
+
+	number of word:                            1437;
+	number of slot:                            110;
+	number of intent:						    18;
+	word embedding dimension:				    256;
+	encoder hidden dimension:				    256;
+	dimension of intent embedding:		    	8;
+	dimension of slot embedding:			    32;
+	dimension of slot decoder hidden:  	    64;
+	dimension of intent decoder hidden:        64;
+	hidden dimension of self-attention:        1024;
+	output dimension of self-attention:        128;
+
+End of parameters show. Now training begins.
+
+
+The model has been loaded into GPU and cost 2.898086 seconds.
+
+[Epoch  0]: The total slot loss on train data is 253.455642, intent data is 144.951920, bio data is 79.686075, cost about 25.6366 seconds.
+
+Test result: slot f1 score: 0.003021, intent acc score: 0.646365, semantic accuracy score: 0.025540. BIO f1 score 0.406720 
+[Epoch  0]: In validation process, the slot f1 score is 0.007005, the intent acc is 0.685990, the semantic acc is 0.02, cost about 18.091388 seconds.
+
+[Epoch  1]: The total slot loss on train data is 177.419343, intent data is 56.412169, bio data is 42.308950, cost about 29.2463 seconds.
+
+Test result: slot f1 score: 0.005970, intent acc score: 0.719057, semantic accuracy score: 0.035363. BIO f1 score 0.608768 
+[Epoch  1]: In validation process, the slot f1 score is 0.003478, the intent acc is 0.772947, the semantic acc is 0.03, cost about 18.407225 seconds.
+
+[Epoch  2]: The total slot loss on train data is 147.382811, intent data is 29.751838, bio data is 28.761761, cost about 25.9466 seconds.
+
+Test result: slot f1 score: 0.216216, intent acc score: 0.762279, semantic accuracy score: 0.172888. BIO f1 score 0.692863 
+[Epoch  2]: In validation process, the slot f1 score is 0.215305, the intent acc is 0.814010, the semantic acc is 0.15, cost about 21.255352 seconds.
+
+[Epoch  3]: The total slot loss on train data is 124.876195, intent data is 20.145659, bio data is 21.909010, cost about 24.0137 seconds.
+
+Test result: slot f1 score: 0.318068, intent acc score: 0.795678, semantic accuracy score: 0.265226. BIO f1 score 0.718153 
+[Epoch  3]: In validation process, the slot f1 score is 0.317336, the intent acc is 0.833333, the semantic acc is 0.25, cost about 15.161696 seconds.
+
+[Epoch  4]: The total slot loss on train data is 104.390022, intent data is 14.259691, bio data is 17.787099, cost about 29.3028 seconds.
+
+Test result: slot f1 score: 0.328086, intent acc score: 0.831041, semantic accuracy score: 0.294695. BIO f1 score 0.735924 
+[Epoch  4]: In validation process, the slot f1 score is 0.333007, the intent acc is 0.869565, the semantic acc is 0.28, cost about 18.827720 seconds.
+
+[Epoch  5]: The total slot loss on train data is 86.511180, intent data is 11.105194, bio data is 14.795477, cost about 25.9837 seconds.
+
+Test result: slot f1 score: 0.394937, intent acc score: 0.825147, semantic accuracy score: 0.330059. BIO f1 score 0.755413 
+[Epoch  5]: In validation process, the slot f1 score is 0.379722, the intent acc is 0.874396, the semantic acc is 0.31, cost about 20.627516 seconds.
+
+[Epoch  6]: The total slot loss on train data is 71.381913, intent data is 8.315144, bio data is 12.373110, cost about 21.6269 seconds.
+
+Test result: slot f1 score: 0.431341, intent acc score: 0.848723, semantic accuracy score: 0.377210. BIO f1 score 0.764565 
+[Epoch  6]: In validation process, the slot f1 score is 0.437620, the intent acc is 0.879227, the semantic acc is 0.36, cost about 22.584538 seconds.
+
+[Epoch  7]: The total slot loss on train data is 60.523536, intent data is 6.398293, bio data is 11.615138, cost about 21.5572 seconds.
+
+Test result: slot f1 score: 0.486799, intent acc score: 0.852652, semantic accuracy score: 0.424361. BIO f1 score 0.776433 
+[Epoch  7]: In validation process, the slot f1 score is 0.473840, the intent acc is 0.886473, the semantic acc is 0.40, cost about 22.445159 seconds.
+
+[Epoch  8]: The total slot loss on train data is 52.241298, intent data is 5.167718, bio data is 10.819621, cost about 24.4304 seconds.
+
+Test result: slot f1 score: 0.520259, intent acc score: 0.862475, semantic accuracy score: 0.457760. BIO f1 score 0.779283 
+[Epoch  8]: In validation process, the slot f1 score is 0.495238, the intent acc is 0.891304, the semantic acc is 0.43, cost about 19.764992 seconds.
+
+[Epoch  9]: The total slot loss on train data is 44.112652, intent data is 4.539895, bio data is 9.479099, cost about 27.6797 seconds.
+
+Test result: slot f1 score: 0.546774, intent acc score: 0.858546, semantic accuracy score: 0.477407. BIO f1 score 0.791435 
+[Epoch  9]: In validation process, the slot f1 score is 0.517602, the intent acc is 0.900966, the semantic acc is 0.45, cost about 19.156549 seconds.
+
+[Epoch 10]: The total slot loss on train data is 38.597035, intent data is 3.488182, bio data is 8.314714, cost about 29.0369 seconds.
+
+Test result: slot f1 score: 0.575563, intent acc score: 0.848723, semantic accuracy score: 0.495088. BIO f1 score 0.798115 
+[Epoch 10]: In validation process, the slot f1 score is 0.551464, the intent acc is 0.886473, the semantic acc is 0.49, cost about 18.914588 seconds.
+
+[Epoch 11]: The total slot loss on train data is 35.280337, intent data is 3.215879, bio data is 7.928052, cost about 29.0368 seconds.
+
+Test result: slot f1 score: 0.605242, intent acc score: 0.868369, semantic accuracy score: 0.524558. BIO f1 score 0.794002 
+[Epoch 11]: In validation process, the slot f1 score is 0.604695, the intent acc is 0.903382, the semantic acc is 0.53, cost about 18.360116 seconds.
+
+[Epoch 12]: The total slot loss on train data is 30.308709, intent data is 2.684785, bio data is 6.349220, cost about 28.4237 seconds.
+
+Test result: slot f1 score: 0.629984, intent acc score: 0.878193, semantic accuracy score: 0.561886. BIO f1 score 0.797488 
+[Epoch 12]: In validation process, the slot f1 score is 0.618114, the intent acc is 0.910628, the semantic acc is 0.55, cost about 19.026213 seconds.
+
+[Epoch 13]: The total slot loss on train data is 27.013237, intent data is 2.494084, bio data is 6.486287, cost about 29.41 seconds.
+
+Test result: slot f1 score: 0.650040, intent acc score: 0.876228, semantic accuracy score: 0.575639. BIO f1 score 0.799685 
+[Epoch 13]: In validation process, the slot f1 score is 0.638418, the intent acc is 0.915459, the semantic acc is 0.58, cost about 18.492117 seconds.
+
+[Epoch 14]: The total slot loss on train data is 23.921609, intent data is 2.194430, bio data is 4.964382, cost about 29.4893 seconds.
+
+Test result: slot f1 score: 0.651899, intent acc score: 0.878193, semantic accuracy score: 0.583497. BIO f1 score 0.788820 
+[Epoch 14]: In validation process, the slot f1 score is 0.661710, the intent acc is 0.913043, the semantic acc is 0.59, cost about 18.482113 seconds.
+
+[Epoch 15]: The total slot loss on train data is 22.212956, intent data is 2.358232, bio data is 5.280096, cost about 29.181 seconds.
+
+Test result: slot f1 score: 0.652278, intent acc score: 0.878193, semantic accuracy score: 0.583497. BIO f1 score 0.799368 
+[Epoch 15]: In validation process, the slot f1 score is 0.664799, the intent acc is 0.925121, the semantic acc is 0.61, cost about 18.795386 seconds.
+
+[Epoch 16]: The total slot loss on train data is 19.957737, intent data is 1.701242, bio data is 4.013220, cost about 29.1994 seconds.
+
+Test result: slot f1 score: 0.669856, intent acc score: 0.878193, semantic accuracy score: 0.595285. BIO f1 score 0.797468 
+[Epoch 16]: In validation process, the slot f1 score is 0.677328, the intent acc is 0.917874, the semantic acc is 0.60, cost about 18.727824 seconds.
+
+[Epoch 17]: The total slot loss on train data is 17.932606, intent data is 1.475567, bio data is 4.258564, cost about 27.4833 seconds.
+
+Test result: slot f1 score: 0.673092, intent acc score: 0.874263, semantic accuracy score: 0.603143. BIO f1 score 0.815873 
+[Epoch 17]: In validation process, the slot f1 score is 0.660430, the intent acc is 0.927536, the semantic acc is 0.60, cost about 19.869893 seconds.
+
+[Epoch 18]: The total slot loss on train data is 16.480126, intent data is 1.599927, bio data is 3.962452, cost about 26.6521 seconds.
+[Epoch 19]: The total slot loss on train data is 15.455150, intent data is 1.323359, bio data is 3.922266, cost about 29.256 seconds.
+
+Test result: slot f1 score: 0.680851, intent acc score: 0.876228, semantic accuracy score: 0.611002. BIO f1 score 0.806178 
+[Epoch 19]: In validation process, the slot f1 score is 0.679594, the intent acc is 0.922705, the semantic acc is 0.61, cost about 18.749892 seconds.
+
+[Epoch 20]: The total slot loss on train data is 14.067152, intent data is 1.153004, bio data is 3.571515, cost about 26.3284 seconds.
+
+Test result: slot f1 score: 0.669310, intent acc score: 0.874263, semantic accuracy score: 0.589391. BIO f1 score 0.793375 
+[Epoch 20]: In validation process, the slot f1 score is 0.684601, the intent acc is 0.920290, the semantic acc is 0.60, cost about 21.149672 seconds.
+
+[Epoch 21]: The total slot loss on train data is 12.618720, intent data is 1.105577, bio data is 2.769632, cost about 27.2861 seconds.
+
+Test result: slot f1 score: 0.678797, intent acc score: 0.880157, semantic accuracy score: 0.601179. BIO f1 score 0.799373 
+[Epoch 21]: In validation process, the slot f1 score is 0.690875, the intent acc is 0.922705, the semantic acc is 0.62, cost about 20.390914 seconds.
+
+[Epoch 22]: The total slot loss on train data is 11.609228, intent data is 0.888663, bio data is 3.086524, cost about 23.8188 seconds.
+
+Test result: slot f1 score: 0.702532, intent acc score: 0.880157, semantic accuracy score: 0.624754. BIO f1 score 0.800628 
+[Epoch 22]: In validation process, the slot f1 score is 0.698061, the intent acc is 0.922705, the semantic acc is 0.63, cost about 22.449882 seconds.
+
+[Epoch 23]: The total slot loss on train data is 10.448979, intent data is 0.983315, bio data is 2.682791, cost about 22.2478 seconds.
+
+Test result: slot f1 score: 0.700236, intent acc score: 0.880157, semantic accuracy score: 0.624754. BIO f1 score 0.783699 
+[Epoch 23]: In validation process, the slot f1 score is 0.706642, the intent acc is 0.922705, the semantic acc is 0.64, cost about 21.739181 seconds.
+
+[Epoch 24]: The total slot loss on train data is 9.801314, intent data is 0.811574, bio data is 2.694179, cost about 21.8949 seconds.
+
+Test result: slot f1 score: 0.713719, intent acc score: 0.876228, semantic accuracy score: 0.628684. BIO f1 score 0.804091 
+[Epoch 24]: In validation process, the slot f1 score is 0.686924, the intent acc is 0.932367, the semantic acc is 0.63, cost about 21.883451 seconds.
+
+[Epoch 25]: The total slot loss on train data is 9.428767, intent data is 0.728322, bio data is 2.839606, cost about 24.8716 seconds.
+[Epoch 26]: The total slot loss on train data is 8.611676, intent data is 0.615146, bio data is 2.545663, cost about 22.6998 seconds.
+
+Test result: slot f1 score: 0.692552, intent acc score: 0.870334, semantic accuracy score: 0.603143. BIO f1 score 0.805994 
+[Epoch 26]: In validation process, the slot f1 score is 0.707071, the intent acc is 0.922705, the semantic acc is 0.63, cost about 23.488434 seconds.
+
+[Epoch 27]: The total slot loss on train data is 7.900197, intent data is 0.584482, bio data is 2.525025, cost about 20.126 seconds.
+[Epoch 28]: The total slot loss on train data is 7.514762, intent data is 0.697694, bio data is 1.810140, cost about 24.5693 seconds.
+
+Test result: slot f1 score: 0.714060, intent acc score: 0.886051, semantic accuracy score: 0.628684. BIO f1 score 0.805359 
+[Epoch 28]: In validation process, the slot f1 score is 0.717571, the intent acc is 0.925121, the semantic acc is 0.65, cost about 21.773405 seconds.
+
+[Epoch 29]: The total slot loss on train data is 6.713702, intent data is 0.608011, bio data is 2.078688, cost about 20.1856 seconds.
+
+Test result: slot f1 score: 0.713615, intent acc score: 0.882122, semantic accuracy score: 0.624754. BIO f1 score 0.806827 
+[Epoch 29]: In validation process, the slot f1 score is 0.719780, the intent acc is 0.925121, the semantic acc is 0.65, cost about 22.748803 seconds.
+
+[Epoch 30]: The total slot loss on train data is 6.574929, intent data is 0.711104, bio data is 2.318044, cost about 23.6977 seconds.
+
+Test result: slot f1 score: 0.703383, intent acc score: 0.878193, semantic accuracy score: 0.614931. BIO f1 score 0.807210 
+[Epoch 30]: In validation process, the slot f1 score is 0.719927, the intent acc is 0.927536, the semantic acc is 0.64, cost about 22.463920 seconds.
+
+[Epoch 31]: The total slot loss on train data is 5.774701, intent data is 0.624246, bio data is 1.725759, cost about 24.1247 seconds.
+
+Test result: slot f1 score: 0.701671, intent acc score: 0.874263, semantic accuracy score: 0.605108. BIO f1 score 0.804724 
+[Epoch 31]: In validation process, the slot f1 score is 0.726771, the intent acc is 0.927536, the semantic acc is 0.64, cost about 19.062822 seconds.
+
+[Epoch 32]: The total slot loss on train data is 5.564831, intent data is 1.039354, bio data is 1.936517, cost about 28.0478 seconds.
+[Epoch 33]: The total slot loss on train data is 5.364275, intent data is 0.648863, bio data is 1.917152, cost about 23.6951 seconds.
+
+Test result: slot f1 score: 0.719560, intent acc score: 0.872299, semantic accuracy score: 0.624754. BIO f1 score 0.805947 
+[Epoch 33]: In validation process, the slot f1 score is 0.729779, the intent acc is 0.932367, the semantic acc is 0.65, cost about 22.822417 seconds.
+
+[Epoch 34]: The total slot loss on train data is 4.819624, intent data is 0.680952, bio data is 1.830033, cost about 23.5378 seconds.
+[Epoch 35]: The total slot loss on train data is 4.642236, intent data is 0.547832, bio data is 1.861048, cost about 23.3342 seconds.
+[Epoch 36]: The total slot loss on train data is 4.642061, intent data is 0.524670, bio data is 1.839089, cost about 28.8181 seconds.
+[Epoch 37]: The total slot loss on train data is 4.327250, intent data is 0.458675, bio data is 2.225245, cost about 29.0806 seconds.
+[Epoch 38]: The total slot loss on train data is 4.174571, intent data is 0.388916, bio data is 1.766163, cost about 23.0789 seconds.
+[Epoch 39]: The total slot loss on train data is 3.958518, intent data is 0.405973, bio data is 1.286644, cost about 21.3613 seconds.
+[Epoch 40]: The total slot loss on train data is 3.547508, intent data is 0.409429, bio data is 1.418597, cost about 23.05 seconds.
+[Epoch 41]: The total slot loss on train data is 3.226375, intent data is 0.645733, bio data is 1.555306, cost about 26.3417 seconds.
+[Epoch 42]: The total slot loss on train data is 3.357419, intent data is 0.594319, bio data is 1.314308, cost about 29.026 seconds.
+[Epoch 43]: The total slot loss on train data is 2.830498, intent data is 0.379081, bio data is 1.141404, cost about 26.3812 seconds.
+[Epoch 44]: The total slot loss on train data is 3.039851, intent data is 0.321219, bio data is 1.268400, cost about 22.7571 seconds.
+[Epoch 45]: The total slot loss on train data is 2.698300, intent data is 0.569329, bio data is 1.136790, cost about 26.8953 seconds.
+[Epoch 46]: The total slot loss on train data is 2.470431, intent data is 0.333985, bio data is 0.977669, cost about 29.4856 seconds.
+
+Test result: slot f1 score: 0.719312, intent acc score: 0.882122, semantic accuracy score: 0.622790. BIO f1 score 0.814241 
+[Epoch 46]: In validation process, the slot f1 score is 0.732240, the intent acc is 0.915459, the semantic acc is 0.65, cost about 20.395801 seconds.
+
+[Epoch 47]: The total slot loss on train data is 2.458292, intent data is 0.380947, bio data is 1.208013, cost about 32.0507 seconds.
+[Epoch 48]: The total slot loss on train data is 2.496301, intent data is 0.347191, bio data is 0.983014, cost about 30.4885 seconds.
+[Epoch 49]: The total slot loss on train data is 2.142118, intent data is 0.248164, bio data is 1.098428, cost about 24.6851 seconds.
+
+Test result: slot f1 score: 0.714286, intent acc score: 0.886051, semantic accuracy score: 0.611002. BIO f1 score 0.810304 
+[Epoch 49]: In validation process, the slot f1 score is 0.723133, the intent acc is 0.934783, the semantic acc is 0.66, cost about 22.728693 seconds.
+
+[Epoch 50]: The total slot loss on train data is 1.997335, intent data is 0.193205, bio data is 1.017110, cost about 25.4843 seconds.
+[Epoch 51]: The total slot loss on train data is 1.952015, intent data is 0.235335, bio data is 1.322532, cost about 23.1762 seconds.
+[Epoch 52]: The total slot loss on train data is 1.791353, intent data is 0.204333, bio data is 1.098186, cost about 28.4664 seconds.
+[Epoch 53]: The total slot loss on train data is 1.733793, intent data is 0.218182, bio data is 1.349253, cost about 31.0181 seconds.
+
+Test result: slot f1 score: 0.718110, intent acc score: 0.870334, semantic accuracy score: 0.611002. BIO f1 score 0.810642 
+[Epoch 53]: In validation process, the slot f1 score is 0.738205, the intent acc is 0.937198, the semantic acc is 0.67, cost about 20.162496 seconds.
+
+[Epoch 54]: The total slot loss on train data is 1.712415, intent data is 0.245769, bio data is 1.078040, cost about 29.6977 seconds.
+[Epoch 55]: The total slot loss on train data is 1.669243, intent data is 0.257915, bio data is 1.096467, cost about 23.8436 seconds.
+[Epoch 56]: The total slot loss on train data is 1.603705, intent data is 0.275220, bio data is 1.492583, cost about 30.7609 seconds.
+[Epoch 57]: The total slot loss on train data is 1.384076, intent data is 0.168916, bio data is 0.941839, cost about 26.6708 seconds.
+[Epoch 58]: The total slot loss on train data is 1.337676, intent data is 0.184681, bio data is 0.773278, cost about 24.4795 seconds.
+[Epoch 59]: The total slot loss on train data is 1.261607, intent data is 0.643206, bio data is 0.878250, cost about 25.4678 seconds.
+[Epoch 60]: The total slot loss on train data is 1.680388, intent data is 0.518803, bio data is 1.200854, cost about 28.1922 seconds.
+[Epoch 61]: The total slot loss on train data is 1.344556, intent data is 0.318223, bio data is 1.079157, cost about 28.9963 seconds.
+[Epoch 62]: The total slot loss on train data is 1.591447, intent data is 0.268693, bio data is 1.177785, cost about 26.711 seconds.
+[Epoch 63]: The total slot loss on train data is 1.474333, intent data is 0.255173, bio data is 0.977459, cost about 25.4574 seconds.
+[Epoch 64]: The total slot loss on train data is 1.198052, intent data is 0.125522, bio data is 0.881259, cost about 27.9386 seconds.
+[Epoch 65]: The total slot loss on train data is 1.610620, intent data is 0.145327, bio data is 1.231784, cost about 28.9065 seconds.
+[Epoch 66]: The total slot loss on train data is 1.111899, intent data is 0.195059, bio data is 0.934351, cost about 25.2122 seconds.
+[Epoch 67]: The total slot loss on train data is 1.077662, intent data is 0.458686, bio data is 0.829944, cost about 21.122 seconds.
+[Epoch 68]: The total slot loss on train data is 1.097859, intent data is 0.323230, bio data is 0.808339, cost about 26.105 seconds.
+[Epoch 69]: The total slot loss on train data is 0.977605, intent data is 0.264339, bio data is 0.734175, cost about 29.2486 seconds.
+[Epoch 70]: The total slot loss on train data is 1.116874, intent data is 0.360728, bio data is 0.865533, cost about 25.6173 seconds.
+[Epoch 71]: The total slot loss on train data is 1.244527, intent data is 0.270464, bio data is 1.043032, cost about 23.7518 seconds.
+[Epoch 72]: The total slot loss on train data is 1.007330, intent data is 0.307418, bio data is 0.819287, cost about 20.6575 seconds.
+[Epoch 73]: The total slot loss on train data is 0.865957, intent data is 0.193503, bio data is 0.582673, cost about 25.5654 seconds.
+[Epoch 74]: The total slot loss on train data is 0.756568, intent data is 0.087526, bio data is 0.492564, cost about 29.371 seconds.
+[Epoch 75]: The total slot loss on train data is 0.761385, intent data is 0.149464, bio data is 0.706385, cost about 24.5195 seconds.
+[Epoch 76]: The total slot loss on train data is 0.773175, intent data is 0.106293, bio data is 0.809913, cost about 24.7968 seconds.
+[Epoch 77]: The total slot loss on train data is 0.973734, intent data is 0.216179, bio data is 0.874559, cost about 28.1049 seconds.
+[Epoch 78]: The total slot loss on train data is 1.086916, intent data is 0.116025, bio data is 0.903162, cost about 29.1351 seconds.
+
+Test result: slot f1 score: 0.719066, intent acc score: 0.878193, semantic accuracy score: 0.622790. BIO f1 score 0.808081 
+[Epoch 78]: In validation process, the slot f1 score is 0.743891, the intent acc is 0.915459, the semantic acc is 0.66, cost about 18.905493 seconds.
+
+[Epoch 79]: The total slot loss on train data is 0.819113, intent data is 0.145750, bio data is 0.859863, cost about 29.4177 seconds.
+[Epoch 80]: The total slot loss on train data is 0.980243, intent data is 0.131826, bio data is 0.728081, cost about 23.0399 seconds.
+[Epoch 81]: The total slot loss on train data is 0.966502, intent data is 0.422220, bio data is 0.981265, cost about 27.2368 seconds.
+[Epoch 82]: The total slot loss on train data is 0.993884, intent data is 0.340218, bio data is 0.872024, cost about 29.5101 seconds.
+[Epoch 83]: The total slot loss on train data is 0.786109, intent data is 0.155893, bio data is 0.818921, cost about 22.8941 seconds.
+[Epoch 84]: The total slot loss on train data is 1.059242, intent data is 0.212774, bio data is 0.822511, cost about 23.4694 seconds.
+[Epoch 85]: The total slot loss on train data is 0.718598, intent data is 0.139146, bio data is 0.496061, cost about 27.2669 seconds.
+[Epoch 86]: The total slot loss on train data is 0.580418, intent data is 0.114306, bio data is 0.879332, cost about 29.5168 seconds.
+[Epoch 87]: The total slot loss on train data is 0.746657, intent data is 0.174580, bio data is 0.617841, cost about 23.8012 seconds.
+
+Test result: slot f1 score: 0.727273, intent acc score: 0.876228, semantic accuracy score: 0.634578. BIO f1 score 0.813084 
+[Epoch 87]: In validation process, the slot f1 score is 0.745917, the intent acc is 0.917874, the semantic acc is 0.66, cost about 22.460353 seconds.
+
+[Epoch 88]: The total slot loss on train data is 0.673823, intent data is 0.195394, bio data is 0.573939, cost about 23.6519 seconds.
+[Epoch 89]: The total slot loss on train data is 0.581723, intent data is 0.106693, bio data is 0.611508, cost about 21.9579 seconds.
+[Epoch 90]: The total slot loss on train data is 0.595447, intent data is 0.095289, bio data is 0.682050, cost about 24.0149 seconds.
+[Epoch 91]: The total slot loss on train data is 0.540012, intent data is 0.139020, bio data is 0.434200, cost about 28.8969 seconds.
+[Epoch 92]: The total slot loss on train data is 0.571034, intent data is 0.158413, bio data is 0.636175, cost about 28.0618 seconds.
+[Epoch 93]: The total slot loss on train data is 0.721849, intent data is 0.089654, bio data is 0.769747, cost about 22.6789 seconds.
+[Epoch 94]: The total slot loss on train data is 0.766613, intent data is 0.119593, bio data is 0.633590, cost about 27.1464 seconds.
+[Epoch 95]: The total slot loss on train data is 0.756383, intent data is 0.157434, bio data is 0.732074, cost about 28.6725 seconds.
+[Epoch 96]: The total slot loss on train data is 0.555169, intent data is 0.177463, bio data is 0.406797, cost about 27.0439 seconds.
+[Epoch 97]: The total slot loss on train data is 0.465124, intent data is 0.131312, bio data is 0.435228, cost about 21.0892 seconds.
+[Epoch 98]: The total slot loss on train data is 0.381860, intent data is 0.160215, bio data is 0.489555, cost about 22.7156 seconds.
+[Epoch 99]: The total slot loss on train data is 0.361306, intent data is 0.099271, bio data is 0.412120, cost about 28.1122 seconds.
+[Epoch 100]: The total slot loss on train data is 0.470663, intent data is 0.114562, bio data is 0.351338, cost about 28.7401 seconds.
+[Epoch 101]: The total slot loss on train data is 0.438038, intent data is 0.250041, bio data is 0.358175, cost about 27.3636 seconds.
+[Epoch 102]: The total slot loss on train data is 0.661494, intent data is 0.167453, bio data is 0.503937, cost about 26.4225 seconds.
+[Epoch 103]: The total slot loss on train data is 0.679997, intent data is 0.091442, bio data is 0.533858, cost about 22.2313 seconds.
+[Epoch 104]: The total slot loss on train data is 0.757221, intent data is 0.088045, bio data is 0.560881, cost about 28.0498 seconds.
+[Epoch 105]: The total slot loss on train data is 0.505948, intent data is 0.067614, bio data is 0.420694, cost about 28.9509 seconds.
+[Epoch 106]: The total slot loss on train data is 0.583806, intent data is 0.046864, bio data is 0.400390, cost about 26.6846 seconds.
+[Epoch 107]: The total slot loss on train data is 0.587210, intent data is 0.145606, bio data is 0.808170, cost about 22.9954 seconds.
+[Epoch 108]: The total slot loss on train data is 0.564432, intent data is 0.182598, bio data is 0.500515, cost about 24.8441 seconds.
+[Epoch 109]: The total slot loss on train data is 0.633374, intent data is 0.177212, bio data is 0.679123, cost about 28.9524 seconds.
+
+Test result: slot f1 score: 0.729430, intent acc score: 0.874263, semantic accuracy score: 0.628684. BIO f1 score 0.821570 
+[Epoch 109]: In validation process, the slot f1 score is 0.744739, the intent acc is 0.922705, the semantic acc is 0.67, cost about 18.615694 seconds.
+
+[Epoch 110]: The total slot loss on train data is 0.432175, intent data is 0.649344, bio data is 0.573497, cost about 29.4906 seconds.
+[Epoch 111]: The total slot loss on train data is 0.552931, intent data is 0.119803, bio data is 0.446340, cost about 26.3749 seconds.
+[Epoch 112]: The total slot loss on train data is 0.351708, intent data is 0.119576, bio data is 0.397034, cost about 23.332 seconds.
+[Epoch 113]: The total slot loss on train data is 0.605948, intent data is 0.097379, bio data is 0.525738, cost about 22.3124 seconds.
+[Epoch 114]: The total slot loss on train data is 0.453787, intent data is 0.145551, bio data is 0.685621, cost about 29.3138 seconds.
+[Epoch 115]: The total slot loss on train data is 0.746827, intent data is 0.102083, bio data is 1.087892, cost about 28.408 seconds.
+[Epoch 116]: The total slot loss on train data is 0.673830, intent data is 0.170400, bio data is 1.034778, cost about 25.6683 seconds.
+[Epoch 117]: The total slot loss on train data is 0.547731, intent data is 0.136614, bio data is 0.474314, cost about 23.4719 seconds.
+[Epoch 118]: The total slot loss on train data is 0.483833, intent data is 0.282301, bio data is 0.570812, cost about 27.9698 seconds.
+[Epoch 119]: The total slot loss on train data is 0.451846, intent data is 0.138964, bio data is 0.374735, cost about 28.7894 seconds.
+[Epoch 120]: The total slot loss on train data is 0.491220, intent data is 0.062475, bio data is 0.393585, cost about 26.8876 seconds.
+[Epoch 121]: The total slot loss on train data is 0.382936, intent data is 0.103563, bio data is 0.400408, cost about 29.2219 seconds.
+[Epoch 122]: The total slot loss on train data is 0.458459, intent data is 0.088992, bio data is 0.410292, cost about 25.2724 seconds.
+[Epoch 123]: The total slot loss on train data is 0.497883, intent data is 0.190082, bio data is 0.558485, cost about 23.9878 seconds.
+[Epoch 124]: The total slot loss on train data is 0.326042, intent data is 0.107346, bio data is 0.599293, cost about 28.911 seconds.
+[Epoch 125]: The total slot loss on train data is 0.317930, intent data is 0.198846, bio data is 0.416547, cost about 28.4493 seconds.
+[Epoch 126]: The total slot loss on train data is 0.504962, intent data is 0.149393, bio data is 0.386632, cost about 24.5685 seconds.
+[Epoch 127]: The total slot loss on train data is 0.472047, intent data is 0.159336, bio data is 0.314713, cost about 23.1274 seconds.
+[Epoch 128]: The total slot loss on train data is 0.556010, intent data is 0.050278, bio data is 0.793604, cost about 27.505 seconds.
+[Epoch 129]: The total slot loss on train data is 0.644859, intent data is 0.364698, bio data is 0.484718, cost about 19.7295 seconds.
+[Epoch 130]: The total slot loss on train data is 0.330025, intent data is 0.229388, bio data is 0.443990, cost about 24.0183 seconds.
+[Epoch 131]: The total slot loss on train data is 0.240057, intent data is 0.205686, bio data is 0.320171, cost about 27.8739 seconds.
+[Epoch 132]: The total slot loss on train data is 0.365973, intent data is 0.213784, bio data is 0.760358, cost about 21.3808 seconds.
+[Epoch 133]: The total slot loss on train data is 0.551727, intent data is 0.140725, bio data is 0.513003, cost about 19.7176 seconds.
+[Epoch 134]: The total slot loss on train data is 0.370899, intent data is 0.225421, bio data is 0.406720, cost about 22.5884 seconds.
+[Epoch 135]: The total slot loss on train data is 0.405794, intent data is 0.162622, bio data is 0.314458, cost about 29.5491 seconds.
+[Epoch 136]: The total slot loss on train data is 0.507174, intent data is 0.320326, bio data is 0.516429, cost about 20.7737 seconds.
+[Epoch 137]: The total slot loss on train data is 0.375967, intent data is 0.195396, bio data is 0.400356, cost about 19.5889 seconds.
+[Epoch 138]: The total slot loss on train data is 0.339173, intent data is 0.095628, bio data is 0.324632, cost about 26.7554 seconds.
+[Epoch 139]: The total slot loss on train data is 0.256144, intent data is 0.065985, bio data is 0.401007, cost about 29.6002 seconds.
+[Epoch 140]: The total slot loss on train data is 0.395097, intent data is 0.110621, bio data is 0.524267, cost about 22.5058 seconds.
+[Epoch 141]: The total slot loss on train data is 0.532498, intent data is 0.088906, bio data is 0.752869, cost about 20.189 seconds.
+[Epoch 142]: The total slot loss on train data is 0.403067, intent data is 0.098605, bio data is 0.443451, cost about 20.9762 seconds.
+[Epoch 143]: The total slot loss on train data is 0.481039, intent data is 0.176810, bio data is 0.541460, cost about 27.9889 seconds.
+[Epoch 144]: The total slot loss on train data is 0.507735, intent data is 0.060899, bio data is 0.372356, cost about 26.6248 seconds.
+[Epoch 145]: The total slot loss on train data is 0.461538, intent data is 0.074986, bio data is 0.506201, cost about 20.1005 seconds.
+[Epoch 146]: The total slot loss on train data is 0.276686, intent data is 0.034924, bio data is 0.391654, cost about 20.1018 seconds.
+[Epoch 147]: The total slot loss on train data is 0.261835, intent data is 0.045664, bio data is 0.375533, cost about 25.8487 seconds.
+[Epoch 148]: The total slot loss on train data is 0.311251, intent data is 0.061248, bio data is 0.307479, cost about 29.3917 seconds.
+[Epoch 149]: The total slot loss on train data is 0.418315, intent data is 0.064496, bio data is 0.566909, cost about 21.137 seconds.
+[Epoch 150]: The total slot loss on train data is 0.375974, intent data is 0.059327, bio data is 0.466018, cost about 19.5137 seconds.
+[Epoch 151]: The total slot loss on train data is 0.254565, intent data is 0.035763, bio data is 0.316776, cost about 24.8523 seconds.
+[Epoch 152]: The total slot loss on train data is 0.307970, intent data is 0.066798, bio data is 0.354220, cost about 20.8921 seconds.
+[Epoch 153]: The total slot loss on train data is 0.353416, intent data is 0.105333, bio data is 0.343939, cost about 29.2511 seconds.
+[Epoch 154]: The total slot loss on train data is 0.248092, intent data is 0.077302, bio data is 0.495215, cost about 26.3649 seconds.
+[Epoch 155]: The total slot loss on train data is 0.214762, intent data is 0.063184, bio data is 0.253433, cost about 19.5513 seconds.
+[Epoch 156]: The total slot loss on train data is 0.366442, intent data is 0.149274, bio data is 0.264678, cost about 20.1191 seconds.
+[Epoch 157]: The total slot loss on train data is 0.345598, intent data is 0.163020, bio data is 0.359955, cost about 26.3055 seconds.
+[Epoch 158]: The total slot loss on train data is 0.562612, intent data is 0.070977, bio data is 0.429046, cost about 28.128 seconds.
+[Epoch 159]: The total slot loss on train data is 0.578134, intent data is 0.118081, bio data is 0.344799, cost about 19.3786 seconds.
+[Epoch 160]: The total slot loss on train data is 0.507850, intent data is 0.125735, bio data is 0.596024, cost about 25.0787 seconds.
+[Epoch 161]: The total slot loss on train data is 0.452410, intent data is 0.057512, bio data is 0.369422, cost about 19.4927 seconds.
+[Epoch 162]: The total slot loss on train data is 0.347298, intent data is 0.047913, bio data is 0.297255, cost about 21.0205 seconds.
+[Epoch 163]: The total slot loss on train data is 0.366968, intent data is 0.063977, bio data is 0.216162, cost about 29.3651 seconds.
+[Epoch 164]: The total slot loss on train data is 0.509290, intent data is 0.085170, bio data is 0.468789, cost about 26.8462 seconds.
+[Epoch 165]: The total slot loss on train data is 0.420882, intent data is 0.068320, bio data is 0.308080, cost about 22.5986 seconds.
+[Epoch 166]: The total slot loss on train data is 0.651501, intent data is 0.100482, bio data is 0.540880, cost about 27.1049 seconds.
+[Epoch 167]: The total slot loss on train data is 0.237524, intent data is 0.059602, bio data is 0.371481, cost about 19.708 seconds.
+[Epoch 168]: The total slot loss on train data is 0.233503, intent data is 0.048844, bio data is 0.271933, cost about 20.0445 seconds.
+[Epoch 169]: The total slot loss on train data is 0.277461, intent data is 0.055816, bio data is 0.356644, cost about 24.5959 seconds.
+[Epoch 170]: The total slot loss on train data is 0.427214, intent data is 0.047047, bio data is 0.401468, cost about 24.398 seconds.
+[Epoch 171]: The total slot loss on train data is 0.231394, intent data is 0.106516, bio data is 0.207753, cost about 28.7119 seconds.
+[Epoch 172]: The total slot loss on train data is 0.357646, intent data is 0.069606, bio data is 0.301383, cost about 21.5207 seconds.
+[Epoch 173]: The total slot loss on train data is 0.238305, intent data is 0.057203, bio data is 0.317534, cost about 19.1119 seconds.
+[Epoch 174]: The total slot loss on train data is 0.388379, intent data is 0.080222, bio data is 0.381070, cost about 27.2246 seconds.
+[Epoch 175]: The total slot loss on train data is 0.313290, intent data is 0.059868, bio data is 0.255472, cost about 27.2904 seconds.
+[Epoch 176]: The total slot loss on train data is 0.281211, intent data is 0.549820, bio data is 0.347863, cost about 28.7468 seconds.
+[Epoch 177]: The total slot loss on train data is 0.317556, intent data is 0.265742, bio data is 0.370530, cost about 29.4219 seconds.
+
+Test result: slot f1 score: 0.732394, intent acc score: 0.886051, semantic accuracy score: 0.652259. BIO f1 score 0.808144 
+[Epoch 177]: In validation process, the slot f1 score is 0.748175, the intent acc is 0.929952, the semantic acc is 0.67, cost about 19.333842 seconds.
+
+[Epoch 178]: The total slot loss on train data is 0.375340, intent data is 0.086279, bio data is 0.346242, cost about 29.2005 seconds.
+[Epoch 179]: The total slot loss on train data is 0.327402, intent data is 0.112383, bio data is 0.512983, cost about 24.5434 seconds.
+[Epoch 180]: The total slot loss on train data is 0.332916, intent data is 0.120817, bio data is 0.397276, cost about 19.6397 seconds.
+[Epoch 181]: The total slot loss on train data is 0.446877, intent data is 0.036835, bio data is 0.567016, cost about 20.139 seconds.
+[Epoch 182]: The total slot loss on train data is 0.432227, intent data is 0.126068, bio data is 0.504674, cost about 29.1966 seconds.
+[Epoch 183]: The total slot loss on train data is 0.264949, intent data is 0.291162, bio data is 0.404690, cost about 24.6505 seconds.
+
+Test result: slot f1 score: 0.735524, intent acc score: 0.886051, semantic accuracy score: 0.666012. BIO f1 score 0.818182 
+[Epoch 183]: In validation process, the slot f1 score is 0.738854, the intent acc is 0.929952, the semantic acc is 0.68, cost about 22.419639 seconds.
+
+[Epoch 184]: The total slot loss on train data is 0.216460, intent data is 0.241363, bio data is 0.372440, cost about 23.5421 seconds.
+[Epoch 185]: The total slot loss on train data is 0.248765, intent data is 0.074549, bio data is 0.353338, cost about 24.8309 seconds.
+[Epoch 186]: The total slot loss on train data is 0.245542, intent data is 0.072529, bio data is 0.263088, cost about 29.1366 seconds.
+[Epoch 187]: The total slot loss on train data is 0.251224, intent data is 0.041220, bio data is 0.222149, cost about 27.418 seconds.
+[Epoch 188]: The total slot loss on train data is 0.284607, intent data is 0.111138, bio data is 0.271839, cost about 23.1922 seconds.
+[Epoch 189]: The total slot loss on train data is 0.266760, intent data is 0.034707, bio data is 0.261010, cost about 28.935 seconds.
+[Epoch 190]: The total slot loss on train data is 0.297174, intent data is 0.046015, bio data is 0.470232, cost about 28.6783 seconds.
+[Epoch 191]: The total slot loss on train data is 0.197259, intent data is 0.023275, bio data is 0.274783, cost about 20.8768 seconds.
+[Epoch 192]: The total slot loss on train data is 0.249227, intent data is 0.082925, bio data is 0.305516, cost about 29.4534 seconds.
+[Epoch 193]: The total slot loss on train data is 0.231896, intent data is 0.106219, bio data is 0.244536, cost about 23.4028 seconds.
+[Epoch 194]: The total slot loss on train data is 0.268282, intent data is 0.090322, bio data is 0.201465, cost about 24.6994 seconds.
+[Epoch 195]: The total slot loss on train data is 0.204159, intent data is 0.122804, bio data is 0.166413, cost about 28.6447 seconds.
+[Epoch 196]: The total slot loss on train data is 0.258117, intent data is 0.245301, bio data is 0.212847, cost about 28.9518 seconds.
+[Epoch 197]: The total slot loss on train data is 0.206262, intent data is 0.098719, bio data is 0.297419, cost about 21.2264 seconds.
+[Epoch 198]: The total slot loss on train data is 0.219603, intent data is 0.142849, bio data is 0.272769, cost about 23.8279 seconds.
+[Epoch 199]: The total slot loss on train data is 0.192699, intent data is 0.198492, bio data is 0.271518, cost about 28.7694 seconds.
+[Epoch 200]: The total slot loss on train data is 0.332395, intent data is 0.366526, bio data is 0.317319, cost about 29.4254 seconds.
+[Epoch 201]: The total slot loss on train data is 0.248637, intent data is 0.148700, bio data is 0.231702, cost about 24.1648 seconds.
+[Epoch 202]: The total slot loss on train data is 0.228742, intent data is 0.227572, bio data is 0.348727, cost about 29.6468 seconds.
+[Epoch 203]: The total slot loss on train data is 0.217330, intent data is 0.077613, bio data is 0.302352, cost about 28.5985 seconds.
+[Epoch 204]: The total slot loss on train data is 0.291984, intent data is 0.073072, bio data is 0.402466, cost about 25.5014 seconds.
+[Epoch 205]: The total slot loss on train data is 0.405314, intent data is 0.088751, bio data is 0.268944, cost about 20.5568 seconds.
+[Epoch 206]: The total slot loss on train data is 0.298521, intent data is 0.112837, bio data is 0.204035, cost about 24.0621 seconds.
+[Epoch 207]: The total slot loss on train data is 0.441256, intent data is 0.084762, bio data is 0.280578, cost about 29.5736 seconds.
+[Epoch 208]: The total slot loss on train data is 0.311949, intent data is 0.052353, bio data is 0.259358, cost about 25.6773 seconds.
+[Epoch 209]: The total slot loss on train data is 0.293130, intent data is 0.114290, bio data is 0.303553, cost about 21.1935 seconds.
+[Epoch 210]: The total slot loss on train data is 0.231787, intent data is 0.055905, bio data is 0.296028, cost about 26.0317 seconds.
+[Epoch 211]: The total slot loss on train data is 0.236870, intent data is 0.054847, bio data is 0.230646, cost about 29.5049 seconds.
+[Epoch 212]: The total slot loss on train data is 0.199704, intent data is 0.082575, bio data is 0.281919, cost about 27.8112 seconds.
+[Epoch 213]: The total slot loss on train data is 0.328109, intent data is 0.061398, bio data is 0.284199, cost about 23.4239 seconds.
+[Epoch 214]: The total slot loss on train data is 0.321611, intent data is 0.050164, bio data is 0.321664, cost about 25.4755 seconds.
+[Epoch 215]: The total slot loss on train data is 0.417380, intent data is 0.153152, bio data is 0.409409, cost about 29.154 seconds.
+[Epoch 216]: The total slot loss on train data is 0.248411, intent data is 0.115810, bio data is 0.258848, cost about 29.221 seconds.
+[Epoch 217]: The total slot loss on train data is 0.436105, intent data is 0.038895, bio data is 0.329467, cost about 25.5255 seconds.
+[Epoch 218]: The total slot loss on train data is 0.305731, intent data is 0.060537, bio data is 0.282409, cost about 22.0579 seconds.
+[Epoch 219]: The total slot loss on train data is 0.498878, intent data is 0.588448, bio data is 0.403643, cost about 29.0687 seconds.

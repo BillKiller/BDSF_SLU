@@ -1,0 +1,512 @@
+[2021-04-09 15:43:46,981][140590680069952][train.py][line: 115][INFO] ## Namespace(attention_hidden_dim=1024, attention_output_dim=128, batch_size=16, bio_decoder_hidden_dim=64, bio_embedding_dim=8, bio_forcing_rate=0.9, bio_num=3, data_dir='data/smp', differentiable=False, dropout_rate=0.4, encoder_hidden_dim=256, index=3, intent_decoder_hidden_dim=64, intent_embedding_dim=8, intent_forcing_rate=0.9, l2_penalty=1e-06, learning_rate=0.001, num_epoch=300, random_state=3, save_dir='save/smp_3', slot_decoder_hidden_dim=64, slot_embedding_dim=32, slot_forcing_rate=0.9, template_encoder=True, template_share_encoder=False, word_embedding_dim=256)
+[2021-04-09 15:43:46,982][140590680069952][train.py][line: 116][INFO] ## ModelManager(
+  (_ModelManager__embedding): EmbeddingCollection(
+    (_EmbeddingCollection__embedding_layer): Embedding(1437, 256)
+  )
+  (_ModelManager__encoder): LSTMEncoder(
+    (_LSTMEncoder__dropout_layer): Dropout(p=0.4, inplace=False)
+    (_LSTMEncoder__lstm_layer): LSTM(256, 128, batch_first=True, dropout=0.4, bidirectional=True)
+  )
+  (_ModelManager__attention): SelfAttention(
+    (_SelfAttention__dropout_layer): Dropout(p=0.4, inplace=False)
+    (_SelfAttention__attention_layer): QKVAttention(
+      (_QKVAttention__query_layer): Linear(in_features=256, out_features=1024, bias=True)
+      (_QKVAttention__key_layer): Linear(in_features=256, out_features=1024, bias=True)
+      (_QKVAttention__value_layer): Linear(in_features=256, out_features=128, bias=True)
+      (_QKVAttention__dropout_layer): Dropout(p=0.4, inplace=False)
+    )
+  )
+  (_ModelManager__intent_decoder): LSTMDecoder(
+    (_LSTMDecoder__embedding_layer): Embedding(18, 8)
+    (_LSTMDecoder__dropout_layer): Dropout(p=0.4, inplace=False)
+    (_LSTMDecoder__lstm_layer): LSTM(392, 64, batch_first=True, dropout=0.4)
+    (_LSTMDecoder__linear_layer): Linear(in_features=64, out_features=18, bias=True)
+  )
+  (_ModelManager__slot_decoder): LSTMDecoder(
+    (_LSTMDecoder__embedding_layer): Embedding(110, 32)
+    (_LSTMDecoder__dropout_layer): Dropout(p=0.4, inplace=False)
+    (_LSTMDecoder__lstm_layer): LSTM(949, 64, batch_first=True, dropout=0.4)
+    (_LSTMDecoder__linear_layer): Linear(in_features=64, out_features=110, bias=True)
+  )
+  (_ModelManager__bio_decoder): LSTMDecoder(
+    (_LSTMDecoder__embedding_layer): Embedding(3, 8)
+    (_LSTMDecoder__dropout_layer): Dropout(p=0.4, inplace=False)
+    (_LSTMDecoder__lstm_layer): LSTM(392, 64, batch_first=True, dropout=0.4)
+    (_LSTMDecoder__linear_layer): Linear(in_features=64, out_features=3, bias=True)
+  )
+  (_ModelManager__dropout_layer): Dropout(p=0.4, inplace=False)
+  (_ModelManager__template_encoder): LSTM(256, 256, batch_first=True, dropout=0.4, bidirectional=True)
+  (_ModelManager__intent_embedding): Embedding(18, 18)
+  (_ModelManager__bio_embedding): Embedding(3, 3)
+)
+[2021-04-09 15:44:20,374][140590680069952][process.py][line: 147][INFO] ## [Epoch  0]: The total slot loss on train data is 247.188236, intent data is 152.336784, bio data is 73.735682, cost about 31.0845 seconds.
+[2021-04-09 15:44:35,430][140590680069952][process.py][line: 165][INFO] ## 
+Test result: slot f1 score: 0.089980, intent acc score: 0.648330, semantic accuracy score: 0.023576. BIO f1 score 0.407031 
+[2021-04-09 15:44:35,639][140590680069952][process.py][line: 178][INFO] ## [Epoch  0]: In validation process, the slot f1 score is 0.052319, the intent acc is 0.698068, the semantic acc is 0.03, cost about 15.264886 seconds.
+
+[2021-04-09 15:45:06,470][140590680069952][process.py][line: 147][INFO] ## [Epoch  1]: The total slot loss on train data is 177.569504, intent data is 57.670597, bio data is 38.672502, cost about 30.8312 seconds.
+[2021-04-09 15:45:21,631][140590680069952][process.py][line: 165][INFO] ## 
+Test result: slot f1 score: 0.162325, intent acc score: 0.703340, semantic accuracy score: 0.074656. BIO f1 score 0.623441 
+[2021-04-09 15:45:21,835][140590680069952][process.py][line: 178][INFO] ## [Epoch  1]: In validation process, the slot f1 score is 0.153488, the intent acc is 0.760870, the semantic acc is 0.06, cost about 15.364388 seconds.
+
+[2021-04-09 15:45:52,991][140590680069952][process.py][line: 147][INFO] ## [Epoch  2]: The total slot loss on train data is 149.031057, intent data is 31.656098, bio data is 27.224246, cost about 31.156 seconds.
+[2021-04-09 15:46:08,110][140590680069952][process.py][line: 165][INFO] ## 
+Test result: slot f1 score: 0.213030, intent acc score: 0.772102, semantic accuracy score: 0.168959. BIO f1 score 0.684729 
+[2021-04-09 15:46:08,331][140590680069952][process.py][line: 178][INFO] ## [Epoch  2]: In validation process, the slot f1 score is 0.188634, the intent acc is 0.809179, the semantic acc is 0.14, cost about 15.340156 seconds.
+
+[2021-04-09 15:46:39,370][140590680069952][process.py][line: 147][INFO] ## [Epoch  3]: The total slot loss on train data is 122.870924, intent data is 20.538080, bio data is 21.725641, cost about 31.0388 seconds.
+[2021-04-09 15:46:54,669][140590680069952][process.py][line: 165][INFO] ## 
+Test result: slot f1 score: 0.316232, intent acc score: 0.779961, semantic accuracy score: 0.263261. BIO f1 score 0.713001 
+[2021-04-09 15:46:54,942][140590680069952][process.py][line: 178][INFO] ## [Epoch  3]: In validation process, the slot f1 score is 0.306358, the intent acc is 0.840580, the semantic acc is 0.24, cost about 15.571455 seconds.
+
+[2021-04-09 15:47:25,844][140590680069952][process.py][line: 147][INFO] ## [Epoch  4]: The total slot loss on train data is 100.922083, intent data is 14.780961, bio data is 17.640175, cost about 30.9015 seconds.
+[2021-04-09 15:47:41,047][140590680069952][process.py][line: 165][INFO] ## 
+Test result: slot f1 score: 0.380306, intent acc score: 0.807466, semantic accuracy score: 0.318271. BIO f1 score 0.758958 
+[2021-04-09 15:47:41,167][140590680069952][process.py][line: 178][INFO] ## [Epoch  4]: In validation process, the slot f1 score is 0.347826, the intent acc is 0.864734, the semantic acc is 0.28, cost about 15.323550 seconds.
+
+[2021-04-09 15:48:11,810][140590680069952][process.py][line: 147][INFO] ## [Epoch  5]: The total slot loss on train data is 84.576072, intent data is 10.263909, bio data is 15.429404, cost about 30.6429 seconds.
+[2021-04-09 15:48:26,978][140590680069952][process.py][line: 165][INFO] ## 
+Test result: slot f1 score: 0.413043, intent acc score: 0.833006, semantic accuracy score: 0.339882. BIO f1 score 0.739060 
+[2021-04-09 15:48:27,121][140590680069952][process.py][line: 178][INFO] ## [Epoch  5]: In validation process, the slot f1 score is 0.393762, the intent acc is 0.881643, the semantic acc is 0.32, cost about 15.310588 seconds.
+
+[2021-04-09 15:48:58,512][140590680069952][process.py][line: 147][INFO] ## [Epoch  6]: The total slot loss on train data is 71.472266, intent data is 8.560367, bio data is 14.273655, cost about 31.3912 seconds.
+[2021-04-09 15:49:13,634][140590680069952][process.py][line: 165][INFO] ## 
+Test result: slot f1 score: 0.438333, intent acc score: 0.848723, semantic accuracy score: 0.373281. BIO f1 score 0.748190 
+[2021-04-09 15:49:13,787][140590680069952][process.py][line: 178][INFO] ## [Epoch  6]: In validation process, the slot f1 score is 0.419197, the intent acc is 0.891304, the semantic acc is 0.35, cost about 15.274014 seconds.
+
+[2021-04-09 15:49:44,455][140590680069952][process.py][line: 147][INFO] ## [Epoch  7]: The total slot loss on train data is 60.570050, intent data is 6.533696, bio data is 11.734844, cost about 30.6687 seconds.
+[2021-04-09 15:49:59,554][140590680069952][process.py][line: 165][INFO] ## 
+Test result: slot f1 score: 0.467912, intent acc score: 0.862475, semantic accuracy score: 0.410609. BIO f1 score 0.764984 
+[2021-04-09 15:49:59,667][140590680069952][process.py][line: 178][INFO] ## [Epoch  7]: In validation process, the slot f1 score is 0.461832, the intent acc is 0.910628, the semantic acc is 0.40, cost about 15.211796 seconds.
+
+[2021-04-09 15:50:30,668][140590680069952][process.py][line: 147][INFO] ## [Epoch  8]: The total slot loss on train data is 52.005313, intent data is 4.960027, bio data is 11.222598, cost about 31.0007 seconds.
+[2021-04-09 15:50:45,825][140590680069952][process.py][line: 165][INFO] ## 
+Test result: slot f1 score: 0.516963, intent acc score: 0.862475, semantic accuracy score: 0.465619. BIO f1 score 0.792363 
+[2021-04-09 15:50:45,945][140590680069952][process.py][line: 178][INFO] ## [Epoch  8]: In validation process, the slot f1 score is 0.486230, the intent acc is 0.905797, the semantic acc is 0.42, cost about 15.276738 seconds.
+
+[2021-04-09 15:51:16,215][140590680069952][process.py][line: 147][INFO] ## [Epoch  9]: The total slot loss on train data is 44.395509, intent data is 3.986142, bio data is 8.511008, cost about 30.2699 seconds.
+[2021-04-09 15:51:31,360][140590680069952][process.py][line: 165][INFO] ## 
+Test result: slot f1 score: 0.522928, intent acc score: 0.870334, semantic accuracy score: 0.469548. BIO f1 score 0.790514 
+[2021-04-09 15:51:31,628][140590680069952][process.py][line: 178][INFO] ## [Epoch  9]: In validation process, the slot f1 score is 0.512428, the intent acc is 0.913043, the semantic acc is 0.45, cost about 15.412674 seconds.
+
+[2021-04-09 15:52:02,490][140590680069952][process.py][line: 147][INFO] ## [Epoch 10]: The total slot loss on train data is 39.264729, intent data is 3.307269, bio data is 7.729272, cost about 30.8617 seconds.
+[2021-04-09 15:52:17,776][140590680069952][process.py][line: 165][INFO] ## 
+Test result: slot f1 score: 0.552321, intent acc score: 0.850688, semantic accuracy score: 0.483301. BIO f1 score 0.781591 
+[2021-04-09 15:52:17,888][140590680069952][process.py][line: 178][INFO] ## [Epoch 10]: In validation process, the slot f1 score is 0.519774, the intent acc is 0.913043, the semantic acc is 0.45, cost about 15.397592 seconds.
+
+[2021-04-09 15:52:48,877][140590680069952][process.py][line: 147][INFO] ## [Epoch 11]: The total slot loss on train data is 34.923180, intent data is 2.828013, bio data is 7.519246, cost about 30.9889 seconds.
+[2021-04-09 15:53:04,003][140590680069952][process.py][line: 165][INFO] ## 
+Test result: slot f1 score: 0.591594, intent acc score: 0.872299, semantic accuracy score: 0.526523. BIO f1 score 0.795966 
+[2021-04-09 15:53:04,128][140590680069952][process.py][line: 178][INFO] ## [Epoch 11]: In validation process, the slot f1 score is 0.572505, the intent acc is 0.908213, the semantic acc is 0.50, cost about 15.251475 seconds.
+
+[2021-04-09 15:53:34,836][140590680069952][process.py][line: 147][INFO] ## [Epoch 12]: The total slot loss on train data is 30.643689, intent data is 2.687853, bio data is 6.445093, cost about 30.7078 seconds.
+[2021-04-09 15:53:49,983][140590680069952][process.py][line: 165][INFO] ## 
+Test result: slot f1 score: 0.613546, intent acc score: 0.868369, semantic accuracy score: 0.546169. BIO f1 score 0.784652 
+[2021-04-09 15:53:50,101][140590680069952][process.py][line: 178][INFO] ## [Epoch 12]: In validation process, the slot f1 score is 0.595305, the intent acc is 0.913043, the semantic acc is 0.52, cost about 15.264894 seconds.
+
+[2021-04-09 15:54:20,773][140590680069952][process.py][line: 147][INFO] ## [Epoch 13]: The total slot loss on train data is 27.208223, intent data is 2.433023, bio data is 5.722141, cost about 30.6715 seconds.
+[2021-04-09 15:54:35,891][140590680069952][process.py][line: 165][INFO] ## 
+Test result: slot f1 score: 0.633071, intent acc score: 0.868369, semantic accuracy score: 0.561886. BIO f1 score 0.796584 
+[2021-04-09 15:54:36,110][140590680069952][process.py][line: 178][INFO] ## [Epoch 13]: In validation process, the slot f1 score is 0.617811, the intent acc is 0.898551, the semantic acc is 0.54, cost about 15.336395 seconds.
+
+[2021-04-09 15:55:06,832][140590680069952][process.py][line: 147][INFO] ## [Epoch 14]: The total slot loss on train data is 24.618561, intent data is 2.109287, bio data is 5.171932, cost about 30.7219 seconds.
+[2021-04-09 15:55:21,979][140590680069952][process.py][line: 165][INFO] ## 
+Test result: slot f1 score: 0.637450, intent acc score: 0.876228, semantic accuracy score: 0.573674. BIO f1 score 0.785827 
+[2021-04-09 15:55:22,096][140590680069952][process.py][line: 178][INFO] ## [Epoch 14]: In validation process, the slot f1 score is 0.646009, the intent acc is 0.903382, the semantic acc is 0.56, cost about 15.264542 seconds.
+
+[2021-04-09 15:55:53,136][140590680069952][process.py][line: 147][INFO] ## [Epoch 15]: The total slot loss on train data is 22.367690, intent data is 1.826636, bio data is 4.967241, cost about 31.0397 seconds.
+[2021-04-09 15:56:08,307][140590680069952][process.py][line: 165][INFO] ## 
+Test result: slot f1 score: 0.670391, intent acc score: 0.884086, semantic accuracy score: 0.614931. BIO f1 score 0.802828 
+[2021-04-09 15:56:08,519][140590680069952][process.py][line: 178][INFO] ## [Epoch 15]: In validation process, the slot f1 score is 0.654851, the intent acc is 0.915459, the semantic acc is 0.58, cost about 15.382907 seconds.
+
+[2021-04-09 15:56:39,423][140590680069952][process.py][line: 147][INFO] ## [Epoch 16]: The total slot loss on train data is 20.786216, intent data is 1.610706, bio data is 5.217148, cost about 30.9034 seconds.
+[2021-04-09 15:57:17,420][140590680069952][process.py][line: 147][INFO] ## [Epoch 17]: The total slot loss on train data is 18.339675, intent data is 1.322619, bio data is 4.002480, cost about 30.9571 seconds.
+[2021-04-09 15:57:32,582][140590680069952][process.py][line: 165][INFO] ## 
+Test result: slot f1 score: 0.677778, intent acc score: 0.880157, semantic accuracy score: 0.622790. BIO f1 score 0.797181 
+[2021-04-09 15:57:32,693][140590680069952][process.py][line: 178][INFO] ## [Epoch 17]: In validation process, the slot f1 score is 0.678505, the intent acc is 0.915459, the semantic acc is 0.61, cost about 15.272111 seconds.
+
+[2021-04-09 15:58:03,309][140590680069952][process.py][line: 147][INFO] ## [Epoch 18]: The total slot loss on train data is 16.708235, intent data is 1.150702, bio data is 4.005355, cost about 30.6161 seconds.
+[2021-04-09 15:58:18,526][140590680069952][process.py][line: 165][INFO] ## 
+Test result: slot f1 score: 0.683788, intent acc score: 0.884086, semantic accuracy score: 0.620825. BIO f1 score 0.800963 
+[2021-04-09 15:58:18,744][140590680069952][process.py][line: 178][INFO] ## [Epoch 18]: In validation process, the slot f1 score is 0.680374, the intent acc is 0.920290, the semantic acc is 0.62, cost about 15.435138 seconds.
+
+[2021-04-09 15:58:50,046][140590680069952][process.py][line: 147][INFO] ## [Epoch 19]: The total slot loss on train data is 14.851956, intent data is 1.152309, bio data is 3.652103, cost about 31.3018 seconds.
+[2021-04-09 15:59:05,258][140590680069952][process.py][line: 165][INFO] ## 
+Test result: slot f1 score: 0.694754, intent acc score: 0.888016, semantic accuracy score: 0.624754. BIO f1 score 0.807238 
+[2021-04-09 15:59:05,446][140590680069952][process.py][line: 178][INFO] ## [Epoch 19]: In validation process, the slot f1 score is 0.691381, the intent acc is 0.913043, the semantic acc is 0.62, cost about 15.399665 seconds.
+
+[2021-04-09 15:59:35,957][140590680069952][process.py][line: 147][INFO] ## [Epoch 20]: The total slot loss on train data is 13.776195, intent data is 1.106060, bio data is 3.231840, cost about 30.511 seconds.
+[2021-04-09 15:59:51,250][140590680069952][process.py][line: 165][INFO] ## 
+Test result: slot f1 score: 0.683082, intent acc score: 0.884086, semantic accuracy score: 0.616896. BIO f1 score 0.803473 
+[2021-04-09 15:59:51,472][140590680069952][process.py][line: 178][INFO] ## [Epoch 20]: In validation process, the slot f1 score is 0.694444, the intent acc is 0.920290, the semantic acc is 0.62, cost about 15.514553 seconds.
+
+[2021-04-09 16:00:22,607][140590680069952][process.py][line: 147][INFO] ## [Epoch 21]: The total slot loss on train data is 12.665242, intent data is 1.120906, bio data is 2.655831, cost about 31.1351 seconds.
+[2021-04-09 16:00:37,892][140590680069952][process.py][line: 165][INFO] ## 
+Test result: slot f1 score: 0.695584, intent acc score: 0.882122, semantic accuracy score: 0.620825. BIO f1 score 0.815397 
+[2021-04-09 16:00:38,020][140590680069952][process.py][line: 178][INFO] ## [Epoch 21]: In validation process, the slot f1 score is 0.712177, the intent acc is 0.922705, the semantic acc is 0.64, cost about 15.412237 seconds.
+
+[2021-04-09 16:01:09,180][140590680069952][process.py][line: 147][INFO] ## [Epoch 22]: The total slot loss on train data is 12.086208, intent data is 1.009762, bio data is 3.005878, cost about 31.1606 seconds.
+[2021-04-09 16:01:24,448][140590680069952][process.py][line: 165][INFO] ## 
+Test result: slot f1 score: 0.695584, intent acc score: 0.874263, semantic accuracy score: 0.624754. BIO f1 score 0.791469 
+[2021-04-09 16:01:24,563][140590680069952][process.py][line: 178][INFO] ## [Epoch 22]: In validation process, the slot f1 score is 0.715328, the intent acc is 0.929952, the semantic acc is 0.64, cost about 15.382589 seconds.
+
+[2021-04-09 16:01:56,409][140590680069952][process.py][line: 147][INFO] ## [Epoch 23]: The total slot loss on train data is 11.302612, intent data is 1.036347, bio data is 3.575794, cost about 31.8459 seconds.
+[2021-04-09 16:02:34,634][140590680069952][process.py][line: 147][INFO] ## [Epoch 24]: The total slot loss on train data is 10.612329, intent data is 1.123560, bio data is 3.365841, cost about 31.2522 seconds.
+[2021-04-09 16:03:12,706][140590680069952][process.py][line: 147][INFO] ## [Epoch 25]: The total slot loss on train data is 9.372029, intent data is 0.986680, bio data is 2.393601, cost about 31.0474 seconds.
+[2021-04-09 16:03:27,786][140590680069952][process.py][line: 165][INFO] ## 
+Test result: slot f1 score: 0.706625, intent acc score: 0.870334, semantic accuracy score: 0.628684. BIO f1 score 0.813826 
+[2021-04-09 16:03:27,895][140590680069952][process.py][line: 178][INFO] ## [Epoch 25]: In validation process, the slot f1 score is 0.718607, the intent acc is 0.927536, the semantic acc is 0.64, cost about 15.189674 seconds.
+
+[2021-04-09 16:03:58,757][140590680069952][process.py][line: 147][INFO] ## [Epoch 26]: The total slot loss on train data is 8.987857, intent data is 0.646112, bio data is 3.036089, cost about 30.8618 seconds.
+[2021-04-09 16:04:13,953][140590680069952][process.py][line: 165][INFO] ## 
+Test result: slot f1 score: 0.695170, intent acc score: 0.874263, semantic accuracy score: 0.622790. BIO f1 score 0.812303 
+[2021-04-09 16:04:14,072][140590680069952][process.py][line: 178][INFO] ## [Epoch 26]: In validation process, the slot f1 score is 0.729128, the intent acc is 0.927536, the semantic acc is 0.66, cost about 15.314426 seconds.
+
+[2021-04-09 16:04:45,130][140590680069952][process.py][line: 147][INFO] ## [Epoch 27]: The total slot loss on train data is 8.334889, intent data is 1.007281, bio data is 2.436262, cost about 31.0579 seconds.
+[2021-04-09 16:05:22,769][140590680069952][process.py][line: 147][INFO] ## [Epoch 28]: The total slot loss on train data is 7.773806, intent data is 1.808564, bio data is 2.772446, cost about 30.5693 seconds.
+[2021-04-09 16:05:37,981][140590680069952][process.py][line: 165][INFO] ## 
+Test result: slot f1 score: 0.703383, intent acc score: 0.872299, semantic accuracy score: 0.609037. BIO f1 score 0.815686 
+[2021-04-09 16:05:38,169][140590680069952][process.py][line: 178][INFO] ## [Epoch 28]: In validation process, the slot f1 score is 0.740129, the intent acc is 0.927536, the semantic acc is 0.66, cost about 15.399900 seconds.
+
+[2021-04-09 16:06:10,154][140590680069952][process.py][line: 147][INFO] ## [Epoch 29]: The total slot loss on train data is 7.208769, intent data is 1.399504, bio data is 2.380204, cost about 31.9847 seconds.
+[2021-04-09 16:06:48,082][140590680069952][process.py][line: 147][INFO] ## [Epoch 30]: The total slot loss on train data is 6.598892, intent data is 1.222214, bio data is 2.250372, cost about 30.7983 seconds.
+[2021-04-09 16:07:25,760][140590680069952][process.py][line: 147][INFO] ## [Epoch 31]: The total slot loss on train data is 6.539508, intent data is 1.202830, bio data is 1.818965, cost about 30.6803 seconds.
+[2021-04-09 16:08:03,571][140590680069952][process.py][line: 147][INFO] ## [Epoch 32]: The total slot loss on train data is 6.086860, intent data is 0.737235, bio data is 2.233116, cost about 30.6902 seconds.
+[2021-04-09 16:08:18,831][140590680069952][process.py][line: 165][INFO] ## 
+Test result: slot f1 score: 0.729580, intent acc score: 0.880157, semantic accuracy score: 0.650295. BIO f1 score 0.828729 
+[2021-04-09 16:08:19,014][140590680069952][process.py][line: 178][INFO] ## [Epoch 32]: In validation process, the slot f1 score is 0.746812, the intent acc is 0.913043, the semantic acc is 0.67, cost about 15.443120 seconds.
+
+[2021-04-09 16:08:49,536][140590680069952][process.py][line: 147][INFO] ## [Epoch 33]: The total slot loss on train data is 5.755983, intent data is 0.605168, bio data is 2.056023, cost about 30.5215 seconds.
+[2021-04-09 16:09:28,252][140590680069952][process.py][line: 147][INFO] ## [Epoch 34]: The total slot loss on train data is 5.278797, intent data is 0.479442, bio data is 1.813854, cost about 31.674 seconds.
+[2021-04-09 16:10:06,377][140590680069952][process.py][line: 147][INFO] ## [Epoch 35]: The total slot loss on train data is 4.966706, intent data is 0.606557, bio data is 1.846672, cost about 31.0778 seconds.
+[2021-04-09 16:10:44,093][140590680069952][process.py][line: 147][INFO] ## [Epoch 36]: The total slot loss on train data is 4.662590, intent data is 0.514203, bio data is 1.857213, cost about 30.6546 seconds.
+[2021-04-09 16:11:22,419][140590680069952][process.py][line: 147][INFO] ## [Epoch 37]: The total slot loss on train data is 4.220323, intent data is 0.432309, bio data is 1.538200, cost about 31.2982 seconds.
+[2021-04-09 16:11:37,439][140590680069952][process.py][line: 165][INFO] ## 
+Test result: slot f1 score: 0.728840, intent acc score: 0.888016, semantic accuracy score: 0.646365. BIO f1 score 0.816836 
+[2021-04-09 16:11:37,698][140590680069952][process.py][line: 178][INFO] ## [Epoch 37]: In validation process, the slot f1 score is 0.752044, the intent acc is 0.917874, the semantic acc is 0.67, cost about 15.278917 seconds.
+
+[2021-04-09 16:12:08,224][140590680069952][process.py][line: 147][INFO] ## [Epoch 38]: The total slot loss on train data is 4.086956, intent data is 0.491822, bio data is 1.595476, cost about 30.5259 seconds.
+[2021-04-09 16:12:45,862][140590680069952][process.py][line: 147][INFO] ## [Epoch 39]: The total slot loss on train data is 3.920993, intent data is 0.339105, bio data is 1.792375, cost about 30.5598 seconds.
+[2021-04-09 16:13:00,928][140590680069952][process.py][line: 165][INFO] ## 
+Test result: slot f1 score: 0.747840, intent acc score: 0.886051, semantic accuracy score: 0.650295. BIO f1 score 0.827316 
+[2021-04-09 16:13:01,049][140590680069952][process.py][line: 178][INFO] ## [Epoch 39]: In validation process, the slot f1 score is 0.753199, the intent acc is 0.920290, the semantic acc is 0.68, cost about 15.186194 seconds.
+
+[2021-04-09 16:13:31,773][140590680069952][process.py][line: 147][INFO] ## [Epoch 40]: The total slot loss on train data is 3.580412, intent data is 0.454469, bio data is 1.289078, cost about 30.7238 seconds.
+[2021-04-09 16:14:09,477][140590680069952][process.py][line: 147][INFO] ## [Epoch 41]: The total slot loss on train data is 3.742916, intent data is 0.326713, bio data is 1.623359, cost about 30.6599 seconds.
+[2021-04-09 16:14:47,815][140590680069952][process.py][line: 147][INFO] ## [Epoch 42]: The total slot loss on train data is 3.387365, intent data is 0.395488, bio data is 1.560370, cost about 31.3124 seconds.
+[2021-04-09 16:15:25,760][140590680069952][process.py][line: 147][INFO] ## [Epoch 43]: The total slot loss on train data is 3.016550, intent data is 0.417103, bio data is 1.537124, cost about 30.8808 seconds.
+[2021-04-09 16:15:40,823][140590680069952][process.py][line: 165][INFO] ## 
+Test result: slot f1 score: 0.719436, intent acc score: 0.889980, semantic accuracy score: 0.628684. BIO f1 score 0.823346 
+[2021-04-09 16:15:41,052][140590680069952][process.py][line: 178][INFO] ## [Epoch 43]: In validation process, the slot f1 score is 0.761818, the intent acc is 0.915459, the semantic acc is 0.69, cost about 15.291517 seconds.
+
+[2021-04-09 16:16:12,116][140590680069952][process.py][line: 147][INFO] ## [Epoch 44]: The total slot loss on train data is 3.073157, intent data is 0.292477, bio data is 1.494583, cost about 31.0637 seconds.
+[2021-04-09 16:16:50,223][140590680069952][process.py][line: 147][INFO] ## [Epoch 45]: The total slot loss on train data is 2.727310, intent data is 0.309198, bio data is 1.163617, cost about 31.1629 seconds.
+[2021-04-09 16:17:05,369][140590680069952][process.py][line: 165][INFO] ## 
+Test result: slot f1 score: 0.735363, intent acc score: 0.878193, semantic accuracy score: 0.648330. BIO f1 score 0.816836 
+[2021-04-09 16:17:05,495][140590680069952][process.py][line: 178][INFO] ## [Epoch 45]: In validation process, the slot f1 score is 0.754545, the intent acc is 0.917874, the semantic acc is 0.69, cost about 15.271826 seconds.
+
+[2021-04-09 16:17:35,867][140590680069952][process.py][line: 147][INFO] ## [Epoch 46]: The total slot loss on train data is 2.791636, intent data is 0.380657, bio data is 1.332085, cost about 30.3721 seconds.
+[2021-04-09 16:17:51,128][140590680069952][process.py][line: 165][INFO] ## 
+Test result: slot f1 score: 0.724434, intent acc score: 0.876228, semantic accuracy score: 0.632613. BIO f1 score 0.814118 
+[2021-04-09 16:17:51,380][140590680069952][process.py][line: 178][INFO] ## [Epoch 46]: In validation process, the slot f1 score is 0.762340, the intent acc is 0.915459, the semantic acc is 0.69, cost about 15.512588 seconds.
+
+[2021-04-09 16:18:22,107][140590680069952][process.py][line: 147][INFO] ## [Epoch 47]: The total slot loss on train data is 2.590557, intent data is 0.228100, bio data is 1.214185, cost about 30.7268 seconds.
+[2021-04-09 16:19:00,011][140590680069952][process.py][line: 147][INFO] ## [Epoch 48]: The total slot loss on train data is 2.533742, intent data is 0.333988, bio data is 1.249350, cost about 30.7754 seconds.
+[2021-04-09 16:19:37,851][140590680069952][process.py][line: 147][INFO] ## [Epoch 49]: The total slot loss on train data is 2.147109, intent data is 0.202846, bio data is 1.221772, cost about 30.8247 seconds.
+[2021-04-09 16:20:15,302][140590680069952][process.py][line: 147][INFO] ## [Epoch 50]: The total slot loss on train data is 2.171708, intent data is 0.262096, bio data is 0.900355, cost about 30.3862 seconds.
+[2021-04-09 16:20:53,339][140590680069952][process.py][line: 147][INFO] ## [Epoch 51]: The total slot loss on train data is 2.259849, intent data is 0.374328, bio data is 1.270200, cost about 30.9521 seconds.
+[2021-04-09 16:21:30,911][140590680069952][process.py][line: 147][INFO] ## [Epoch 52]: The total slot loss on train data is 2.324714, intent data is 0.198864, bio data is 1.206310, cost about 30.4532 seconds.
+[2021-04-09 16:22:09,330][140590680069952][process.py][line: 147][INFO] ## [Epoch 53]: The total slot loss on train data is 2.201234, intent data is 0.298509, bio data is 1.151403, cost about 31.3945 seconds.
+[2021-04-09 16:22:47,367][140590680069952][process.py][line: 147][INFO] ## [Epoch 54]: The total slot loss on train data is 1.908166, intent data is 0.185075, bio data is 0.702173, cost about 31.0685 seconds.
+[2021-04-09 16:23:02,507][140590680069952][process.py][line: 165][INFO] ## 
+Test result: slot f1 score: 0.732813, intent acc score: 0.882122, semantic accuracy score: 0.646365. BIO f1 score 0.818824 
+[2021-04-09 16:23:02,682][140590680069952][process.py][line: 178][INFO] ## [Epoch 54]: In validation process, the slot f1 score is 0.767677, the intent acc is 0.920290, the semantic acc is 0.69, cost about 15.314635 seconds.
+
+[2021-04-09 16:23:33,647][140590680069952][process.py][line: 147][INFO] ## [Epoch 55]: The total slot loss on train data is 1.712914, intent data is 0.359541, bio data is 0.662052, cost about 30.965 seconds.
+[2021-04-09 16:24:11,440][140590680069952][process.py][line: 147][INFO] ## [Epoch 56]: The total slot loss on train data is 1.701138, intent data is 0.332858, bio data is 0.805125, cost about 30.7096 seconds.
+[2021-04-09 16:24:49,098][140590680069952][process.py][line: 147][INFO] ## [Epoch 57]: The total slot loss on train data is 1.669207, intent data is 0.265975, bio data is 0.901599, cost about 30.5803 seconds.
+[2021-04-09 16:25:04,257][140590680069952][process.py][line: 165][INFO] ## 
+Test result: slot f1 score: 0.746646, intent acc score: 0.870334, semantic accuracy score: 0.644401. BIO f1 score 0.823436 
+[2021-04-09 16:25:04,521][140590680069952][process.py][line: 178][INFO] ## [Epoch 57]: In validation process, the slot f1 score is 0.761905, the intent acc is 0.925121, the semantic acc is 0.69, cost about 15.423088 seconds.
+
+[2021-04-09 16:25:35,873][140590680069952][process.py][line: 147][INFO] ## [Epoch 58]: The total slot loss on train data is 1.589936, intent data is 0.226694, bio data is 0.952985, cost about 31.352 seconds.
+[2021-04-09 16:26:13,226][140590680069952][process.py][line: 147][INFO] ## [Epoch 59]: The total slot loss on train data is 1.440084, intent data is 0.185146, bio data is 1.123774, cost about 30.3288 seconds.
+[2021-04-09 16:26:28,414][140590680069952][process.py][line: 165][INFO] ## 
+Test result: slot f1 score: 0.739640, intent acc score: 0.880157, semantic accuracy score: 0.636542. BIO f1 score 0.815047 
+[2021-04-09 16:26:28,533][140590680069952][process.py][line: 178][INFO] ## [Epoch 59]: In validation process, the slot f1 score is 0.769091, the intent acc is 0.927536, the semantic acc is 0.69, cost about 15.307410 seconds.
+
+[2021-04-09 16:26:59,604][140590680069952][process.py][line: 147][INFO] ## [Epoch 60]: The total slot loss on train data is 1.338054, intent data is 0.232561, bio data is 1.059004, cost about 31.0704 seconds.
+[2021-04-09 16:27:37,698][140590680069952][process.py][line: 147][INFO] ## [Epoch 61]: The total slot loss on train data is 1.290596, intent data is 0.166200, bio data is 0.866645, cost about 30.9914 seconds.
+[2021-04-09 16:28:15,726][140590680069952][process.py][line: 147][INFO] ## [Epoch 62]: The total slot loss on train data is 1.328523, intent data is 0.154226, bio data is 0.665792, cost about 30.9272 seconds.
+[2021-04-09 16:28:53,877][140590680069952][process.py][line: 147][INFO] ## [Epoch 63]: The total slot loss on train data is 1.141652, intent data is 0.112321, bio data is 0.543035, cost about 31.1787 seconds.
+[2021-04-09 16:29:32,544][140590680069952][process.py][line: 147][INFO] ## [Epoch 64]: The total slot loss on train data is 1.120418, intent data is 0.137996, bio data is 0.995347, cost about 31.6443 seconds.
+[2021-04-09 16:30:10,086][140590680069952][process.py][line: 147][INFO] ## [Epoch 65]: The total slot loss on train data is 1.204231, intent data is 0.393711, bio data is 0.742232, cost about 30.4709 seconds.
+[2021-04-09 16:30:47,913][140590680069952][process.py][line: 147][INFO] ## [Epoch 66]: The total slot loss on train data is 1.283894, intent data is 0.586633, bio data is 0.974229, cost about 30.7505 seconds.
+[2021-04-09 16:31:25,832][140590680069952][process.py][line: 147][INFO] ## [Epoch 67]: The total slot loss on train data is 1.628792, intent data is 0.723738, bio data is 1.523310, cost about 30.8731 seconds.
+[2021-04-09 16:32:04,127][140590680069952][process.py][line: 147][INFO] ## [Epoch 68]: The total slot loss on train data is 1.422407, intent data is 0.307308, bio data is 1.326119, cost about 31.2663 seconds.
+[2021-04-09 16:32:42,006][140590680069952][process.py][line: 147][INFO] ## [Epoch 69]: The total slot loss on train data is 1.093715, intent data is 0.265341, bio data is 0.838593, cost about 30.8612 seconds.
+[2021-04-09 16:33:20,190][140590680069952][process.py][line: 147][INFO] ## [Epoch 70]: The total slot loss on train data is 1.198253, intent data is 0.161932, bio data is 0.993616, cost about 31.1336 seconds.
+[2021-04-09 16:33:58,258][140590680069952][process.py][line: 147][INFO] ## [Epoch 71]: The total slot loss on train data is 1.234557, intent data is 0.172897, bio data is 0.786055, cost about 31.0331 seconds.
+[2021-04-09 16:34:36,550][140590680069952][process.py][line: 147][INFO] ## [Epoch 72]: The total slot loss on train data is 1.151669, intent data is 0.217647, bio data is 1.060226, cost about 31.2464 seconds.
+[2021-04-09 16:35:14,678][140590680069952][process.py][line: 147][INFO] ## [Epoch 73]: The total slot loss on train data is 1.043781, intent data is 0.772987, bio data is 0.864568, cost about 31.0581 seconds.
+[2021-04-09 16:35:52,642][140590680069952][process.py][line: 147][INFO] ## [Epoch 74]: The total slot loss on train data is 1.138422, intent data is 0.487144, bio data is 1.178393, cost about 30.9899 seconds.
+[2021-04-09 16:36:30,608][140590680069952][process.py][line: 147][INFO] ## [Epoch 75]: The total slot loss on train data is 0.882676, intent data is 0.260632, bio data is 0.881384, cost about 30.9359 seconds.
+[2021-04-09 16:37:08,630][140590680069952][process.py][line: 147][INFO] ## [Epoch 76]: The total slot loss on train data is 1.061715, intent data is 0.265275, bio data is 0.701349, cost about 30.9572 seconds.
+[2021-04-09 16:37:46,686][140590680069952][process.py][line: 147][INFO] ## [Epoch 77]: The total slot loss on train data is 1.095271, intent data is 0.180069, bio data is 0.975637, cost about 30.9533 seconds.
+[2021-04-09 16:38:24,711][140590680069952][process.py][line: 147][INFO] ## [Epoch 78]: The total slot loss on train data is 0.872515, intent data is 0.261513, bio data is 1.069846, cost about 30.9522 seconds.
+[2021-04-09 16:39:02,804][140590680069952][process.py][line: 147][INFO] ## [Epoch 79]: The total slot loss on train data is 0.787427, intent data is 0.404571, bio data is 0.799301, cost about 31.0244 seconds.
+[2021-04-09 16:39:40,312][140590680069952][process.py][line: 147][INFO] ## [Epoch 80]: The total slot loss on train data is 0.994920, intent data is 0.144831, bio data is 0.732866, cost about 30.4543 seconds.
+[2021-04-09 16:40:18,139][140590680069952][process.py][line: 147][INFO] ## [Epoch 81]: The total slot loss on train data is 0.913382, intent data is 0.099124, bio data is 0.738175, cost about 30.7616 seconds.
+[2021-04-09 16:40:56,181][140590680069952][process.py][line: 147][INFO] ## [Epoch 82]: The total slot loss on train data is 0.662492, intent data is 0.100887, bio data is 0.732272, cost about 30.9265 seconds.
+[2021-04-09 16:41:33,584][140590680069952][process.py][line: 147][INFO] ## [Epoch 83]: The total slot loss on train data is 0.666293, intent data is 0.152020, bio data is 0.771122, cost about 30.2976 seconds.
+[2021-04-09 16:42:11,360][140590680069952][process.py][line: 147][INFO] ## [Epoch 84]: The total slot loss on train data is 0.591927, intent data is 0.085778, bio data is 0.640657, cost about 30.6752 seconds.
+[2021-04-09 16:42:49,249][140590680069952][process.py][line: 147][INFO] ## [Epoch 85]: The total slot loss on train data is 1.096459, intent data is 0.118276, bio data is 0.660682, cost about 30.864 seconds.
+[2021-04-09 16:43:27,647][140590680069952][process.py][line: 147][INFO] ## [Epoch 86]: The total slot loss on train data is 0.630988, intent data is 0.302173, bio data is 0.606482, cost about 31.351 seconds.
+[2021-04-09 16:44:05,786][140590680069952][process.py][line: 147][INFO] ## [Epoch 87]: The total slot loss on train data is 0.647339, intent data is 0.138641, bio data is 0.718991, cost about 31.0278 seconds.
+[2021-04-09 16:44:43,508][140590680069952][process.py][line: 147][INFO] ## [Epoch 88]: The total slot loss on train data is 0.623812, intent data is 0.115476, bio data is 0.563180, cost about 30.7284 seconds.
+[2021-04-09 16:45:21,732][140590680069952][process.py][line: 147][INFO] ## [Epoch 89]: The total slot loss on train data is 0.562807, intent data is 0.091311, bio data is 0.669516, cost about 31.1552 seconds.
+[2021-04-09 16:45:36,903][140590680069952][process.py][line: 165][INFO] ## 
+Test result: slot f1 score: 0.729858, intent acc score: 0.888016, semantic accuracy score: 0.648330. BIO f1 score 0.813047 
+[2021-04-09 16:45:37,119][140590680069952][process.py][line: 178][INFO] ## [Epoch 89]: In validation process, the slot f1 score is 0.744271, the intent acc is 0.932367, the semantic acc is 0.67, cost about 15.386641 seconds.
+
+[2021-04-09 16:46:08,121][140590680069952][process.py][line: 147][INFO] ## [Epoch 90]: The total slot loss on train data is 0.509296, intent data is 0.184843, bio data is 0.624866, cost about 31.0025 seconds.
+[2021-04-09 16:46:46,386][140590680069952][process.py][line: 147][INFO] ## [Epoch 91]: The total slot loss on train data is 0.506745, intent data is 0.102838, bio data is 0.403033, cost about 31.1469 seconds.
+[2021-04-09 16:47:01,582][140590680069952][process.py][line: 165][INFO] ## 
+Test result: slot f1 score: 0.728560, intent acc score: 0.878193, semantic accuracy score: 0.634578. BIO f1 score 0.814580 
+[2021-04-09 16:47:01,698][140590680069952][process.py][line: 178][INFO] ## [Epoch 91]: In validation process, the slot f1 score is 0.751139, the intent acc is 0.937198, the semantic acc is 0.69, cost about 15.311769 seconds.
+
+[2021-04-09 16:47:32,968][140590680069952][process.py][line: 147][INFO] ## [Epoch 92]: The total slot loss on train data is 0.468251, intent data is 0.106372, bio data is 0.574735, cost about 31.2696 seconds.
+[2021-04-09 16:48:10,934][140590680069952][process.py][line: 147][INFO] ## [Epoch 93]: The total slot loss on train data is 0.540091, intent data is 0.209761, bio data is 0.370849, cost about 30.8775 seconds.
+[2021-04-09 16:48:26,132][140590680069952][process.py][line: 165][INFO] ## 
+Test result: slot f1 score: 0.739984, intent acc score: 0.889980, semantic accuracy score: 0.656189. BIO f1 score 0.822695 
+[2021-04-09 16:48:26,320][140590680069952][process.py][line: 178][INFO] ## [Epoch 93]: In validation process, the slot f1 score is 0.745887, the intent acc is 0.939614, the semantic acc is 0.68, cost about 15.385963 seconds.
+
+[2021-04-09 16:48:57,378][140590680069952][process.py][line: 147][INFO] ## [Epoch 94]: The total slot loss on train data is 0.568057, intent data is 0.169676, bio data is 0.398487, cost about 31.0574 seconds.
+[2021-04-09 16:49:35,328][140590680069952][process.py][line: 147][INFO] ## [Epoch 95]: The total slot loss on train data is 0.474262, intent data is 0.136221, bio data is 0.367603, cost about 30.8681 seconds.
+[2021-04-09 16:50:13,625][140590680069952][process.py][line: 147][INFO] ## [Epoch 96]: The total slot loss on train data is 0.618486, intent data is 0.092115, bio data is 0.652852, cost about 31.2086 seconds.
+[2021-04-09 16:50:51,371][140590680069952][process.py][line: 147][INFO] ## [Epoch 97]: The total slot loss on train data is 0.754639, intent data is 0.113650, bio data is 0.686787, cost about 30.6935 seconds.
+[2021-04-09 16:51:29,158][140590680069952][process.py][line: 147][INFO] ## [Epoch 98]: The total slot loss on train data is 0.523739, intent data is 0.117015, bio data is 0.510915, cost about 30.714 seconds.
+[2021-04-09 16:52:06,799][140590680069952][process.py][line: 147][INFO] ## [Epoch 99]: The total slot loss on train data is 0.793688, intent data is 0.055747, bio data is 0.794267, cost about 30.5865 seconds.
+[2021-04-09 16:52:44,850][140590680069952][process.py][line: 147][INFO] ## [Epoch 100]: The total slot loss on train data is 0.514242, intent data is 0.121687, bio data is 0.457497, cost about 30.9919 seconds.
+[2021-04-09 16:53:22,881][140590680069952][process.py][line: 147][INFO] ## [Epoch 101]: The total slot loss on train data is 0.467824, intent data is 0.138073, bio data is 0.368289, cost about 30.9562 seconds.
+[2021-04-09 16:54:00,742][140590680069952][process.py][line: 147][INFO] ## [Epoch 102]: The total slot loss on train data is 0.542556, intent data is 0.117757, bio data is 0.736914, cost about 30.74 seconds.
+[2021-04-09 16:54:39,542][140590680069952][process.py][line: 147][INFO] ## [Epoch 103]: The total slot loss on train data is 0.683731, intent data is 0.089237, bio data is 0.594506, cost about 31.7667 seconds.
+[2021-04-09 16:55:17,580][140590680069952][process.py][line: 147][INFO] ## [Epoch 104]: The total slot loss on train data is 0.497395, intent data is 0.254303, bio data is 0.366562, cost about 30.9815 seconds.
+[2021-04-09 16:55:55,206][140590680069952][process.py][line: 147][INFO] ## [Epoch 105]: The total slot loss on train data is 0.427458, intent data is 0.326300, bio data is 0.497130, cost about 30.5262 seconds.
+[2021-04-09 16:56:33,153][140590680069952][process.py][line: 147][INFO] ## [Epoch 106]: The total slot loss on train data is 0.637549, intent data is 0.203989, bio data is 0.591813, cost about 30.8519 seconds.
+[2021-04-09 16:57:11,537][140590680069952][process.py][line: 147][INFO] ## [Epoch 107]: The total slot loss on train data is 0.789911, intent data is 0.169627, bio data is 0.748036, cost about 31.356 seconds.
+[2021-04-09 16:57:49,748][140590680069952][process.py][line: 147][INFO] ## [Epoch 108]: The total slot loss on train data is 0.497530, intent data is 0.079919, bio data is 0.536943, cost about 31.1658 seconds.
+[2021-04-09 16:58:27,884][140590680069952][process.py][line: 147][INFO] ## [Epoch 109]: The total slot loss on train data is 0.485295, intent data is 0.093650, bio data is 0.377892, cost about 31.1119 seconds.
+[2021-04-09 16:59:06,294][140590680069952][process.py][line: 147][INFO] ## [Epoch 110]: The total slot loss on train data is 0.399237, intent data is 0.086304, bio data is 0.402720, cost about 31.317 seconds.
+[2021-04-09 16:59:44,316][140590680069952][process.py][line: 147][INFO] ## [Epoch 111]: The total slot loss on train data is 0.571967, intent data is 0.070767, bio data is 0.711995, cost about 30.9682 seconds.
+[2021-04-09 16:59:59,444][140590680069952][process.py][line: 165][INFO] ## 
+Test result: slot f1 score: 0.740219, intent acc score: 0.889980, semantic accuracy score: 0.644401. BIO f1 score 0.817405 
+[2021-04-09 16:59:59,553][140590680069952][process.py][line: 178][INFO] ## [Epoch 111]: In validation process, the slot f1 score is 0.759310, the intent acc is 0.925121, the semantic acc is 0.70, cost about 15.237284 seconds.
+
+[2021-04-09 17:00:30,615][140590680069952][process.py][line: 147][INFO] ## [Epoch 112]: The total slot loss on train data is 0.738043, intent data is 0.080375, bio data is 0.437661, cost about 31.0617 seconds.
+[2021-04-09 17:01:08,499][140590680069952][process.py][line: 147][INFO] ## [Epoch 113]: The total slot loss on train data is 0.596763, intent data is 0.045511, bio data is 0.663929, cost about 30.78 seconds.
+[2021-04-09 17:01:46,771][140590680069952][process.py][line: 147][INFO] ## [Epoch 114]: The total slot loss on train data is 0.454144, intent data is 0.146350, bio data is 0.643088, cost about 31.2327 seconds.
+[2021-04-09 17:02:24,690][140590680069952][process.py][line: 147][INFO] ## [Epoch 115]: The total slot loss on train data is 0.448144, intent data is 0.145757, bio data is 0.544884, cost about 30.8706 seconds.
+[2021-04-09 17:03:02,242][140590680069952][process.py][line: 147][INFO] ## [Epoch 116]: The total slot loss on train data is 0.481812, intent data is 0.144522, bio data is 0.433345, cost about 30.4697 seconds.
+[2021-04-09 17:03:39,908][140590680069952][process.py][line: 147][INFO] ## [Epoch 117]: The total slot loss on train data is 0.450383, intent data is 0.166421, bio data is 0.628549, cost about 30.5448 seconds.
+[2021-04-09 17:04:18,514][140590680069952][process.py][line: 147][INFO] ## [Epoch 118]: The total slot loss on train data is 0.598780, intent data is 0.181768, bio data is 0.467397, cost about 31.5554 seconds.
+[2021-04-09 17:04:56,489][140590680069952][process.py][line: 147][INFO] ## [Epoch 119]: The total slot loss on train data is 0.556149, intent data is 0.073568, bio data is 0.825208, cost about 30.9095 seconds.
+[2021-04-09 17:05:34,380][140590680069952][process.py][line: 147][INFO] ## [Epoch 120]: The total slot loss on train data is 0.577100, intent data is 0.151679, bio data is 0.827671, cost about 30.8216 seconds.
+[2021-04-09 17:06:12,541][140590680069952][process.py][line: 147][INFO] ## [Epoch 121]: The total slot loss on train data is 0.466517, intent data is 0.256382, bio data is 0.573905, cost about 31.0796 seconds.
+[2021-04-09 17:06:50,767][140590680069952][process.py][line: 147][INFO] ## [Epoch 122]: The total slot loss on train data is 0.473851, intent data is 0.087682, bio data is 0.553033, cost about 31.1323 seconds.
+[2021-04-09 17:07:28,494][140590680069952][process.py][line: 147][INFO] ## [Epoch 123]: The total slot loss on train data is 0.538377, intent data is 0.190102, bio data is 0.456342, cost about 30.5685 seconds.
+[2021-04-09 17:08:06,300][140590680069952][process.py][line: 147][INFO] ## [Epoch 124]: The total slot loss on train data is 0.488174, intent data is 0.081887, bio data is 0.490670, cost about 30.7807 seconds.
+[2021-04-09 17:08:44,232][140590680069952][process.py][line: 147][INFO] ## [Epoch 125]: The total slot loss on train data is 0.518109, intent data is 0.095798, bio data is 0.595636, cost about 30.8977 seconds.
+[2021-04-09 17:08:59,460][140590680069952][process.py][line: 165][INFO] ## 
+Test result: slot f1 score: 0.727273, intent acc score: 0.891945, semantic accuracy score: 0.640472. BIO f1 score 0.805012 
+[2021-04-09 17:08:59,580][140590680069952][process.py][line: 178][INFO] ## [Epoch 125]: In validation process, the slot f1 score is 0.782530, the intent acc is 0.929952, the semantic acc is 0.71, cost about 15.348121 seconds.
+
+[2021-04-09 17:09:30,880][140590680069952][process.py][line: 147][INFO] ## [Epoch 126]: The total slot loss on train data is 0.489785, intent data is 0.033289, bio data is 0.312317, cost about 31.2995 seconds.
+[2021-04-09 17:10:08,840][140590680069952][process.py][line: 147][INFO] ## [Epoch 127]: The total slot loss on train data is 0.441682, intent data is 0.162694, bio data is 0.433937, cost about 30.9073 seconds.
+[2021-04-09 17:10:46,597][140590680069952][process.py][line: 147][INFO] ## [Epoch 128]: The total slot loss on train data is 0.489525, intent data is 0.067333, bio data is 0.567845, cost about 30.6996 seconds.
+[2021-04-09 17:11:24,406][140590680069952][process.py][line: 147][INFO] ## [Epoch 129]: The total slot loss on train data is 0.365164, intent data is 0.056543, bio data is 0.493994, cost about 30.7553 seconds.
+[2021-04-09 17:12:02,166][140590680069952][process.py][line: 147][INFO] ## [Epoch 130]: The total slot loss on train data is 0.410995, intent data is 0.051800, bio data is 0.377762, cost about 30.668 seconds.
+[2021-04-09 17:12:40,112][140590680069952][process.py][line: 147][INFO] ## [Epoch 131]: The total slot loss on train data is 0.354385, intent data is 0.213777, bio data is 0.385785, cost about 30.8482 seconds.
+[2021-04-09 17:13:17,801][140590680069952][process.py][line: 147][INFO] ## [Epoch 132]: The total slot loss on train data is 0.296645, intent data is 0.168262, bio data is 0.282783, cost about 30.6751 seconds.
+[2021-04-09 17:13:56,570][140590680069952][process.py][line: 147][INFO] ## [Epoch 133]: The total slot loss on train data is 0.490396, intent data is 0.085549, bio data is 0.434849, cost about 31.7325 seconds.
+[2021-04-09 17:14:34,818][140590680069952][process.py][line: 147][INFO] ## [Epoch 134]: The total slot loss on train data is 0.330975, intent data is 0.201879, bio data is 0.313520, cost about 31.1811 seconds.
+[2021-04-09 17:15:12,943][140590680069952][process.py][line: 147][INFO] ## [Epoch 135]: The total slot loss on train data is 0.371438, intent data is 0.035082, bio data is 0.570862, cost about 31.0079 seconds.
+[2021-04-09 17:16:03,411][140590680069952][process.py][line: 147][INFO] ## [Epoch 136]: The total slot loss on train data is 0.293906, intent data is 0.102518, bio data is 0.687835, cost about 41.0707 seconds.
+[2021-04-09 17:16:47,153][140590680069952][process.py][line: 147][INFO] ## [Epoch 137]: The total slot loss on train data is 0.307270, intent data is 0.100316, bio data is 0.457362, cost about 34.3377 seconds.
+[2021-04-09 17:17:32,732][140590680069952][process.py][line: 147][INFO] ## [Epoch 138]: The total slot loss on train data is 0.433738, intent data is 0.078268, bio data is 0.396237, cost about 35.2211 seconds.
+[2021-04-09 17:18:19,421][140590680069952][process.py][line: 147][INFO] ## [Epoch 139]: The total slot loss on train data is 0.342668, intent data is 0.112908, bio data is 0.433064, cost about 34.4838 seconds.
+[2021-04-09 17:18:59,563][140590680069952][process.py][line: 147][INFO] ## [Epoch 140]: The total slot loss on train data is 0.242785, intent data is 0.124296, bio data is 0.289641, cost about 31.7064 seconds.
+[2021-04-09 17:19:41,936][140590680069952][process.py][line: 147][INFO] ## [Epoch 141]: The total slot loss on train data is 0.454655, intent data is 0.050373, bio data is 0.538446, cost about 35.1685 seconds.
+[2021-04-09 17:20:21,582][140590680069952][process.py][line: 147][INFO] ## [Epoch 142]: The total slot loss on train data is 0.440457, intent data is 0.077716, bio data is 0.475212, cost about 31.7649 seconds.
+[2021-04-09 17:21:01,956][140590680069952][process.py][line: 147][INFO] ## [Epoch 143]: The total slot loss on train data is 0.477530, intent data is 0.182808, bio data is 0.303123, cost about 32.7519 seconds.
+[2021-04-09 17:21:41,920][140590680069952][process.py][line: 147][INFO] ## [Epoch 144]: The total slot loss on train data is 0.285774, intent data is 0.154379, bio data is 0.269080, cost about 32.2232 seconds.
+[2021-04-09 17:22:06,282][140590680069952][process.py][line: 147][INFO] ## [Epoch 145]: The total slot loss on train data is 0.446323, intent data is 0.079877, bio data is 0.419112, cost about 19.2203 seconds.
+[2021-04-09 17:22:30,447][140590680069952][process.py][line: 147][INFO] ## [Epoch 146]: The total slot loss on train data is 0.325663, intent data is 0.810865, bio data is 0.400317, cost about 19.2344 seconds.
+[2021-04-09 17:22:53,065][140590680069952][process.py][line: 147][INFO] ## [Epoch 147]: The total slot loss on train data is 0.541288, intent data is 0.115855, bio data is 0.736275, cost about 17.9771 seconds.
+[2021-04-09 17:23:16,401][140590680069952][process.py][line: 147][INFO] ## [Epoch 148]: The total slot loss on train data is 0.605151, intent data is 0.060500, bio data is 0.465927, cost about 18.7325 seconds.
+[2021-04-09 17:23:39,416][140590680069952][process.py][line: 147][INFO] ## [Epoch 149]: The total slot loss on train data is 0.339358, intent data is 0.079773, bio data is 0.440618, cost about 18.4285 seconds.
+[2021-04-09 17:24:02,700][140590680069952][process.py][line: 147][INFO] ## [Epoch 150]: The total slot loss on train data is 0.412314, intent data is 0.068182, bio data is 0.339559, cost about 18.6968 seconds.
+[2021-04-09 17:24:25,820][140590680069952][process.py][line: 147][INFO] ## [Epoch 151]: The total slot loss on train data is 0.298214, intent data is 0.138712, bio data is 0.318028, cost about 18.4894 seconds.
+[2021-04-09 17:24:48,904][140590680069952][process.py][line: 147][INFO] ## [Epoch 152]: The total slot loss on train data is 0.300399, intent data is 0.212964, bio data is 0.343630, cost about 18.4929 seconds.
+[2021-04-09 17:25:11,942][140590680069952][process.py][line: 147][INFO] ## [Epoch 153]: The total slot loss on train data is 0.294018, intent data is 0.110161, bio data is 0.392427, cost about 18.4178 seconds.
+[2021-04-09 17:25:35,923][140590680069952][process.py][line: 147][INFO] ## [Epoch 154]: The total slot loss on train data is 0.273669, intent data is 0.077357, bio data is 0.290466, cost about 19.3861 seconds.
+[2021-04-09 17:25:58,549][140590680069952][process.py][line: 147][INFO] ## [Epoch 155]: The total slot loss on train data is 0.271194, intent data is 0.087916, bio data is 0.343248, cost about 17.9678 seconds.
+[2021-04-09 17:26:21,527][140590680069952][process.py][line: 147][INFO] ## [Epoch 156]: The total slot loss on train data is 0.285468, intent data is 0.051056, bio data is 0.326262, cost about 18.3245 seconds.
+[2021-04-09 17:26:44,834][140590680069952][process.py][line: 147][INFO] ## [Epoch 157]: The total slot loss on train data is 0.376212, intent data is 0.155844, bio data is 0.257036, cost about 18.6726 seconds.
+[2021-04-09 17:27:07,833][140590680069952][process.py][line: 147][INFO] ## [Epoch 158]: The total slot loss on train data is 0.318967, intent data is 0.163158, bio data is 0.297431, cost about 18.3805 seconds.
+[2021-04-09 17:27:31,326][140590680069952][process.py][line: 147][INFO] ## [Epoch 159]: The total slot loss on train data is 0.414587, intent data is 0.061964, bio data is 0.521942, cost about 18.8437 seconds.
+[2021-04-09 17:27:54,343][140590680069952][process.py][line: 147][INFO] ## [Epoch 160]: The total slot loss on train data is 0.423677, intent data is 0.117908, bio data is 0.426340, cost about 18.3729 seconds.
+[2021-04-09 17:28:17,683][140590680069952][process.py][line: 147][INFO] ## [Epoch 161]: The total slot loss on train data is 0.318420, intent data is 0.078801, bio data is 0.412949, cost about 18.6799 seconds.
+[2021-04-09 17:28:41,243][140590680069952][process.py][line: 147][INFO] ## [Epoch 162]: The total slot loss on train data is 0.334465, intent data is 0.041666, bio data is 0.381265, cost about 18.9327 seconds.
+[2021-04-09 17:29:04,090][140590680069952][process.py][line: 147][INFO] ## [Epoch 163]: The total slot loss on train data is 0.402292, intent data is 0.174033, bio data is 0.373168, cost about 18.2024 seconds.
+[2021-04-09 17:29:26,906][140590680069952][process.py][line: 147][INFO] ## [Epoch 164]: The total slot loss on train data is 0.445095, intent data is 0.126648, bio data is 0.196391, cost about 18.1935 seconds.
+[2021-04-09 17:29:50,122][140590680069952][process.py][line: 147][INFO] ## [Epoch 165]: The total slot loss on train data is 0.459795, intent data is 0.045444, bio data is 0.733893, cost about 18.5993 seconds.
+[2021-04-09 17:30:13,449][140590680069952][process.py][line: 147][INFO] ## [Epoch 166]: The total slot loss on train data is 0.260946, intent data is 0.091956, bio data is 0.221817, cost about 18.6777 seconds.
+[2021-04-09 17:30:36,239][140590680069952][process.py][line: 147][INFO] ## [Epoch 167]: The total slot loss on train data is 0.427398, intent data is 0.041624, bio data is 0.334127, cost about 18.161 seconds.
+[2021-04-09 17:30:58,528][140590680069952][process.py][line: 147][INFO] ## [Epoch 168]: The total slot loss on train data is 0.375888, intent data is 0.052290, bio data is 0.408520, cost about 17.7309 seconds.
+[2021-04-09 17:31:20,861][140590680069952][process.py][line: 147][INFO] ## [Epoch 169]: The total slot loss on train data is 0.248840, intent data is 0.048992, bio data is 0.361807, cost about 17.8023 seconds.
+[2021-04-09 17:31:43,509][140590680069952][process.py][line: 147][INFO] ## [Epoch 170]: The total slot loss on train data is 0.348909, intent data is 0.057697, bio data is 0.418367, cost about 18.0541 seconds.
+[2021-04-09 17:32:06,071][140590680069952][process.py][line: 147][INFO] ## [Epoch 171]: The total slot loss on train data is 0.191726, intent data is 0.097876, bio data is 0.244584, cost about 18.0332 seconds.
+[2021-04-09 17:32:28,894][140590680069952][process.py][line: 147][INFO] ## [Epoch 172]: The total slot loss on train data is 0.274699, intent data is 0.105684, bio data is 0.376560, cost about 18.284 seconds.
+[2021-04-09 17:32:51,040][140590680069952][process.py][line: 147][INFO] ## [Epoch 173]: The total slot loss on train data is 0.249478, intent data is 0.133537, bio data is 0.439238, cost about 17.6103 seconds.
+[2021-04-09 17:33:13,228][140590680069952][process.py][line: 147][INFO] ## [Epoch 174]: The total slot loss on train data is 0.487465, intent data is 0.119050, bio data is 0.436766, cost about 17.6393 seconds.
+[2021-04-09 17:33:35,836][140590680069952][process.py][line: 147][INFO] ## [Epoch 175]: The total slot loss on train data is 0.281863, intent data is 0.140987, bio data is 0.320870, cost about 18.0923 seconds.
+[2021-04-09 17:33:58,534][140590680069952][process.py][line: 147][INFO] ## [Epoch 176]: The total slot loss on train data is 0.295268, intent data is 0.067202, bio data is 0.354831, cost about 18.1453 seconds.
+[2021-04-09 17:34:20,917][140590680069952][process.py][line: 147][INFO] ## [Epoch 177]: The total slot loss on train data is 0.371491, intent data is 0.128544, bio data is 0.436679, cost about 17.8415 seconds.
+[2021-04-09 17:34:43,338][140590680069952][process.py][line: 147][INFO] ## [Epoch 178]: The total slot loss on train data is 0.284913, intent data is 0.049047, bio data is 0.302696, cost about 17.8881 seconds.
+[2021-04-09 17:35:05,696][140590680069952][process.py][line: 147][INFO] ## [Epoch 179]: The total slot loss on train data is 0.399755, intent data is 0.030265, bio data is 0.248224, cost about 17.8143 seconds.
+[2021-04-09 17:35:28,066][140590680069952][process.py][line: 147][INFO] ## [Epoch 180]: The total slot loss on train data is 0.241977, intent data is 0.152415, bio data is 0.287126, cost about 17.8079 seconds.
+[2021-04-09 17:35:50,557][140590680069952][process.py][line: 147][INFO] ## [Epoch 181]: The total slot loss on train data is 0.280158, intent data is 0.210839, bio data is 0.413526, cost about 17.9188 seconds.
+[2021-04-09 17:36:14,096][140590680069952][process.py][line: 147][INFO] ## [Epoch 182]: The total slot loss on train data is 0.267648, intent data is 0.072414, bio data is 0.309526, cost about 18.8943 seconds.
+[2021-04-09 17:36:37,499][140590680069952][process.py][line: 147][INFO] ## [Epoch 183]: The total slot loss on train data is 0.254023, intent data is 0.047729, bio data is 0.199495, cost about 18.2251 seconds.
+[2021-04-09 17:36:59,965][140590680069952][process.py][line: 147][INFO] ## [Epoch 184]: The total slot loss on train data is 0.321978, intent data is 0.085210, bio data is 0.255205, cost about 17.8493 seconds.
+[2021-04-09 17:37:22,479][140590680069952][process.py][line: 147][INFO] ## [Epoch 185]: The total slot loss on train data is 0.299667, intent data is 0.109441, bio data is 0.304851, cost about 17.9484 seconds.
+[2021-04-09 17:37:44,882][140590680069952][process.py][line: 147][INFO] ## [Epoch 186]: The total slot loss on train data is 0.343269, intent data is 0.112401, bio data is 0.516921, cost about 17.8209 seconds.
+[2021-04-09 17:38:07,529][140590680069952][process.py][line: 147][INFO] ## [Epoch 187]: The total slot loss on train data is 0.422899, intent data is 0.105672, bio data is 0.694281, cost about 18.1122 seconds.
+[2021-04-09 17:38:30,003][140590680069952][process.py][line: 147][INFO] ## [Epoch 188]: The total slot loss on train data is 0.284505, intent data is 0.045286, bio data is 0.209776, cost about 17.8796 seconds.
+[2021-04-09 17:38:53,395][140590680069952][process.py][line: 147][INFO] ## [Epoch 189]: The total slot loss on train data is 0.209219, intent data is 0.038733, bio data is 0.190368, cost about 18.8294 seconds.
+[2021-04-09 17:39:16,689][140590680069952][process.py][line: 147][INFO] ## [Epoch 190]: The total slot loss on train data is 0.304594, intent data is 0.058020, bio data is 0.338948, cost about 18.6037 seconds.
+[2021-04-09 17:39:39,843][140590680069952][process.py][line: 147][INFO] ## [Epoch 191]: The total slot loss on train data is 0.205724, intent data is 0.042854, bio data is 0.192386, cost about 18.4801 seconds.
+[2021-04-09 17:40:02,780][140590680069952][process.py][line: 147][INFO] ## [Epoch 192]: The total slot loss on train data is 0.233248, intent data is 0.108778, bio data is 0.262587, cost about 18.2355 seconds.
+[2021-04-09 17:40:27,109][140590680069952][process.py][line: 147][INFO] ## [Epoch 193]: The total slot loss on train data is 0.436414, intent data is 0.040835, bio data is 0.206990, cost about 19.6185 seconds.
+[2021-04-09 17:40:52,096][140590680069952][process.py][line: 147][INFO] ## [Epoch 194]: The total slot loss on train data is 0.271504, intent data is 0.067560, bio data is 0.388262, cost about 19.433 seconds.
+[2021-04-09 17:41:15,269][140590680069952][process.py][line: 147][INFO] ## [Epoch 195]: The total slot loss on train data is 0.226931, intent data is 0.058673, bio data is 0.215791, cost about 18.4464 seconds.
+[2021-04-09 17:41:38,423][140590680069952][process.py][line: 147][INFO] ## [Epoch 196]: The total slot loss on train data is 0.353253, intent data is 0.059749, bio data is 0.356310, cost about 18.4277 seconds.
+[2021-04-09 17:42:01,654][140590680069952][process.py][line: 147][INFO] ## [Epoch 197]: The total slot loss on train data is 0.275058, intent data is 0.062893, bio data is 0.186168, cost about 18.5441 seconds.
+[2021-04-09 17:42:24,849][140590680069952][process.py][line: 147][INFO] ## [Epoch 198]: The total slot loss on train data is 0.142140, intent data is 0.045959, bio data is 0.160975, cost about 18.4926 seconds.
+[2021-04-09 17:42:49,043][140590680069952][process.py][line: 147][INFO] ## [Epoch 199]: The total slot loss on train data is 0.199224, intent data is 0.082321, bio data is 0.258109, cost about 19.2449 seconds.
+[2021-04-09 17:43:12,597][140590680069952][process.py][line: 147][INFO] ## [Epoch 200]: The total slot loss on train data is 0.172427, intent data is 0.063235, bio data is 0.259322, cost about 18.7313 seconds.
+[2021-04-09 17:43:35,544][140590680069952][process.py][line: 147][INFO] ## [Epoch 201]: The total slot loss on train data is 0.310115, intent data is 0.099772, bio data is 0.385131, cost about 18.291 seconds.
+[2021-04-09 17:43:58,647][140590680069952][process.py][line: 147][INFO] ## [Epoch 202]: The total slot loss on train data is 0.197693, intent data is 0.028073, bio data is 0.269517, cost about 18.4916 seconds.
+[2021-04-09 17:44:08,731][140590680069952][process.py][line: 165][INFO] ## 
+Test result: slot f1 score: 0.743169, intent acc score: 0.884086, semantic accuracy score: 0.660118. BIO f1 score 0.812500 
+[2021-04-09 17:44:09,080][140590680069952][process.py][line: 178][INFO] ## [Epoch 202]: In validation process, the slot f1 score is 0.764493, the intent acc is 0.942029, the semantic acc is 0.69, cost about 10.433713 seconds.
+
+[2021-04-09 17:44:27,415][140590680069952][process.py][line: 147][INFO] ## [Epoch 203]: The total slot loss on train data is 0.221179, intent data is 0.036636, bio data is 0.247533, cost about 18.3342 seconds.
+[2021-04-09 17:44:51,520][140590680069952][process.py][line: 147][INFO] ## [Epoch 204]: The total slot loss on train data is 0.283315, intent data is 0.110876, bio data is 0.173476, cost about 19.4533 seconds.
+[2021-04-09 17:45:14,987][140590680069952][process.py][line: 147][INFO] ## [Epoch 205]: The total slot loss on train data is 0.157840, intent data is 0.132063, bio data is 0.105132, cost about 18.3625 seconds.
+[2021-04-09 17:45:39,483][140590680069952][process.py][line: 147][INFO] ## [Epoch 206]: The total slot loss on train data is 0.141781, intent data is 0.114442, bio data is 0.121786, cost about 19.3736 seconds.
+[2021-04-09 17:46:05,649][140590680069952][process.py][line: 147][INFO] ## [Epoch 207]: The total slot loss on train data is 0.320044, intent data is 0.106871, bio data is 0.274631, cost about 20.3419 seconds.
+[2021-04-09 17:46:29,574][140590680069952][process.py][line: 147][INFO] ## [Epoch 208]: The total slot loss on train data is 0.196718, intent data is 0.026782, bio data is 0.219171, cost about 18.8359 seconds.
+[2021-04-09 17:46:53,449][140590680069952][process.py][line: 147][INFO] ## [Epoch 209]: The total slot loss on train data is 0.204299, intent data is 0.119557, bio data is 0.263435, cost about 18.89 seconds.
+[2021-04-09 17:47:17,793][140590680069952][process.py][line: 147][INFO] ## [Epoch 210]: The total slot loss on train data is 0.251089, intent data is 0.158056, bio data is 0.291499, cost about 18.9299 seconds.
+[2021-04-09 17:47:42,583][140590680069952][process.py][line: 147][INFO] ## [Epoch 211]: The total slot loss on train data is 0.258211, intent data is 0.019204, bio data is 0.175807, cost about 19.1448 seconds.
+[2021-04-09 17:48:06,962][140590680069952][process.py][line: 147][INFO] ## [Epoch 212]: The total slot loss on train data is 0.274823, intent data is 0.033263, bio data is 0.350588, cost about 18.9591 seconds.
+[2021-04-09 17:48:32,563][140590680069952][process.py][line: 147][INFO] ## [Epoch 213]: The total slot loss on train data is 0.289513, intent data is 0.099570, bio data is 0.270407, cost about 19.909 seconds.
+[2021-04-09 17:48:57,539][140590680069952][process.py][line: 147][INFO] ## [Epoch 214]: The total slot loss on train data is 0.253979, intent data is 0.059738, bio data is 0.121420, cost about 19.5724 seconds.
+[2021-04-09 17:49:22,273][140590680069952][process.py][line: 147][INFO] ## [Epoch 215]: The total slot loss on train data is 0.209649, intent data is 0.045492, bio data is 0.271540, cost about 19.2813 seconds.
+[2021-04-09 17:49:45,960][140590680069952][process.py][line: 147][INFO] ## [Epoch 216]: The total slot loss on train data is 0.160894, intent data is 0.025870, bio data is 0.190035, cost about 18.2011 seconds.
+[2021-04-09 17:50:09,302][140590680069952][process.py][line: 147][INFO] ## [Epoch 217]: The total slot loss on train data is 0.309447, intent data is 0.018140, bio data is 0.213472, cost about 18.4978 seconds.
+[2021-04-09 17:50:32,241][140590680069952][process.py][line: 147][INFO] ## [Epoch 218]: The total slot loss on train data is 0.219565, intent data is 0.134244, bio data is 0.220494, cost about 18.0992 seconds.
+[2021-04-09 17:50:55,118][140590680069952][process.py][line: 147][INFO] ## [Epoch 219]: The total slot loss on train data is 0.274201, intent data is 0.151244, bio data is 0.207138, cost about 18.1009 seconds.
+[2021-04-09 17:51:18,069][140590680069952][process.py][line: 147][INFO] ## [Epoch 220]: The total slot loss on train data is 0.278453, intent data is 0.177695, bio data is 0.132158, cost about 18.145 seconds.
+[2021-04-09 17:51:40,898][140590680069952][process.py][line: 147][INFO] ## [Epoch 221]: The total slot loss on train data is 0.181270, intent data is 0.081205, bio data is 0.167667, cost about 18.0689 seconds.
+[2021-04-09 17:52:03,784][140590680069952][process.py][line: 147][INFO] ## [Epoch 222]: The total slot loss on train data is 0.166722, intent data is 0.058679, bio data is 0.099616, cost about 18.091 seconds.
+[2021-04-09 17:52:26,819][140590680069952][process.py][line: 147][INFO] ## [Epoch 223]: The total slot loss on train data is 0.152376, intent data is 0.105447, bio data is 0.143425, cost about 18.2573 seconds.
+[2021-04-09 17:52:49,387][140590680069952][process.py][line: 147][INFO] ## [Epoch 224]: The total slot loss on train data is 0.247317, intent data is 0.120162, bio data is 0.204629, cost about 17.7832 seconds.
+[2021-04-09 17:53:11,667][140590680069952][process.py][line: 147][INFO] ## [Epoch 225]: The total slot loss on train data is 0.230984, intent data is 0.090492, bio data is 0.226136, cost about 17.4587 seconds.
+[2021-04-09 17:53:34,336][140590680069952][process.py][line: 147][INFO] ## [Epoch 226]: The total slot loss on train data is 0.258991, intent data is 0.152991, bio data is 0.414452, cost about 17.8829 seconds.
+[2021-04-09 17:53:44,458][140590680069952][process.py][line: 165][INFO] ## 
+Test result: slot f1 score: 0.749609, intent acc score: 0.882122, semantic accuracy score: 0.658153. BIO f1 score 0.825098 
+[2021-04-09 17:53:44,567][140590680069952][process.py][line: 178][INFO] ## [Epoch 226]: In validation process, the slot f1 score is 0.760949, the intent acc is 0.944444, the semantic acc is 0.69, cost about 10.231488 seconds.
+
+[2021-04-09 17:54:03,034][140590680069952][process.py][line: 147][INFO] ## [Epoch 227]: The total slot loss on train data is 0.693632, intent data is 0.027449, bio data is 0.457589, cost about 18.4661 seconds.
+[2021-04-09 17:54:25,773][140590680069952][process.py][line: 147][INFO] ## [Epoch 228]: The total slot loss on train data is 0.517570, intent data is 0.069515, bio data is 0.316803, cost about 17.9627 seconds.
+[2021-04-09 17:54:48,423][140590680069952][process.py][line: 147][INFO] ## [Epoch 229]: The total slot loss on train data is 0.346963, intent data is 0.077967, bio data is 0.292404, cost about 17.842 seconds.
+[2021-04-09 17:55:10,997][140590680069952][process.py][line: 147][INFO] ## [Epoch 230]: The total slot loss on train data is 0.216123, intent data is 0.098268, bio data is 0.234186, cost about 17.7996 seconds.
+[2021-04-09 17:55:33,547][140590680069952][process.py][line: 147][INFO] ## [Epoch 231]: The total slot loss on train data is 0.359611, intent data is 0.113820, bio data is 0.397785, cost about 17.7894 seconds.
+[2021-04-09 17:55:56,077][140590680069952][process.py][line: 147][INFO] ## [Epoch 232]: The total slot loss on train data is 0.221501, intent data is 0.125367, bio data is 0.144402, cost about 17.9206 seconds.
+[2021-04-09 17:56:18,515][140590680069952][process.py][line: 147][INFO] ## [Epoch 233]: The total slot loss on train data is 0.315970, intent data is 0.052400, bio data is 0.344501, cost about 17.843 seconds.
+[2021-04-09 17:56:41,072][140590680069952][process.py][line: 147][INFO] ## [Epoch 234]: The total slot loss on train data is 0.329492, intent data is 0.051621, bio data is 0.201805, cost about 17.9292 seconds.
+[2021-04-09 17:56:50,961][140590680069952][process.py][line: 165][INFO] ## 
+Test result: slot f1 score: 0.746687, intent acc score: 0.882122, semantic accuracy score: 0.656189. BIO f1 score 0.820593 
+[2021-04-09 17:56:51,211][140590680069952][process.py][line: 178][INFO] ## [Epoch 234]: In validation process, the slot f1 score is 0.751812, the intent acc is 0.949275, the semantic acc is 0.69, cost about 10.139004 seconds.
+
+[2021-04-09 17:57:08,968][140590680069952][process.py][line: 147][INFO] ## [Epoch 235]: The total slot loss on train data is 0.249042, intent data is 0.120726, bio data is 0.164327, cost about 17.7564 seconds.
+[2021-04-09 17:57:31,558][140590680069952][process.py][line: 147][INFO] ## [Epoch 236]: The total slot loss on train data is 0.270192, intent data is 0.063459, bio data is 0.237543, cost about 17.9985 seconds.
+[2021-04-09 17:57:54,041][140590680069952][process.py][line: 147][INFO] ## [Epoch 237]: The total slot loss on train data is 0.420554, intent data is 0.155551, bio data is 0.393624, cost about 17.8822 seconds.
+[2021-04-09 17:58:16,958][140590680069952][process.py][line: 147][INFO] ## [Epoch 238]: The total slot loss on train data is 0.439529, intent data is 0.012850, bio data is 0.338998, cost about 18.2869 seconds.
+[2021-04-09 17:58:39,441][140590680069952][process.py][line: 147][INFO] ## [Epoch 239]: The total slot loss on train data is 0.213674, intent data is 0.023390, bio data is 0.345600, cost about 17.8598 seconds.
+[2021-04-09 17:59:02,096][140590680069952][process.py][line: 147][INFO] ## [Epoch 240]: The total slot loss on train data is 0.339825, intent data is 0.089215, bio data is 0.170097, cost about 18.0499 seconds.
+[2021-04-09 17:59:24,260][140590680069952][process.py][line: 147][INFO] ## [Epoch 241]: The total slot loss on train data is 0.244969, intent data is 0.103841, bio data is 0.272009, cost about 17.5722 seconds.
+[2021-04-09 17:59:46,965][140590680069952][process.py][line: 147][INFO] ## [Epoch 242]: The total slot loss on train data is 0.209709, intent data is 0.051537, bio data is 0.321034, cost about 18.0879 seconds.
+[2021-04-09 18:00:09,529][140590680069952][process.py][line: 147][INFO] ## [Epoch 243]: The total slot loss on train data is 0.313279, intent data is 0.092136, bio data is 0.292018, cost about 17.9464 seconds.
+[2021-04-09 18:00:32,257][140590680069952][process.py][line: 147][INFO] ## [Epoch 244]: The total slot loss on train data is 0.228608, intent data is 0.111267, bio data is 0.173059, cost about 18.1088 seconds.
+[2021-04-09 18:00:54,836][140590680069952][process.py][line: 147][INFO] ## [Epoch 245]: The total slot loss on train data is 0.163380, intent data is 0.049129, bio data is 0.280375, cost about 18.0007 seconds.
+[2021-04-09 18:01:17,261][140590680069952][process.py][line: 147][INFO] ## [Epoch 246]: The total slot loss on train data is 0.275725, intent data is 0.058674, bio data is 0.463329, cost about 17.8301 seconds.
+[2021-04-09 18:01:39,690][140590680069952][process.py][line: 147][INFO] ## [Epoch 247]: The total slot loss on train data is 0.283845, intent data is 0.044398, bio data is 0.427931, cost about 17.8283 seconds.
+[2021-04-09 18:02:02,127][140590680069952][process.py][line: 147][INFO] ## [Epoch 248]: The total slot loss on train data is 0.240985, intent data is 0.032977, bio data is 0.316498, cost about 17.8011 seconds.
+[2021-04-09 18:02:24,714][140590680069952][process.py][line: 147][INFO] ## [Epoch 249]: The total slot loss on train data is 0.248259, intent data is 0.066342, bio data is 0.167817, cost about 17.9884 seconds.
+[2021-04-09 18:02:47,003][140590680069952][process.py][line: 147][INFO] ## [Epoch 250]: The total slot loss on train data is 0.181668, intent data is 0.038516, bio data is 0.132473, cost about 17.6733 seconds.
+[2021-04-09 18:03:09,269][140590680069952][process.py][line: 147][INFO] ## [Epoch 251]: The total slot loss on train data is 0.204012, intent data is 0.046996, bio data is 0.175973, cost about 17.6706 seconds.
+[2021-04-09 18:03:31,484][140590680069952][process.py][line: 147][INFO] ## [Epoch 252]: The total slot loss on train data is 0.311655, intent data is 0.026368, bio data is 0.168057, cost about 17.6445 seconds.
+[2021-04-09 18:03:53,923][140590680069952][process.py][line: 147][INFO] ## [Epoch 253]: The total slot loss on train data is 0.216497, intent data is 0.041736, bio data is 0.227199, cost about 17.8458 seconds.
+[2021-04-09 18:04:16,007][140590680069952][process.py][line: 147][INFO] ## [Epoch 254]: The total slot loss on train data is 0.142532, intent data is 0.020726, bio data is 0.200795, cost about 17.4788 seconds.
+[2021-04-09 18:04:38,477][140590680069952][process.py][line: 147][INFO] ## [Epoch 255]: The total slot loss on train data is 0.322920, intent data is 0.013167, bio data is 0.189131, cost about 17.8659 seconds.
+[2021-04-09 18:05:01,049][140590680069952][process.py][line: 147][INFO] ## [Epoch 256]: The total slot loss on train data is 0.253204, intent data is 0.054116, bio data is 0.096839, cost about 17.9889 seconds.
+[2021-04-09 18:05:23,382][140590680069952][process.py][line: 147][INFO] ## [Epoch 257]: The total slot loss on train data is 0.201963, intent data is 0.062888, bio data is 0.223161, cost about 17.7371 seconds.
+[2021-04-09 18:05:46,348][140590680069952][process.py][line: 147][INFO] ## [Epoch 258]: The total slot loss on train data is 0.277418, intent data is 0.037153, bio data is 0.354892, cost about 18.3901 seconds.
+[2021-04-09 18:06:08,731][140590680069952][process.py][line: 147][INFO] ## [Epoch 259]: The total slot loss on train data is 0.333151, intent data is 0.045722, bio data is 0.093368, cost about 17.767 seconds.
+[2021-04-09 18:06:31,029][140590680069952][process.py][line: 147][INFO] ## [Epoch 260]: The total slot loss on train data is 0.192827, intent data is 0.013465, bio data is 0.219334, cost about 17.7001 seconds.
+[2021-04-09 18:06:53,315][140590680069952][process.py][line: 147][INFO] ## [Epoch 261]: The total slot loss on train data is 0.148269, intent data is 0.044427, bio data is 0.166851, cost about 17.6758 seconds.
+[2021-04-09 18:07:15,862][140590680069952][process.py][line: 147][INFO] ## [Epoch 262]: The total slot loss on train data is 0.296631, intent data is 0.032785, bio data is 0.321697, cost about 17.9408 seconds.
+[2021-04-09 18:07:38,539][140590680069952][process.py][line: 147][INFO] ## [Epoch 263]: The total slot loss on train data is 0.201861, intent data is 0.046840, bio data is 0.248774, cost about 18.0893 seconds.
+[2021-04-09 18:08:00,741][140590680069952][process.py][line: 147][INFO] ## [Epoch 264]: The total slot loss on train data is 0.286154, intent data is 0.041717, bio data is 0.271337, cost about 17.6129 seconds.
+[2021-04-09 18:08:23,383][140590680069952][process.py][line: 147][INFO] ## [Epoch 265]: The total slot loss on train data is 0.179046, intent data is 0.025916, bio data is 0.316210, cost about 18.022 seconds.
+[2021-04-09 18:08:45,970][140590680069952][process.py][line: 147][INFO] ## [Epoch 266]: The total slot loss on train data is 0.285624, intent data is 0.036874, bio data is 0.177053, cost about 18.0198 seconds.
+[2021-04-09 18:09:08,582][140590680069952][process.py][line: 147][INFO] ## [Epoch 267]: The total slot loss on train data is 0.263213, intent data is 0.041362, bio data is 0.167731, cost about 18.019 seconds.
+[2021-04-09 18:09:31,033][140590680069952][process.py][line: 147][INFO] ## [Epoch 268]: The total slot loss on train data is 0.188338, intent data is 0.382890, bio data is 0.082731, cost about 17.8675 seconds.
+[2021-04-09 18:09:53,457][140590680069952][process.py][line: 147][INFO] ## [Epoch 269]: The total slot loss on train data is 0.159168, intent data is 0.197788, bio data is 0.250728, cost about 17.8478 seconds.
+[2021-04-09 18:10:16,561][140590680069952][process.py][line: 147][INFO] ## [Epoch 270]: The total slot loss on train data is 0.471178, intent data is 0.162630, bio data is 0.601513, cost about 18.5005 seconds.
+[2021-04-09 18:10:38,946][140590680069952][process.py][line: 147][INFO] ## [Epoch 271]: The total slot loss on train data is 0.301644, intent data is 0.148423, bio data is 0.300064, cost about 17.7899 seconds.
+[2021-04-09 18:11:00,987][140590680069952][process.py][line: 147][INFO] ## [Epoch 272]: The total slot loss on train data is 0.231012, intent data is 0.062788, bio data is 0.164927, cost about 17.4424 seconds.
+[2021-04-09 18:11:23,520][140590680069952][process.py][line: 147][INFO] ## [Epoch 273]: The total slot loss on train data is 0.177193, intent data is 0.088600, bio data is 0.325867, cost about 17.9425 seconds.
+[2021-04-09 18:11:45,961][140590680069952][process.py][line: 147][INFO] ## [Epoch 274]: The total slot loss on train data is 0.159223, intent data is 0.022459, bio data is 0.213242, cost about 17.8232 seconds.
+[2021-04-09 18:12:08,316][140590680069952][process.py][line: 147][INFO] ## [Epoch 275]: The total slot loss on train data is 0.195218, intent data is 0.172944, bio data is 0.311423, cost about 17.756 seconds.
+[2021-04-09 18:12:30,932][140590680069952][process.py][line: 147][INFO] ## [Epoch 276]: The total slot loss on train data is 0.329500, intent data is 0.090298, bio data is 0.318435, cost about 18.0123 seconds.
+[2021-04-09 18:12:53,403][140590680069952][process.py][line: 147][INFO] ## [Epoch 277]: The total slot loss on train data is 0.203438, intent data is 0.034402, bio data is 0.203391, cost about 17.8702 seconds.
+[2021-04-09 18:13:15,576][140590680069952][process.py][line: 147][INFO] ## [Epoch 278]: The total slot loss on train data is 0.103683, intent data is 0.403640, bio data is 0.080652, cost about 17.5811 seconds.
+[2021-04-09 18:13:38,083][140590680069952][process.py][line: 147][INFO] ## [Epoch 279]: The total slot loss on train data is 0.257257, intent data is 0.034803, bio data is 0.222356, cost about 17.9119 seconds.
+[2021-04-09 18:14:00,857][140590680069952][process.py][line: 147][INFO] ## [Epoch 280]: The total slot loss on train data is 0.273341, intent data is 0.163622, bio data is 0.402455, cost about 18.192 seconds.
+[2021-04-09 18:14:23,222][140590680069952][process.py][line: 147][INFO] ## [Epoch 281]: The total slot loss on train data is 0.290029, intent data is 0.072461, bio data is 0.408046, cost about 17.7641 seconds.
+[2021-04-09 18:14:45,951][140590680069952][process.py][line: 147][INFO] ## [Epoch 282]: The total slot loss on train data is 0.091561, intent data is 0.072529, bio data is 0.202809, cost about 18.1155 seconds.
+[2021-04-09 18:15:08,431][140590680069952][process.py][line: 147][INFO] ## [Epoch 283]: The total slot loss on train data is 0.220876, intent data is 0.048203, bio data is 0.196899, cost about 17.8726 seconds.
+[2021-04-09 18:15:31,065][140590680069952][process.py][line: 147][INFO] ## [Epoch 284]: The total slot loss on train data is 0.203783, intent data is 0.046303, bio data is 0.174302, cost about 18.0227 seconds.
+[2021-04-09 18:15:53,305][140590680069952][process.py][line: 147][INFO] ## [Epoch 285]: The total slot loss on train data is 0.177945, intent data is 0.022982, bio data is 0.166728, cost about 17.6578 seconds.
+[2021-04-09 18:16:16,073][140590680069952][process.py][line: 147][INFO] ## [Epoch 286]: The total slot loss on train data is 0.192312, intent data is 0.040280, bio data is 0.081921, cost about 18.1481 seconds.
+[2021-04-09 18:16:38,551][140590680069952][process.py][line: 147][INFO] ## [Epoch 287]: The total slot loss on train data is 0.134382, intent data is 0.022423, bio data is 0.091881, cost about 17.8768 seconds.
+[2021-04-09 18:17:01,448][140590680069952][process.py][line: 147][INFO] ## [Epoch 288]: The total slot loss on train data is 0.366100, intent data is 0.022166, bio data is 0.138041, cost about 18.316 seconds.
+[2021-04-09 18:17:23,720][140590680069952][process.py][line: 147][INFO] ## [Epoch 289]: The total slot loss on train data is 0.213698, intent data is 0.037177, bio data is 0.340599, cost about 17.6709 seconds.
+[2021-04-09 18:17:46,708][140590680069952][process.py][line: 147][INFO] ## [Epoch 290]: The total slot loss on train data is 0.137485, intent data is 0.020250, bio data is 0.095102, cost about 18.3931 seconds.
+[2021-04-09 18:18:09,367][140590680069952][process.py][line: 147][INFO] ## [Epoch 291]: The total slot loss on train data is 0.330797, intent data is 0.063429, bio data is 0.247605, cost about 18.0726 seconds.
+[2021-04-09 18:18:32,146][140590680069952][process.py][line: 147][INFO] ## [Epoch 292]: The total slot loss on train data is 0.243910, intent data is 0.020387, bio data is 0.314292, cost about 18.1888 seconds.
+[2021-04-09 18:18:54,754][140590680069952][process.py][line: 147][INFO] ## [Epoch 293]: The total slot loss on train data is 0.186280, intent data is 0.032136, bio data is 0.175132, cost about 18.0147 seconds.
+[2021-04-09 18:19:17,021][140590680069952][process.py][line: 147][INFO] ## [Epoch 294]: The total slot loss on train data is 0.198968, intent data is 0.091448, bio data is 0.152946, cost about 17.6733 seconds.
+[2021-04-09 18:19:39,790][140590680069952][process.py][line: 147][INFO] ## [Epoch 295]: The total slot loss on train data is 0.150652, intent data is 0.014721, bio data is 0.249539, cost about 18.1831 seconds.
+[2021-04-09 18:20:01,924][140590680069952][process.py][line: 147][INFO] ## [Epoch 296]: The total slot loss on train data is 0.203190, intent data is 0.044382, bio data is 0.270764, cost about 17.5295 seconds.
+[2021-04-09 18:20:24,382][140590680069952][process.py][line: 147][INFO] ## [Epoch 297]: The total slot loss on train data is 0.100090, intent data is 0.061860, bio data is 0.146704, cost about 17.8712 seconds.
+[2021-04-09 18:20:46,685][140590680069952][process.py][line: 147][INFO] ## [Epoch 298]: The total slot loss on train data is 0.180906, intent data is 0.018255, bio data is 0.224590, cost about 17.7054 seconds.
+[2021-04-09 18:21:08,952][140590680069952][process.py][line: 147][INFO] ## [Epoch 299]: The total slot loss on train data is 0.132737, intent data is 0.017663, bio data is 0.223913, cost about 17.6542 seconds.
+[2021-04-09 18:21:18,932][140590680069952][train.py][line: 122][INFO] ## 
+Accepted performance: (0.7466874512860483, 0.8821218074656189, 0.656188605108055) at test dataset;
+
