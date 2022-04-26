@@ -1,23 +1,4 @@
-# A Stack-Propagation Framework with Token-Level Intent Detection for Spoken Language Understanding
-
-This repository contains the PyTorch implementation of the paper: **A Stack-Propagation Framework with 
-Token-Level Intent Detection for Spoken Language Understanding**. If you use any source codes or the datasets included in this toolkit in your work, please cite the following paper. The bibtex are listed below:
-
-<pre>
-@article{qin2019stack,
-  title={A Stack-Propagation Framework with Token-Level Intent Detection for Spoken Language Understanding},
-  author={Qin, Libo and Che, Wanxiang and Li, Yangming and Wen, Haoyang and Liu, Ting},
-  journal={arXiv preprint arXiv:1909.02188},
-  year={2019}
-}
-</pre>
-
-In the following, we will guide you how to use this repository step by step.
-
-## Architecture
-
-<div align=center><img src="https://github.com/LeePleased/StackPropagation-SLU/blob/master/image/0.png" 
-                   width="400" height="400" /></div>
+## Boundary-prediction and Dynamic-template Slot Filling(BDSF)
 
 ## Preparation
 
